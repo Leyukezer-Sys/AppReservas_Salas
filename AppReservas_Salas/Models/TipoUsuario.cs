@@ -2,5 +2,6 @@
 {
     public class TipoUsuario
     {
+        public List<Usuario>? Usuarios { get; set; }
     }
 }

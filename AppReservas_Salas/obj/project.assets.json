@@ -1644,19 +1644,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\aaman\\.nuget\\packages\\": {}
+    "C:\\Users\\Leyukezer\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\AppReservas_Salas.csproj",
+      "projectUniqueName": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\AppReservas_Salas.csproj",
       "projectName": "AppReservas_Salas",
-      "projectPath": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\AppReservas_Salas.csproj",
-      "packagesPath": "C:\\Users\\aaman\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\obj\\",
+      "projectPath": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\AppReservas_Salas.csproj",
+      "packagesPath": "C:\\Users\\Leyukezer\\.nuget\\packages\\",
+      "outputPath": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\aaman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Leyukezer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1682,7 +1687,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -1720,7 +1726,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
