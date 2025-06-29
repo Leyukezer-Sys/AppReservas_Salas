@@ -22,5 +22,7 @@ namespace AppReservas_Salas.Models
 
         [ForeignKey(nameof(IdTipo))]
         public TipoUsuario? Tipo { get; set; }
+
+        public List<Reserva>? Reservas { get; set; }
     }
 }

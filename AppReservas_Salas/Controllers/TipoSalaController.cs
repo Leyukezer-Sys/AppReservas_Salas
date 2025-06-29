@@ -16,7 +16,7 @@ namespace AppReservas_Salas.Controllers
 
         public async Task<List<TipoSala>>? TiposUsuario()
         {
-            var tipos = await _context.TiposSalas.Include(tu => tu.Salas).ToListAsync();
+            var tipos = await _context.TiposSalas.Include(ts => ts.Salas).ToListAsync();
 
             return tipos;
         }
