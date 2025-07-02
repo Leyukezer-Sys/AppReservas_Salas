@@ -1,0 +1,68 @@
+﻿@page "/cadastrarSala"
+@using AppReservas_Salas.Models;
+@using AppReservas_Salas.Controllers;
+@inject SalaController salaController;
+@inject TipoSalaController tipoController;
+@inject NavigationManager navegacao;
+
+<div class="top-row px-5 bg-gradient m-0 p-5" style="height: 50px;">
+
+</div>
+<h1 class="m-5">Cadastro De Sala</h1>
+
+<div class="container">
+    <div class="row mt-2">
+        <div class="col ms-3">
+            <label class="form-label" for="txtNumero"></label>
+            <input type="number" name="txtNumero" id="txtNumero" @bind="sala.Numero" class="form-control" placeholder="" />
+        </div>
+        <div class="col ms-3">
+            <label class="form-label" for="txtCapacidade"></label>
+            <input type="number" name="txtCapacidade" id="txtCapacidade" @bind="sala.Capacidade" class="form-control" placeholder="" />
+        </div>
+        <div class="col ms-3">
+            <label class="form-label" for="txtBloco"></label>
+            <input type="text" name="txtBloco" id="txtBloco" @bind="sala.Bloco" class="form-control" placeholder="" />
+        </div>
+    </div>
+    <div class="row mt-2">
+        <div class="col ms-3">
+            <select @bind="sala.IdTipo" class="form-control" name="txtTipo" id="txtTipo">
+                <option disabled selected>Selecione o Tipo de Sala</option>
+                @foreach (var tipo in tipoSalas)
+                {
+                    <option value="@tipo.Id">@tipo.Nome</option>
+                }
+            </select>
+        </div>
+    </div>
+
+    <div class="row mt-2">
+        <div class="col ms-3">
+            <button class="btn btn-success" @onclick="Salvar" disabled="@enableButton">SALVAR</button>
+        </div>
+    </div>
+
+</div>
+
+@code {
+    private Sala sala = new Sala();
+    private bool enableButton = true;
+    private List<TipoSala> tipoSalas = new List<TipoSala>();
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        var listaTipos = await tipoController.TiposSalas();
+        tipoSalas = listaTipos;
+    }
+
+    public async Task Salvar()
+    {
+        await salaController.Add(sala);
+        await salaController.Salvar();
+
+        enableButton = true;
+    }
+
+}

@@ -1,24 +1,28 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AppReservas_Salas.bundle.scp.css",
-      "PackagePath": "staticwebassets\\AppReservas_Salas.bundle.scp.css"
+      "Id": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AppReservas_Salas.bundle.scp.css",
+      "PackagePath": "staticwebassets\\AppReservas_Salas.ax3l15m3k2.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\app.css",
+      "Id": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\app.css",
       "PackagePath": "staticwebassets\\app.css"
     },
     {
-      "Id": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Id": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Id": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\favicon.png",
+      "Id": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.AppReservas_Salas.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.AppReservas_Salas.Microsoft.AspNetCore.StaticWebAssets.props",

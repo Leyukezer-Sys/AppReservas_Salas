@@ -1,11 +1,12 @@
 ﻿using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
+using AppReservas_Salas.Models;
 
 namespace AppReservas_Salas.Ferramenta
 {
     public class Impressao
     {
-        public async Task GerarImpressao(List<_> lista1, List<_> lista2, NavigationManager nav, IJSRuntime jsRuntime)
+        public async Task GerarImpressao(List<Sala> lista1, List<Reserva> lista2, List<Usuario> lista3, NavigationManager nav, IJSRuntime jsRuntime)
         {
             try
             {
@@ -15,6 +16,7 @@ namespace AppReservas_Salas.Ferramenta
                     var report = new FastReport.Report();
                     report.Dictionary.RegisterBusinessObject(lista1, "lista1", 10, true);
                     report.Dictionary.RegisterBusinessObject(lista2, "lista2", 10, true);
+                    report.Dictionary.RegisterBusinessObject(lista3, "lista3", 10, true);
                     report.Report.Save(filePath);
 
                 }
@@ -23,6 +25,7 @@ namespace AppReservas_Salas.Ferramenta
                 report1.Report.Load(filePath);
                 report1.Dictionary.RegisterBusinessObject(lista1, "lista1", 10, true);
                 report1.Dictionary.RegisterBusinessObject(lista2, "lista2", 10, true);
+                report1.Dictionary.RegisterBusinessObject(lista3, "lista3", 10, true);
                 report1.Prepare();
                 using var pdfExport = new FastReport.Export.PdfSimple.PDFSimpleExport();
                 using var reportStream = new MemoryStream();

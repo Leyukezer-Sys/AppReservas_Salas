@@ -3,48 +3,24 @@
   "WorkspaceRootPath": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C038ABED-A9BA-432B-88CC-C230494A3C3D}|AppReservas_Salas.csproj|d:\\leyukezer\\documents\\github\\appreservas_salas\\appreservas_salas\\models\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C038ABED-A9BA-432B-88CC-C230494A3C3D}|AppReservas_Salas.csproj|solutionrelative:models\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C038ABED-A9BA-432B-88CC-C230494A3C3D}|AppReservas_Salas.csproj|d:\\leyukezer\\documents\\github\\appreservas_salas\\appreservas_salas\\components\\pages\\consultarusuarios.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C038ABED-A9BA-432B-88CC-C230494A3C3D}|AppReservas_Salas.csproj|solutionrelative:components\\pages\\consultarusuarios.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C038ABED-A9BA-432B-88CC-C230494A3C3D}|AppReservas_Salas.csproj|d:\\leyukezer\\documents\\github\\appreservas_salas\\appreservas_salas\\models\\sala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C038ABED-A9BA-432B-88CC-C230494A3C3D}|AppReservas_Salas.csproj|solutionrelative:models\\sala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C038ABED-A9BA-432B-88CC-C230494A3C3D}|AppReservas_Salas.csproj|d:\\leyukezer\\documents\\github\\appreservas_salas\\appreservas_salas\\components\\pages\\cadastrosala.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C038ABED-A9BA-432B-88CC-C230494A3C3D}|AppReservas_Salas.csproj|solutionrelative:components\\pages\\cadastrosala.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C038ABED-A9BA-432B-88CC-C230494A3C3D}|AppReservas_Salas.csproj|d:\\leyukezer\\documents\\github\\appreservas_salas\\appreservas_salas\\models\\tiposala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C038ABED-A9BA-432B-88CC-C230494A3C3D}|AppReservas_Salas.csproj|solutionrelative:models\\tiposala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C038ABED-A9BA-432B-88CC-C230494A3C3D}|AppReservas_Salas.csproj|d:\\leyukezer\\documents\\github\\appreservas_salas\\appreservas_salas\\models\\tipousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C038ABED-A9BA-432B-88CC-C230494A3C3D}|AppReservas_Salas.csproj|solutionrelative:models\\tipousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C038ABED-A9BA-432B-88CC-C230494A3C3D}|AppReservas_Salas.csproj|d:\\leyukezer\\documents\\github\\appreservas_salas\\appreservas_salas\\components\\pages\\cadastrousuario.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C038ABED-A9BA-432B-88CC-C230494A3C3D}|AppReservas_Salas.csproj|solutionrelative:components\\pages\\cadastrousuario.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C038ABED-A9BA-432B-88CC-C230494A3C3D}|AppReservas_Salas.csproj|d:\\leyukezer\\documents\\github\\appreservas_salas\\appreservas_salas\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C038ABED-A9BA-432B-88CC-C230494A3C3D}|AppReservas_Salas.csproj|solutionrelative:models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C038ABED-A9BA-432B-88CC-C230494A3C3D}|AppReservas_Salas.csproj|d:\\leyukezer\\documents\\github\\appreservas_salas\\appreservas_salas\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C038ABED-A9BA-432B-88CC-C230494A3C3D}|AppReservas_Salas.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C038ABED-A9BA-432B-88CC-C230494A3C3D}|AppReservas_Salas.csproj|d:\\leyukezer\\documents\\github\\appreservas_salas\\appreservas_salas\\controllers\\tipousuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C038ABED-A9BA-432B-88CC-C230494A3C3D}|AppReservas_Salas.csproj|solutionrelative:controllers\\tipousuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C038ABED-A9BA-432B-88CC-C230494A3C3D}|AppReservas_Salas.csproj|d:\\leyukezer\\documents\\github\\appreservas_salas\\appreservas_salas\\controllers\\tiposalacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C038ABED-A9BA-432B-88CC-C230494A3C3D}|AppReservas_Salas.csproj|solutionrelative:controllers\\tiposalacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C038ABED-A9BA-432B-88CC-C230494A3C3D}|AppReservas_Salas.csproj|d:\\leyukezer\\documents\\github\\appreservas_salas\\appreservas_salas\\controllers\\salacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C038ABED-A9BA-432B-88CC-C230494A3C3D}|AppReservas_Salas.csproj|solutionrelative:controllers\\salacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C038ABED-A9BA-432B-88CC-C230494A3C3D}|AppReservas_Salas.csproj|d:\\leyukezer\\documents\\github\\appreservas_salas\\appreservas_salas\\controllers\\reservacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C038ABED-A9BA-432B-88CC-C230494A3C3D}|AppReservas_Salas.csproj|solutionrelative:controllers\\reservacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C038ABED-A9BA-432B-88CC-C230494A3C3D}|AppReservas_Salas.csproj|d:\\leyukezer\\documents\\github\\appreservas_salas\\appreservas_salas\\ferramenta\\impressao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C038ABED-A9BA-432B-88CC-C230494A3C3D}|AppReservas_Salas.csproj|solutionrelative:ferramenta\\impressao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C038ABED-A9BA-432B-88CC-C230494A3C3D}|AppReservas_Salas.csproj|d:\\leyukezer\\documents\\github\\appreservas_salas\\appreservas_salas\\wwwroot\\bootstrap\\bootstrap.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C038ABED-A9BA-432B-88CC-C230494A3C3D}|AppReservas_Salas.csproj|solutionrelative:wwwroot\\bootstrap\\bootstrap.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -59,145 +35,72 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Reserva.cs",
-              "DocumentMoniker": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\Models\\Reserva.cs",
-              "RelativeDocumentMoniker": "Models\\Reserva.cs",
-              "ToolTip": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\Models\\Reserva.cs",
-              "RelativeToolTip": "Models\\Reserva.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T22:29:57.53Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ReservaController.cs",
-              "DocumentMoniker": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\Controllers\\ReservaController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ReservaController.cs",
-              "ToolTip": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\Controllers\\ReservaController.cs",
-              "RelativeToolTip": "Controllers\\ReservaController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAADwvzIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T22:29:52.792Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SalaController.cs",
-              "DocumentMoniker": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\Controllers\\SalaController.cs",
-              "RelativeDocumentMoniker": "Controllers\\SalaController.cs",
-              "ToolTip": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\Controllers\\SalaController.cs",
-              "RelativeToolTip": "Controllers\\SalaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T22:13:43.863Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TipoSala.cs",
-              "DocumentMoniker": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\Models\\TipoSala.cs",
-              "RelativeDocumentMoniker": "Models\\TipoSala.cs",
-              "ToolTip": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\Models\\TipoSala.cs",
-              "RelativeToolTip": "Models\\TipoSala.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T22:03:43.963Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TipoSalaController.cs",
-              "DocumentMoniker": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\Controllers\\TipoSalaController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TipoSalaController.cs",
-              "ToolTip": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\Controllers\\TipoSalaController.cs",
-              "RelativeToolTip": "Controllers\\TipoSalaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T21:54:14.061Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TipoUsuario.cs",
-              "DocumentMoniker": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\Models\\TipoUsuario.cs",
-              "RelativeDocumentMoniker": "Models\\TipoUsuario.cs",
-              "ToolTip": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\Models\\TipoUsuario.cs",
-              "RelativeToolTip": "Models\\TipoUsuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T21:22:43.047Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TipoUsuarioController.cs",
-              "DocumentMoniker": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\Controllers\\TipoUsuarioController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TipoUsuarioController.cs",
-              "ToolTip": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\Controllers\\TipoUsuarioController.cs",
-              "RelativeToolTip": "Controllers\\TipoUsuarioController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "OverriddenGroupName": "Controllers",
-              "WhenOpened": "2025-06-26T21:21:15.968Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UsuarioController.cs",
-              "DocumentMoniker": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\Controllers\\UsuarioController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
-              "ToolTip": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\Controllers\\UsuarioController.cs",
-              "RelativeToolTip": "Controllers\\UsuarioController.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAwwDQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T20:19:15.043Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Impressao.cs",
-              "DocumentMoniker": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\Ferramenta\\Impressao.cs",
-              "RelativeDocumentMoniker": "Ferramenta\\Impressao.cs",
-              "ToolTip": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\Ferramenta\\Impressao.cs",
-              "RelativeToolTip": "Ferramenta\\Impressao.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T20:25:48.347Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Sala.cs",
-              "DocumentMoniker": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\Models\\Sala.cs",
-              "RelativeDocumentMoniker": "Models\\Sala.cs",
-              "ToolTip": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\Models\\Sala.cs",
-              "RelativeToolTip": "Models\\Sala.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T19:42:02.522Z",
+              "Title": "ConsultarUsuarios.razor",
+              "DocumentMoniker": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\Components\\Pages\\ConsultarUsuarios.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\ConsultarUsuarios.razor",
+              "ToolTip": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\Components\\Pages\\ConsultarUsuarios.razor",
+              "RelativeToolTip": "Components\\Pages\\ConsultarUsuarios.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-02T00:13:45.458Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "bootstrap.min.css",
+              "DocumentMoniker": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\bootstrap\\bootstrap.min.css",
+              "RelativeDocumentMoniker": "wwwroot\\bootstrap\\bootstrap.min.css",
+              "ToolTip": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\bootstrap\\bootstrap.min.css",
+              "RelativeToolTip": "wwwroot\\bootstrap\\bootstrap.min.css",
+              "ViewState": "AgIAACkAAAAAAAAAAAApwEUAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-07-01T23:35:01.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CadastroSala.razor",
+              "DocumentMoniker": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\Components\\Pages\\CadastroSala.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\CadastroSala.razor",
+              "ToolTip": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\Components\\Pages\\CadastroSala.razor",
+              "RelativeToolTip": "Components\\Pages\\CadastroSala.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-01T23:26:51.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CadastroUsuario.razor",
+              "DocumentMoniker": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\Components\\Pages\\CadastroUsuario.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\CadastroUsuario.razor",
+              "ToolTip": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\Components\\Pages\\CadastroUsuario.razor",
+              "RelativeToolTip": "Components\\Pages\\CadastroUsuario.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-01T23:19:27.083Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Usuario.cs",
               "DocumentMoniker": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\Models\\Usuario.cs",
               "RelativeDocumentMoniker": "Models\\Usuario.cs",
               "ToolTip": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\Models\\Usuario.cs",
               "RelativeToolTip": "Models\\Usuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T19:41:55.414Z",
+              "WhenOpened": "2025-07-01T23:42:07.186Z",
               "EditorCaption": ""
             }
           ]

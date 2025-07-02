@@ -17,6 +17,9 @@ namespace AppReservas_Salas.Models
         [Column("bloco")]
         public string? Bloco { get; set; }
 
+        [Column("reservada")]
+        public bool? Reservada { get; set; }
+
         [Column("id_tipo_fk")]
         public int IdTipo { get; set; }
 

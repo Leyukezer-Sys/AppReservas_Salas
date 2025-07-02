@@ -1,0 +1,42 @@
+﻿@page "/consultarUsuarios"
+@using AppReservas_Salas.Models;
+@using AppReservas_Salas.Controllers;
+@inject UsuarioController usuarioController;
+@inject NavigationManager navegacao;
+@rendermode InteractiveServer
+
+<div class="top-row px-5 bg-gradient m-0 p-5" style="height: 50px;">
+</div>
+<h1 class="m-5">Usuarios</h1>
+
+<div class="container">
+
+    <div class="row mt-2">
+        <div class="col">
+
+        </div>
+
+    </div>
+    <div class="mt-2">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mark</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+@code {
+
+}

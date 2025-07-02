@@ -1,7 +1,46 @@
 ﻿@page "/"
+@using AppReservas_Salas.Models;
+@using AppReservas_Salas.Controllers;
+@inject TipoSalaController salaController;
+@inject NavigationManager navegacao;
+@rendermode InteractiveServer
 
 <PageTitle>Home</PageTitle>
+@if (tiposSala.Count == 0)
+{
+    <div class="d-flex justify-content-center align-items-center" style="width: screen;">
+        <p class="fs-3 mt-5">Nenhuma sala encontrada..!</p>
+    </div>
+}
+else
+{
+    foreach (var tipo in tiposSala)
+    {
+        <div class="top-row px-5 bg-gradient m-0">
+            <h1>@tipo.Nome</h1>
+        </div>
+        <div class="card" style="width: 18rem;">
+            @foreach (var sala in tipo.Salas)
+            {
+                if (sala.Reservada == true) cor = "bg-secondary";
+                else cor = "bg-primary";
 
-<h1>Hello, world!</h1>
+                <div class="card @cor">
+                    <h5 class="card-title">@sala.Numero</h5>
+                    <p class="card-text">Capacidade: @sala.Capacidade</p>
+                </div>
+            }
+        </div>
+    }
+}
 
-Welcome to your new app.
+@code {
+    private List<TipoSala> tiposSala = new();
+    private string cor = "bg-primary";
+
+    protected override async Task OnInitializedAsync()
+    {
+        //var listaTiposSala = await salaController.TiposSalas();
+        //tiposSala = listaTiposSala;
+    }
+}

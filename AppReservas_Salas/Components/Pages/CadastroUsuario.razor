@@ -1,0 +1,103 @@
+﻿@page "/cadastroUsuario"
+@using AppReservas_Salas.Models;
+@using AppReservas_Salas.Controllers;
+@inject UsuarioController usuarioController;
+@inject TipoUsuarioController tipoController;
+@inject NavigationManager navegacao;
+@rendermode InteractiveServer
+
+
+<div class="top-row px-5 bg-gradient m-0 p-5" style="height: 50px;">
+
+</div>
+<h1 class="m-5">Cadastro De Usuario</h1>
+
+<div class="container">
+    <div class="row mt-2">
+        <div class="col ms-3">
+            <label class="form-label" for="txtNome">Nome:</label>
+            <input type="text" name="txtNome" id="txtNome" @bind="usuario.Nome" class="form-control" placeholder="" />
+        </div>
+        <div class="col ms-3">
+            <label class="form-label" for="txtMatricula">Matricula:</label>
+            <input type="number" name="txtMatricula" id="txtMatricula" @bind="usuario.Matricula" class="form-control" placeholder="" />
+        </div>
+    </div>
+
+    <div class="row mt-2">
+        <div class="col ms-3">
+            
+            <label class="form-label" for="txtSenha">Senha:</label>
+            <input type="password" name="txtSenha" id="txtSenha" @bind="usuario.Senha" class="form-control" placeholder="" />
+            @if (erroSenha)
+            {
+                <div class="invalid-tooltip">
+                    As senhas não coincidem!
+                </div>
+            }
+        </div>
+        <div class="col ms-3">
+            <label class="form-label" for="txtCSenha">Confirmar Senha:</label>
+            <input type="password" name="txtCSenha" id="txtCSenha" class="form-control" placeholder="" @onchange="VerificarSenha" />
+        </div>
+    </div>
+
+    <div class="row mt-2">
+        <div class="col ms-3">
+            <select @bind="usuario.IdTipo" class="form-control" name="txtTipo" id="txtTipo">
+                <option disabled selected>Selecione o Tipo de Usuário</option>
+                @foreach (var tipo in tipoUsuarios)
+                {
+                    <option value="@tipo.Id">@tipo.Nome</option>
+                }
+            </select>
+        </div>
+    </div>
+
+    <div class="row mt-2">
+        <div class="col ms-3">
+            <button class="btn btn-success" @onclick="Salvar" disabled="@enableButton">SALVAR</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+@code {
+    private Usuario usuario = new Usuario();
+    private string password = "";
+    private bool enableButton = true;
+    private bool erroSenha = false;
+    private List<TipoUsuario> tipoUsuarios = new List<TipoUsuario>();
+    
+
+    protected override async Task OnInitializedAsync()
+    {
+        var listaTipos = await tipoController.TiposUsuario();
+        tipoUsuarios= listaTipos;
+    }
+
+    public async Task Salvar()
+    {
+        await usuarioController.Add(usuario);
+        await usuarioController.Salvar();
+
+        enableButton = true;
+    }
+
+    private void VerificarSenha(ChangeEventArgs e)
+    {
+        password = e.Value?.ToString();
+
+        if (usuario.Senha != password)
+        {
+            erroSenha = true;
+        }
+        else
+        {
+            erroSenha = false;
+        }
+    }
+}
