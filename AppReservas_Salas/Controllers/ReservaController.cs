@@ -16,6 +16,26 @@ namespace AppReservas_Salas.Controllers
             return reservas;
         }
 
+        public async Task<bool> VerificarDisponibilidade(int idSala, DateTime dataReserva, TimeOnly horaInicio, TimeOnly horaFim)
+        {
+            return !await _context.Reservas.AnyAsync(r =>
+                r.IdSala == idSala &&
+                r.DataReserva.Date == dataReserva.Date &&
+                (
+                    (horaInicio >= r.HoraInicioReserva && horaInicio < r.HoraFimReserva) ||
+                    (horaFim > r.HoraInicioReserva && horaFim <= r.HoraFimReserva) ||       
+                    (horaInicio <= r.HoraInicioReserva && horaFim >= r.HoraFimReserva)      
+                )
+            );
+        }
+
+        public async Task<bool> SalaEstaReservada(int idSala, DateTime data)
+        {
+            return await _context.Reservas
+                .AnyAsync(r => r.IdSala == idSala && r.DataReserva == data);
+        }
+
+
         public async Task<Reserva>? GetReserva(int id)
         {
             var reserva = await _context.Reservas.Include(r => r.Sala).Include(r => r.Usuario).Where(r => r.Id == id).FirstOrDefaultAsync();

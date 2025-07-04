@@ -4,6 +4,24 @@
 @inject SalaController salaController;
 @inject TipoSalaController tipoController;
 @inject NavigationManager navegacao;
+@inject IJSRuntime JSRuntime;
+@rendermode InteractiveServer
+
+<script>
+    window.abrirModal = (id) => {
+        const el = document.getElementById(id);
+        const modal = bootstrap.Modal.getOrCreateInstance(el);
+        modal.show();
+
+    window.fecharModal = (id) => {
+        const modalEl = document.getElementById(id);
+        const modal = bootstrap.Modal.getInstance(modalEl);
+        if (modal) {
+            modal.hide();
+        }
+    };
+</script>
+
 
 <div class="top-row px-5 bg-gradient m-0 p-5" style="height: 50px;">
 
@@ -25,14 +43,16 @@
             <input type="text" name="txtBloco" id="txtBloco" @bind="sala.Bloco" class="form-control" placeholder="" />
         </div>
     </div>
+
     <div class="row mt-2">
         <div class="col ms-3">
-            <select @bind="sala.IdTipo" class="form-control" name="txtTipo" id="txtTipo">
+            <select @onchange="SelecionarTipo" class="form-control" name="txtTipo" id="txtTipo">
                 <option disabled selected>Selecione o Tipo de Sala</option>
                 @foreach (var tipo in tipoSalas)
                 {
                     <option value="@tipo.Id">@tipo.Nome</option>
                 }
+                <option value="-1">+ Novo Tipo...</option>
             </select>
         </div>
     </div>
@@ -42,7 +62,26 @@
             <button class="btn btn-success" @onclick="Salvar" disabled="@enableButton">SALVAR</button>
         </div>
     </div>
+</div>
 
+//Modal de Cadastro de Tipo
+<div class="modal fade" id="modalNovoTipo" tabindex="-1" aria-labelledby="modalNovoTipoLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalNovoTipoLabel">Cadastrar Novo Tipo de Sala</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+            </div>
+            <div class="modal-body d-flex flex-row gap-3">
+                <label class="form-label">Tipo de Sala:</label>
+                <input type="text" class="form-control" placeholder="Nome do tipo" @bind="novoTipoNome" />
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary" @onclick="SalvarNovoTipo">Salvar</button>
+            </div>
+        </div>
+    </div>
 </div>
 
 @code {
@@ -63,6 +102,39 @@
         await salaController.Salvar();
 
         enableButton = true;
+    }
+
+    private async Task SelecionarTipo(ChangeEventArgs e)
+    {
+        var valor = e.Value?.ToString();
+
+        if (valor == "-1")
+        {
+            // Abre o modal via JS
+            await JSRuntime.InvokeVoidAsync("abrirModal", "modalNovoTipo");
+        }
+        else if (int.TryParse(valor, out int idTipo))
+        {
+            sala.IdTipo = idTipo;
+        }
+
+    }
+
+    private string? novoTipoNome;
+
+    private async Task SalvarNovoTipo()
+    {
+        if (!string.IsNullOrWhiteSpace(novoTipoNome.ToLower()))
+        {
+            var novoTipo = new TipoSala();
+            novoTipo.Nome = novoTipoNome.ToLower();
+            await tipoController.Add(novoTipo);
+            await tipoController.Salvar();
+            var lista = await tipoController.TiposSalas();
+            tipoSalas = lista;
+
+            await JSRuntime.InvokeVoidAsync("fecharModal", "modalNovoTipo");
+        }
     }
 
 }

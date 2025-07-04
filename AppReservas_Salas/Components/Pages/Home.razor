@@ -1,46 +1,103 @@
 ﻿@page "/"
-@using AppReservas_Salas.Models;
-@using AppReservas_Salas.Controllers;
-@inject TipoSalaController salaController;
-@inject NavigationManager navegacao;
+@using AppReservas_Salas.Ferramenta
+@using AppReservas_Salas.Models
+@using AppReservas_Salas.Controllers
+@inject TipoSalaController tipoController
+@inject ReservaController reservaController
+@inject NavigationManager navegacao
+@inject IJSRuntime JSRuntime;
 @rendermode InteractiveServer
 
-<PageTitle>Home</PageTitle>
+<script>
+    function NovaGuia(url) {
+    window.open(url, '_blank');
+    }
+</script>
+
+<PageTitle>Início</PageTitle>
+
 @if (tiposSala.Count == 0)
 {
-    <div class="d-flex justify-content-center align-items-center" style="width: screen;">
+    <div class="d-flex justify-content-center align-items-center" style="height: 200px;">
         <p class="fs-3 mt-5">Nenhuma sala encontrada..!</p>
     </div>
 }
 else
 {
-    foreach (var tipo in tiposSala)
-    {
-        <div class="top-row px-5 bg-gradient m-0">
-            <h1>@tipo.Nome</h1>
+    <div class="container mt-4">
+        <div class="row mb-3">
+            <div class="col-md-4">
+                <label class="form-label">Data da consulta:</label>
+                <input type="date" class="form-control" @onchange="AtualizarDisponibilidade" />
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-primary" @onclick="ImprimirRelatorioGeral">Relatório Geral</button>/>
+            </div>
         </div>
-        <div class="card" style="width: 18rem;">
-            @foreach (var sala in tipo.Salas)
-            {
-                if (sala.Reservada == true) cor = "bg-secondary";
-                else cor = "bg-primary";
 
-                <div class="card @cor">
-                    <h5 class="card-title">@sala.Numero</h5>
-                    <p class="card-text">Capacidade: @sala.Capacidade</p>
-                </div>
-            }
-        </div>
-    }
+        @foreach (var tipo in tiposSala)
+        {
+            <div class="top-row px-5 bg-gradient m-0">
+                <h2 class="text-white">@tipo.Nome</h2>
+            </div>
+
+            <div class="d-flex flex-wrap gap-3 p-3">
+                @foreach (var sala in tipo.Salas)
+                {
+                    var estaReservada = salasReservadas.ContainsKey(sala.IdSala) && salasReservadas[sala.IdSala];
+                    var cor = estaReservada ? "bg-secondary" : "bg-primary";
+
+                    <div class="card text-white @cor" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Sala @sala.Numero</h5>
+                            <p class="card-text">Capacidade: @sala.Capacidade</p>
+                            <button class="btn btn-light" disabled="@estaReservada" @onclick="() => ReservarSala(sala.IdSala)">
+                                @(estaReservada ? "Reservada" : "Reservar")
+                            </button>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    </div>
 }
 
 @code {
     private List<TipoSala> tiposSala = new();
-    private string cor = "bg-primary";
+    private Dictionary<int, bool> salasReservadas = new();
+    private DateTime dataConsulta = DateTime.Today;
 
     protected override async Task OnInitializedAsync()
     {
-        //var listaTiposSala = await salaController.TiposSalas();
-        //tiposSala = listaTiposSala;
+        tiposSala = await tipoController.TiposSalas();
+        await AtualizarDisponibilidade();
+    }
+
+    private async Task AtualizarDisponibilidade()
+    {
+        salasReservadas.Clear();
+
+        foreach (var tipo in tiposSala)
+        {
+            foreach (var sala in tipo.Salas)
+            {
+                bool reservada = await reservaController.SalaEstaReservada(sala.IdSala, dataConsulta);
+                salasReservadas[sala.IdSala] = reservada;
+            }
+        }
+
+        StateHasChanged();
+    }
+
+    private void ReservarSala(int idSala)
+    {
+        navegacao.NavigateTo("/agendarReserva");
+    }
+
+    private void ImprimirRelatorioGeral()
+    {
+        Impressao imprimir = new Impressao();
+
+        imprimir.GerarImpressaoGeral(tiposSala, navegacao, JSRuntime);
     }
 }

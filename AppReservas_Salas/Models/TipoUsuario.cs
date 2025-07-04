@@ -8,7 +8,7 @@ namespace AppReservas_Salas.Models
         [Column("id_tipo")]
         public int Id { get; set; }
         [Column("nome_tipo")]
-        public int Nome { get; set; }
+        public string? Nome { get; set; }
         public List<Usuario>? Usuarios { get; set; }
     }
 }

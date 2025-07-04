@@ -1,9 +1,17 @@
 ﻿@page "/consultarUsuarios"
+@using AppReservas_Salas.Ferramenta
 @using AppReservas_Salas.Models;
 @using AppReservas_Salas.Controllers;
 @inject UsuarioController usuarioController;
 @inject NavigationManager navegacao;
+@inject IJSRuntime JSRuntime;
 @rendermode InteractiveServer
+
+<script>
+    function NovaGuia(url) {
+    window.open(url, '_blank');
+    }
+</script>
 
 <div class="top-row px-5 bg-gradient m-0 p-5" style="height: 50px;">
 </div>
@@ -12,31 +20,76 @@
 <div class="container">
 
     <div class="row mt-2">
-        <div class="col">
-
+        <div class="col d-flex flex-row gap-3">
+            <label class="form-label">Buscar:</label>
+            <input class="form-control" type="text" list="lista-usuario" @onchange="SelecionarUsuario" placeholder="Buscar pela Matricula"/>
+            <datalist id="lista-usuario">
+                @foreach(var usuario in listaUsuarios)
+                {
+                    <option value="@usuario.Matricula">@usuario.Nome</option>
+                }
+            </datalist>
         </div>
-
     </div>
+
     <div class="mt-2">
+        <div class="d-flex flex-row-reverse">
+            <button class="btn btn-primary me-3" @onclick="NovoUsuario"> Novo Usuario</button>
+        </div>
         <table class="table table-striped">
             <thead>
                 <tr>
                     <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Matricula</th>
+                    <th scope="col">Tipo</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Mark</td>
-                </tr>
+                @foreach(var usuario in listaUsuarios)
+                {
+                    <tr>
+                        <td>@usuario.IdUsuario</td>
+                        <td>@usuario.Nome</td>
+                        <td>@usuario.Matricula</td>
+                        <td>@usuario.Tipo.Nome</td>
+                    </tr>
+                }
             </tbody>
         </table>
+
+        <button type="button" class="btn btn-success" @onclick="ImprimirUsuarios">RELATÓRIO USUAÁRIOS</button>
     </div>
 
 </div>
 
 @code {
+    private List<Usuario> listaUsuarios = new List<Usuario>();
 
+    protected override async Task OnInitializedAsync()
+    {
+        var lista = await usuarioController.Usuarios();
+        listaUsuarios = lista;
+    }
+
+    private void SelecionarUsuario(ChangeEventArgs e)
+    {
+        string matricula = e.Value?.ToString();
+        if(matricula != "" || matricula is not null || matricula.Length > 2)
+        {
+            listaUsuarios.Where(u => u.Matricula.Contains(matricula)).ToList();
+        }
+    }
+
+    private void NovoUsuario()
+    {
+        navegacao.NavigateTo("/cadastroUsuario");
+    }
+
+    private void ImprimirUsuarios()
+    {
+        Impressao imprimir = new Impressao();
+
+        imprimir.GerarImpressaoUsuarios(listaUsuarios, navegacao, JSRuntime);
+    }
 }

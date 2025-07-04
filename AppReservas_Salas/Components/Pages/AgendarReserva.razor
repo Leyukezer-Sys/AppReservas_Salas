@@ -1,0 +1,99 @@
+﻿@page "/agendarReserva"
+@using AppReservas_Salas.Models
+@using AppReservas_Salas.Controllers
+@inject ReservaController reservaController
+@inject SalaController salaController
+@inject UsuarioController usuarioController
+@inject NavigationManager navegacao
+
+<h3 class="m-5">Agendar Reserva</h3>
+
+<div class="container">
+    <div class="row mt-2">
+        <div class="col ms-3">
+            <label>Usuário:</label>
+            <select @bind="reserva.IdUsuario" class="form-control">
+                <option disabled value="">Selecione o usuário</option>
+                @foreach (var usuario in usuarios)
+                {
+                    <option value="@usuario.IdUsuario">@usuario.Nome</option>
+                }
+            </select>
+        </div>
+        <div class="col ms-3">
+            <label>Sala:</label>
+            <select @bind="reserva.IdSala" class="form-control">
+                <option disabled value="">Selecione uma sala</option>
+                @foreach (var sala in salas)
+                {
+                    <option value="@sala.IdSala">Sala @sala.Numero - Bloco @sala.Bloco</option>
+                }
+            </select>
+        </div>
+    </div>
+
+    <div class="row mt-2">
+        <div class="col ms-3">
+            <label>Data:</label>
+            <input type="date" class="form-control" @bind="reserva.DataReserva" />
+        </div>
+        <div class="col ms-3">
+            <label>Início:</label>
+            <input type="time" class="form-control" @bind="reserva.HoraInicioReserva" />
+        </div>
+        <div class="col ms-3">
+            <label>Fim:</label>
+            <input type="time" class="form-control" @bind="reserva.HoraFimReserva" />
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col ms-3">
+            <button class="btn btn-primary" @onclick="Agendar" disabled="@( !FormularioValido() )">Reservar</button>
+        </div>
+    </div>
+
+    @if (!string.IsNullOrEmpty(mensagem))
+    {
+        <div class="alert alert-info mt-3 ms-3">@mensagem</div>
+    }
+</div>
+
+@code {
+    private Reserva reserva = new Reserva();
+    private List<Sala> salas = new List<Sala>();
+    private List<Usuario> usuarios = new List<Usuario>();
+    private string mensagem = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        salas = await salaController.Salas();
+        usuarios = await usuarioController.Usuarios();
+        reserva.DataReserva = DateTime.Today;
+    }
+
+    private async Task Agendar()
+    {
+        var disponivel = await reservaController.VerificarDisponibilidade(reserva.IdSala, reserva.DataReserva, reserva.HoraInicioReserva, reserva.HoraFimReserva);
+
+        if (!disponivel)
+        {
+            mensagem = "Essa sala já está reservada nesse horário.";
+            return;
+        }
+
+        await reservaController.Add(reserva);
+        await reservaController.Salvar();
+
+        mensagem = "Reserva realizada com sucesso!";
+        reserva = new Reserva() { DataReserva = DateTime.Today };
+    }
+
+    private bool FormularioValido()
+    {
+        return reserva.IdUsuario > 0 &&
+               reserva.IdSala > 0 &&
+               reserva.DataReserva >= DateTime.Today &&
+               reserva.HoraInicioReserva < reserva.HoraFimReserva;
+    }
+}
