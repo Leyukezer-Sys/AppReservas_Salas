@@ -1,8 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AppReservas_Salas.Models
 {
-    [Table("tipo_usuario")]
+    [Table("tipo_usuario"), PrimaryKey(nameof(Id))]
     public class TipoUsuario
     {
         [Column("id_tipo")]

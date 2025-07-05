@@ -1,8 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AppReservas_Salas.Models
 {
-    [Table("sala")]
+    [Table("sala"), PrimaryKey(nameof(IdSala))]
     public class Sala
     {
         [Column("id_sala")]
@@ -16,9 +17,6 @@ namespace AppReservas_Salas.Models
 
         [Column("bloco")]
         public string? Bloco { get; set; }
-
-        [Column("reservada")]
-        public bool? Reservada { get; set; }
 
         [Column("id_tipo_fk")]
         public int IdTipo { get; set; }

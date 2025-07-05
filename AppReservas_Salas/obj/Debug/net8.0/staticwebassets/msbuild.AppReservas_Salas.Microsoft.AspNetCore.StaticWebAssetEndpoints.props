@@ -24,17 +24,11 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Hvw/a0F7wIZqU2hVTnyhvyKPPsJftaBuHLCqDCKgQx0="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5909"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Hvw/a0F7wIZqU2hVTnyhvyKPPsJftaBuHLCqDCKgQx0=\u0022"},{"Name":"Last-Modified","Value":"Tue, 01 Jul 2025 21:58:53 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/AppReservas_Salas/bootstrap/bootstrap.min.0v2jrj4vx1.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\bootstrap\bootstrap.min.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"0v2jrj4vx1"},{"Name":"integrity","Value":"sha256-xEOZdPwzSZj/IWipc2JvP5Z7hEouCNeV3uhFBUUJMHQ="},{"Name":"label","Value":"_content/AppReservas_Salas/bootstrap/bootstrap.min.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"163056"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022xEOZdPwzSZj/IWipc2JvP5Z7hEouCNeV3uhFBUUJMHQ=\u0022"},{"Name":"Last-Modified","Value":"Tue, 01 Jul 2025 22:08:27 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AppReservas_Salas/bootstrap/bootstrap.min.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\bootstrap\bootstrap.min.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-xEOZdPwzSZj/IWipc2JvP5Z7hEouCNeV3uhFBUUJMHQ="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"163056"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022xEOZdPwzSZj/IWipc2JvP5Z7hEouCNeV3uhFBUUJMHQ=\u0022"},{"Name":"Last-Modified","Value":"Tue, 01 Jul 2025 22:08:27 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-eqdXsghftl\u002BhK486w0UoFhqA5L/vdL\u002Bdxn6HUYEQzTg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"163198"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022eqdXsghftl\u002BhK486w0UoFhqA5L/vdL\u002Bdxn6HUYEQzTg=\u0022"},{"Name":"Last-Modified","Value":"Tue, 01 Jul 2025 23:39:06 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AppReservas_Salas/bootstrap/bootstrap.min.css.8inm30yfxf.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\bootstrap\bootstrap.min.css.map'))</AssetFile>
@@ -47,6 +41,12 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"449111"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 26 Jun 2025 20:18:10 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AppReservas_Salas/bootstrap/bootstrap.min.y1gx90uo0o.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\bootstrap\bootstrap.min.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"y1gx90uo0o"},{"Name":"integrity","Value":"sha256-eqdXsghftl\u002BhK486w0UoFhqA5L/vdL\u002Bdxn6HUYEQzTg="},{"Name":"label","Value":"_content/AppReservas_Salas/bootstrap/bootstrap.min.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"163198"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022eqdXsghftl\u002BhK486w0UoFhqA5L/vdL\u002Bdxn6HUYEQzTg=\u0022"},{"Name":"Last-Modified","Value":"Tue, 01 Jul 2025 23:39:06 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AppReservas_Salas/favicon.ifv42okdf2.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.png'))</AssetFile>
