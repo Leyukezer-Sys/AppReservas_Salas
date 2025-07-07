@@ -27,6 +27,7 @@ namespace AppReservas_Salas.Controllers
             {
                 await _context.TiposSalas.AddAsync(tipo);
             }
+
         }
 
         public async Task Salvar()

@@ -4,24 +4,7 @@
 @inject SalaController salaController;
 @inject TipoSalaController tipoController;
 @inject NavigationManager navegacao;
-@inject IJSRuntime JSRuntime;
 @rendermode InteractiveServer
-
-<script>
-    window.abrirModal = (id) => {
-        const el = document.getElementById(id);
-        const modal = bootstrap.Modal.getOrCreateInstance(el);
-        modal.show();
-
-    window.fecharModal = (id) => {
-        const modalEl = document.getElementById(id);
-        const modal = bootstrap.Modal.getInstance(modalEl);
-        if (modal) {
-            modal.hide();
-        }
-    };
-</script>
-
 
 <div class="top-row px-5 bg-gradient m-0 p-5" style="height: 50px;">
 
@@ -31,21 +14,22 @@
 <div class="container">
     <div class="row mt-2">
         <div class="col ms-3">
-            <label class="form-label" for="txtNumero"></label>
+            <label class="form-label" for="txtNumero">Numero:</label>
             <input type="number" name="txtNumero" id="txtNumero" @bind="sala.Numero" class="form-control" placeholder="" />
         </div>
         <div class="col ms-3">
-            <label class="form-label" for="txtCapacidade"></label>
+            <label class="form-label" for="txtCapacidade">Capacidade da Sala</label>
             <input type="number" name="txtCapacidade" id="txtCapacidade" @bind="sala.Capacidade" class="form-control" placeholder="" />
         </div>
         <div class="col ms-3">
-            <label class="form-label" for="txtBloco"></label>
+            <label class="form-label" for="txtBloco">Local (Bloco) da Sala:</label>
             <input type="text" name="txtBloco" id="txtBloco" @bind="sala.Bloco" class="form-control" placeholder="" />
         </div>
     </div>
 
     <div class="row mt-2">
         <div class="col ms-3">
+            <label for="txtTipo">Tipo de Sala:</label>
             <select @onchange="SelecionarTipo" class="form-control" name="txtTipo" id="txtTipo">
                 <option disabled selected>Selecione o Tipo de Sala</option>
                 @foreach (var tipo in tipoSalas)
@@ -64,31 +48,22 @@
     </div>
 </div>
 
-//Modal de Cadastro de Tipo
-<div class="modal fade" id="modalNovoTipo" tabindex="-1" aria-labelledby="modalNovoTipoLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalNovoTipoLabel">Cadastrar Novo Tipo de Sala</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-            </div>
-            <div class="modal-body d-flex flex-row gap-3">
-                <label class="form-label">Tipo de Sala:</label>
-                <input type="text" class="form-control" placeholder="Nome do tipo" @bind="novoTipoNome" />
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-primary" @onclick="SalvarNovoTipo">Salvar</button>
+@if (mostrarModalTipo)
+{
+    <div class="modal fade show d-block" tabindex="-1" style="background-color: rgba(0,0,0,0.5);">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <CadastroTipoSala OnClose="FecharModalTipo" />
             </div>
         </div>
     </div>
-</div>
+}
 
 @code {
     private Sala sala = new Sala();
     private bool enableButton = true;
-    private List<TipoSala> tipoSalas = new List<TipoSala>();
-
+    private List<TipoSala>? tipoSalas = new List<TipoSala>();
+    private bool mostrarModalTipo = false;
 
     protected override async Task OnInitializedAsync()
     {
@@ -100,8 +75,7 @@
     {
         await salaController.Add(sala);
         await salaController.Salvar();
-
-        enableButton = true;
+        navegacao.NavigateTo("/cadastrarSala", forceLoad: true);
     }
 
     private async Task SelecionarTipo(ChangeEventArgs e)
@@ -110,31 +84,20 @@
 
         if (valor == "-1")
         {
-            // Abre o modal via JS
-            await JSRuntime.InvokeVoidAsync("abrirModal", "modalNovoTipo");
+            mostrarModalTipo = true;
         }
         else if (int.TryParse(valor, out int idTipo))
         {
             sala.IdTipo = idTipo;
+            enableButton = false;
         }
 
     }
 
-    private string? novoTipoNome;
-
-    private async Task SalvarNovoTipo()
+    private async Task FecharModalTipo()
     {
-        if (!string.IsNullOrWhiteSpace(novoTipoNome.ToLower()))
-        {
-            var novoTipo = new TipoSala();
-            novoTipo.Nome = novoTipoNome.ToLower();
-            await tipoController.Add(novoTipo);
-            await tipoController.Salvar();
-            var lista = await tipoController.TiposSalas();
-            tipoSalas = lista;
-
-            await JSRuntime.InvokeVoidAsync("fecharModal", "modalNovoTipo");
-        }
+        mostrarModalTipo = false;
+        navegacao.NavigateTo("/cadastrarSala", forceLoad: true);
+        StateHasChanged();
     }
-
 }

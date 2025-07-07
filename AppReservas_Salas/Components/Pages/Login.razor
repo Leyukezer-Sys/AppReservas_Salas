@@ -1,0 +1,13 @@
+﻿@page "/"
+@layout LoginLayout
+@inject NavigationManager navegacao;
+@rendermode InteractiveServer
+
+<h3>Login</h3>
+<button class="btn btn-success" @onclick="Entrar">LOGIN</button>
+@code {
+    public void Entrar()
+    {
+        navegacao.NavigateTo("/home");
+    }
+}

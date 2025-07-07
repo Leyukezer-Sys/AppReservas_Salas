@@ -1,4 +1,7 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
+﻿@inject NavigationManager navegacao;
+@rendermode InteractiveServer
+
+<div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="">Reservas De Salas</a>
     </div>
@@ -28,3 +31,16 @@
     </nav>
 </div>
 
+
+<div class="position-absolute bottom-0" style="width:100%;">
+    <center>
+        <button class="btn btn-danger px-lg-5 mb-2" @onclick="Sair">Sair</button>
+    </center>
+</div>
+
+@code{
+    private void Sair()
+    {
+        navegacao.NavigateTo("/");
+    }
+}

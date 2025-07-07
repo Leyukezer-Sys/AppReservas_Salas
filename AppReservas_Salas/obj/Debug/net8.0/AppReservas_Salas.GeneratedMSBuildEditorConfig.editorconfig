@@ -32,6 +32,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDYWRhc3Ryb1NhbGEucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Leyukezer/Documents/GitHub/AppReservas_Salas/AppReservas_Salas/Components/Pages/CadastroTipoSala.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDYWRhc3Ryb1RpcG9TYWxhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Leyukezer/Documents/GitHub/AppReservas_Salas/AppReservas_Salas/Components/Pages/CadastroTipoUsuario.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDYWRhc3Ryb1RpcG9Vc3VhcmlvLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Leyukezer/Documents/GitHub/AppReservas_Salas/AppReservas_Salas/Components/Pages/CadastroUsuario.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDYWRhc3Ryb1VzdWFyaW8ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -50,6 +58,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Leyukezer/Documents/GitHub/AppReservas_Salas/AppReservas_Salas/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Leyukezer/Documents/GitHub/AppReservas_Salas/AppReservas_Salas/Components/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMb2dpbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Leyukezer/Documents/GitHub/AppReservas_Salas/AppReservas_Salas/Components/Pages/LoginLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMb2dpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Leyukezer/Documents/GitHub/AppReservas_Salas/AppReservas_Salas/Components/Pages/Weather.razor]

@@ -4,25 +4,7 @@
 @inject UsuarioController usuarioController;
 @inject TipoUsuarioController tipoController;
 @inject NavigationManager navegacao;
-@inject IJSRuntime JSRuntime;
 @rendermode InteractiveServer
-
-<script>
-    window.abrirModal = (id) => {
-        const el = document.getElementById(id);
-        const modal = bootstrap.Modal.getOrCreateInstance(el);
-        modal.show();
-
-    window.fecharModal = (id) => {
-        const modalEl = document.getElementById(id);
-        const modal = bootstrap.Modal.getInstance(modalEl);
-        if (modal) {
-            modal.hide();
-        }
-    };
-</script>
-
-
 
 <div class="top-row px-5 bg-gradient m-0 p-5" style="height: 50px;">
 
@@ -42,10 +24,14 @@
     </div>
 
     <div class="row mt-2">
-        <div class="col ms-3">
-
+        <div class="col ms-3 position-relative">
             <label class="form-label" for="txtSenha">Senha:</label>
-            <input type="password" name="txtSenha" id="txtSenha" @bind="usuario.Senha" class="form-control" placeholder="" />
+            <input type="password"
+                   name="txtSenha"
+                   id="txtSenha"
+                   @bind="usuario.Senha"
+                   class="form-control @(erroSenha ? "is-invalid" : "")"
+                   placeholder="" />
             @if (erroSenha)
             {
                 <div class="invalid-tooltip">
@@ -61,6 +47,7 @@
 
     <div class="row mt-2">
         <div class="col ms-3">
+            <label for="txtTipo">Tipo de Usuario:</label>
             <select @onchange="SelecionarTipo" class="form-control" name="txtTipo" id="txtTipo">
                 <option disabled selected>Selecione o Tipo de Usuário</option>
                 @foreach (var tipo in tipoUsuarios)
@@ -79,26 +66,16 @@
     </div>
 </div>
 
-//Modal de Cadastro de Tipo
-<div class="modal fade" id="modalNovoTipo" tabindex="-1" aria-labelledby="modalNovoTipoLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalNovoTipoLabel">Cadastrar Novo Tipo de Usuário</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-            </div>
-            <div class="modal-body d-flex flex-row gap-3">
-                <label class="form-label">Tipo de Usuario:</label>
-                <input type="text" class="form-control" placeholder="Nome do tipo" @bind="novoTipoNome" />
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-primary" @onclick="SalvarNovoTipo">Salvar</button>
+@if (mostrarModalTipo)
+{
+    <div class="modal fade show d-block" tabindex="-1" style="background-color: rgba(0,0,0,0.5);">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <CadastroTipoUsuario OnClose="FecharModalTipo" />
             </div>
         </div>
     </div>
-</div>
-
+}
 
 @code {
     private Usuario usuario = new Usuario();
@@ -106,6 +83,7 @@
     private bool enableButton = true;
     private bool erroSenha = false;
     private List<TipoUsuario>? tipoUsuarios = new List<TipoUsuario>();
+    private bool mostrarModalTipo = false;
 
 
     protected override async Task OnInitializedAsync()
@@ -119,7 +97,7 @@
         await usuarioController.Add(usuario);
         await usuarioController.Salvar();
 
-        enableButton = true;
+        navegacao.NavigateTo("/consultarUsuarios", forceLoad: true);
     }
 
     private void VerificarSenha(ChangeEventArgs e)
@@ -129,10 +107,12 @@
         if (usuario.Senha != password)
         {
             erroSenha = true;
+            enableButton = true;
         }
         else
         {
             erroSenha = false;
+            enableButton = false;
         }
     }
 
@@ -142,8 +122,7 @@
 
         if (valor == "-1")
         {
-            // Abre o modal via JS
-            await JSRuntime.InvokeVoidAsync("abrirModal", "modalNovoTipo");
+            mostrarModalTipo = true;
         }
         else if (int.TryParse(valor, out int idTipo))
         {
@@ -152,20 +131,10 @@
 
     }
 
-    private string? novoTipoNome;
-
-    private async Task SalvarNovoTipo()
+    private async Task FecharModalTipo()
     {
-        if (!string.IsNullOrWhiteSpace(novoTipoNome.ToLower()))
-        {
-            var novoTipo = new TipoUsuario();
-            novoTipo.Nome = novoTipoNome.ToLower();
-            await tipoController.Add(novoTipo);
-            await tipoController.Salvar();
-            var lista = await tipoController.TiposUsuario();
-            tipoUsuarios = lista;
-
-            await JSRuntime.InvokeVoidAsync("fecharModal", "modalNovoTipo");
-        }
+        mostrarModalTipo = false;
+        navegacao.NavigateTo("/cadastrarUsuario", forceLoad: true);
+        StateHasChanged();
     }
 }
