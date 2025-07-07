@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BdnooBJk59Qp4M279oY2eZduPm7TMgvB/Lmfc0YvTkU=",
+  "Hash": "smi29+WtnbTPAoU47OxP0m3BCN2GdTFj4nhU9wZCwEo=",
   "Source": "AppReservas_Salas",
   "BasePath": "_content/AppReservas_Salas",
   "Mode": "Default",
@@ -136,8 +136,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ifv42okdf2",
-      "Integrity": "4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=",
+      "Fingerprint": "hwdgspyp1r",
+      "Integrity": "n1UrH/IZIT3l8UP6BNNNokTvJzeUAXoGBf/BzC4X0/A=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.png"
@@ -576,7 +576,7 @@
       ]
     },
     {
-      "Route": "favicon.ifv42okdf2.png",
+      "Route": "favicon.hwdgspyp1r.png",
       "AssetFile": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\favicon.png",
       "Selectors": [],
       "ResponseHeaders": [
@@ -586,7 +586,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1148"
+          "Value": "12597"
         },
         {
           "Name": "Content-Type",
@@ -594,11 +594,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\""
+          "Value": "\"n1UrH/IZIT3l8UP6BNNNokTvJzeUAXoGBf/BzC4X0/A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 26 Jun 2025 20:18:10 GMT"
+          "Value": "Mon, 07 Jul 2025 02:39:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -608,7 +608,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ifv42okdf2"
+          "Value": "hwdgspyp1r"
         },
         {
           "Name": "label",
@@ -616,7 +616,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+          "Value": "sha256-n1UrH/IZIT3l8UP6BNNNokTvJzeUAXoGBf/BzC4X0/A="
         }
       ]
     },
@@ -631,7 +631,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1148"
+          "Value": "12597"
         },
         {
           "Name": "Content-Type",
@@ -639,11 +639,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\""
+          "Value": "\"n1UrH/IZIT3l8UP6BNNNokTvJzeUAXoGBf/BzC4X0/A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 26 Jun 2025 20:18:10 GMT"
+          "Value": "Mon, 07 Jul 2025 02:39:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -653,7 +653,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+          "Value": "sha256-n1UrH/IZIT3l8UP6BNNNokTvJzeUAXoGBf/BzC4X0/A="
         }
       ]
     },

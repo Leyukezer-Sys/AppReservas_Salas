@@ -1,11 +1,13 @@
-﻿@page "/home"
+﻿@page "/"
 @using AppReservas_Salas.Ferramenta
 @using AppReservas_Salas.Models
 @using AppReservas_Salas.Controllers
+@using Microsoft.AspNetCore.Authorization
 @inject TipoSalaController tipoController
 @inject ReservaController reservaController
 @inject NavigationManager navegacao
 @inject IJSRuntime JSRuntime;
+@attribute [Authorize]
 @rendermode InteractiveServer
 
 <script>

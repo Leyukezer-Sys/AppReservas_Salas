@@ -1,11 +1,15 @@
 ﻿@page "/agendarReserva"
 @using AppReservas_Salas.Models
 @using AppReservas_Salas.Controllers
+@using Microsoft.AspNetCore.Authorization
 @inject ReservaController reservaController
 @inject SalaController salaController
 @inject UsuarioController usuarioController
 @inject NavigationManager navegacao
+@attribute [Authorize]
+@rendermode InteractiveServer
 
+<PageTitle>Reservas de Sala</PageTitle>
 <h3 class="m-5">Agendar Reserva</h3>
 
 <div class="container">

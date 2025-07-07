@@ -1,12 +1,20 @@
 ﻿@page "/Error"
 @using System.Diagnostics
 
-<PageTitle>Error</PageTitle>
 
+<PageTitle>Erro</PageTitle>
+
+<div class="container text-center mt-5">
+    <h1 class="display-4 text-danger fs-1">Acesso Negado</h1>
+    <p class="lead fs-3">Você precisa estar logado para acessar esta página.</p>
+    <a href="/login" class="btn btn-primary mt-3 fs-4">Ir para o Login</a>
+</div>
+
+<!--
 <h1 class="text-danger">Error.</h1>
 <h2 class="text-danger">An error occurred while processing your request.</h2>
 
-@if (ShowRequestId)
+if (ShowRequestId)
 {
     <p>
         <strong>Request ID:</strong> <code>@RequestId</code>
@@ -24,7 +32,7 @@
     and restarting the app.
 </p>
 
-@code{
+code{
     [CascadingParameter]
     private HttpContext? HttpContext { get; set; }
 
@@ -34,3 +42,4 @@
     protected override void OnInitialized() =>
         RequestId = Activity.Current?.Id ?? HttpContext?.TraceIdentifier;
 }
+-->

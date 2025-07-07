@@ -2,9 +2,11 @@
 @using AppReservas_Salas.Ferramenta
 @using AppReservas_Salas.Models;
 @using AppReservas_Salas.Controllers;
+@using Microsoft.AspNetCore.Authorization
 @inject UsuarioController usuarioController;
 @inject NavigationManager navegacao;
 @inject IJSRuntime JSRuntime;
+@attribute [Authorize]
 @rendermode InteractiveServer
 
 <script>
@@ -12,6 +14,7 @@
     window.open(url, '_blank');
     }
 </script>
+<PageTitle>Consultar Usuários</PageTitle>
 
 <div class="top-row px-5 bg-gradient m-0 p-5" style="height: 50px;">
 </div>

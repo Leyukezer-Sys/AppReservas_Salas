@@ -1,10 +1,14 @@
 ﻿@page "/cadastrarUsuario"
 @using AppReservas_Salas.Models;
 @using AppReservas_Salas.Controllers;
+@using Microsoft.AspNetCore.Authorization
 @inject UsuarioController usuarioController;
 @inject TipoUsuarioController tipoController;
 @inject NavigationManager navegacao;
+@attribute [Authorize(Roles = "professor")]
 @rendermode InteractiveServer
+
+<PageTitle>Novo Usuário</PageTitle>
 
 <div class="top-row px-5 bg-gradient m-0 p-5" style="height: 50px;">
 
@@ -24,24 +28,24 @@
     </div>
 
     <div class="row mt-2">
-        <div class="col ms-3 position-relative">
+        <div class="col ms-3 ">
             <label class="form-label" for="txtSenha">Senha:</label>
             <input type="password"
                    name="txtSenha"
                    id="txtSenha"
                    @bind="usuario.Senha"
-                   class="form-control @(erroSenha ? "is-invalid" : "")"
+                   class="form-control"
                    placeholder="" />
+        </div>
+        <div class="col ms-3 position-relative">
+            <label class="form-label" for="txtCSenha">Confirmar Senha:</label>
+            <input type="password" name="txtCSenha" id="txtCSenha" class="form-control  @(erroSenha ? "is-invalid" : "")" placeholder="" @onchange="VerificarSenha" />
             @if (erroSenha)
             {
                 <div class="invalid-tooltip">
                     As senhas não coincidem!
                 </div>
             }
-        </div>
-        <div class="col ms-3">
-            <label class="form-label" for="txtCSenha">Confirmar Senha:</label>
-            <input type="password" name="txtCSenha" id="txtCSenha" class="form-control" placeholder="" @onchange="VerificarSenha" />
         </div>
     </div>
 

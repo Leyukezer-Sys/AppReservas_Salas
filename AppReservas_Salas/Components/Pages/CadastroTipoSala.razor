@@ -26,7 +26,8 @@
 
     private async Task Salvar()
     {
-        Console.WriteLine(novoTipo.Nome);
+        novoTipo.Nome = novoTipo.Nome.Trim();
+        novoTipo.Nome = novoTipo.Nome.ToLower();
         await tipoController.Add(novoTipo);
         await tipoController.Salvar();
         await OnClose.InvokeAsync();

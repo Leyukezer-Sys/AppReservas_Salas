@@ -1,0 +1,117 @@
+﻿@page "/novoUsuario"
+@using Microsoft.AspNetCore.Authorization
+@attribute [AllowAnonymous]
+@using AppReservas_Salas.Controllers
+@using AppReservas_Salas.Models
+@inject UsuarioController usuarioController
+@layout LoginLayout
+@inject NavigationManager navegacao;
+@inject TipoUsuarioController tipoController
+@rendermode InteractiveServer
+
+<PageTitle>Registro Usuário</PageTitle>
+
+<div class="d-flex flex-row align-items-center justify-content-center" style="height:100vh">
+    <div class="col d-flex justify-content-center align-items-center">
+        <div class="rounded-2 shadow-lg" style="width: 500px;">
+            <div class="d-flex align-items-center justify-content-center mt-3">
+                <img class="card-img-top rounded" src="favicon.png" style="width: 50px;" />
+            </div>
+            <h1 class="m-5">Novo Usuario</h1>
+
+            <div class="container">
+                <div class="row mt-2">
+                    <div class="col ms-3">
+                        <label class="form-label" for="txtNome">Nome:</label>
+                        <input type="text" name="txtNome" id="txtNome" @bind="usuario.Nome" class="form-control" placeholder="" />
+                    </div>
+                    <div class="col ms-3">
+                        <label class="form-label" for="txtMatricula">Matricula:</label>
+                        <input type="number" name="txtMatricula" id="txtMatricula" @bind="usuario.Matricula" class="form-control" placeholder="" />
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="col ms-3 ">
+                        <label class="form-label" for="txtSenha">Senha:</label>
+                        <input type="password"
+                               name="txtSenha"
+                               id="txtSenha"
+                               @bind="usuario.Senha"
+                               class="form-control"
+                               placeholder="" />
+                    </div>
+                    <div class="col ms-3 position-relative">
+                        <label class="form-label" for="txtCSenha">Confirmar Senha:</label>
+                        <input type="password" name="txtCSenha" id="txtCSenha" class="form-control @(erroSenha ? "is-invalid" : "")" placeholder="" @onchange="VerificarSenha" />
+                        @if (erroSenha)
+                        {
+                            <div class="invalid-tooltip">
+                                @msg
+                            </div>
+                        }
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="col ms-3">
+                        <label for="txtTipo">Tipo de Usuario:</label>
+                        <select @bind="usuario.IdTipo" class="form-control" name="txtTipo" id="txtTipo">
+                            <option disabled selected>Selecione o Tipo de Usuário</option>
+                            @foreach (var tipo in tipoUsuarios)
+                            {
+                                <option value="@tipo.Id">@tipo.Nome</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="col ms-3">
+                        <button class="btn btn-success" @onclick="Salvar" disabled="@enableButton">SALVAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private Usuario usuario = new Usuario();
+    private string password = "";
+    private bool enableButton = true;
+    private bool erroSenha = false;
+    private List<TipoUsuario>? tipoUsuarios = new List<TipoUsuario>();
+    private string msg = "As senhas não coincidem!";
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        var listaTipos = await tipoController.TiposUsuario();
+        tipoUsuarios = listaTipos;
+    }
+
+    public async Task Salvar()
+    {
+        await usuarioController.Add(usuario);
+        await usuarioController.Salvar();
+
+        navegacao.NavigateTo("/login");
+    }
+
+    private void VerificarSenha(ChangeEventArgs e)
+    {
+        password = e.Value?.ToString();
+
+        if (usuario.Senha != password)
+        {
+            erroSenha = true;
+            enableButton = true;
+        }
+        else
+        {
+            erroSenha = false;
+            enableButton = false;
+        }
+    }
+}

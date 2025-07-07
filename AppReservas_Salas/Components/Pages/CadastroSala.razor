@@ -1,10 +1,14 @@
 ﻿@page "/cadastrarSala"
 @using AppReservas_Salas.Models;
 @using AppReservas_Salas.Controllers;
+@using Microsoft.AspNetCore.Authorization
 @inject SalaController salaController;
 @inject TipoSalaController tipoController;
 @inject NavigationManager navegacao;
+@attribute [Authorize(Roles = "professor")]
 @rendermode InteractiveServer
+
+<PageTitle>Nova Sala</PageTitle>
 
 <div class="top-row px-5 bg-gradient m-0 p-5" style="height: 50px;">
 

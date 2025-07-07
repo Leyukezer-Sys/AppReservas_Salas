@@ -13,6 +13,15 @@ builder.Services.AddScoped<ReservaController>()
                 .AddScoped<TipoSalaController>()
                 .AddScoped<TipoUsuarioController>()
                 .AddScoped<UsuarioController>();
+builder.Services.AddAuthentication("Cookies")
+    .AddCookie("Cookies", options =>
+    {
+        options.LoginPath = "/login";
+        options.AccessDeniedPath = "/Error";
+    });
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddAuthorization();
+
 
 string mySqlConexao = builder.Configuration.GetConnectionString("ConexaoMySql");
 builder.Services.AddDbContextPool<ContextoBD>(options => options.UseMySql(mySqlConexao, ServerVersion.AutoDetect(mySqlConexao)));
@@ -32,6 +41,9 @@ app.UseHttpsRedirection();
 
 app.UseStaticFiles();
 app.UseAntiforgery();
+app.UseAuthentication();
+app.UseAuthorization();
+
 
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
