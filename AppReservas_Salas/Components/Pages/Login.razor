@@ -71,7 +71,7 @@
 @code {
     private string? matricula;
     private bool erroMatricula = false;
-    private string? senha;
+    private string? senha = "";
     private bool erroSenha = false;
     private List<Usuario> listaUsuarios = new();
     private ElementReference matriculaInput;
@@ -130,8 +130,15 @@
             return;
         }
 
-        navegacao.NavigateTo("/home", forceLoad: true);
-     
+        if (senha != "") {
+            navegacao.NavigateTo("/home", forceLoad: true);
+
+        }
+        else {
+            await senhaInput.FocusAsync();
+            return;
+        }
+
     }
 
 }

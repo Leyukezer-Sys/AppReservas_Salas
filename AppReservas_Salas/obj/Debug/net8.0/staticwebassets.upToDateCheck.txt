@@ -2,3 +2,12 @@ wwwroot\app.css
 wwwroot\bootstrap\bootstrap.min.css
 wwwroot\bootstrap\bootstrap.min.css.map
 wwwroot\favicon.png
+wwwroot\RelatoriosTemp\Relatorio_33b99c70-0e76-4407-8ddd-25902398790e.pdf
+wwwroot\RelatoriosTemp\Relatorio_3f0f475a-33f9-4006-a168-30297aba2524.pdf
+wwwroot\RelatoriosTemp\Relatorio_4aeedb7a-9893-45fc-9285-26d29e7db3cf.pdf
+wwwroot\RelatoriosTemp\Relatorio_4fd0bd60-1b7f-4b02-9ee3-82a7382b8c66.pdf
+wwwroot\RelatoriosTemp\Relatorio_61300eee-cd26-49ea-b1ef-9e819fd922f6.pdf
+wwwroot\RelatoriosTemp\Relatorio_6d544a21-8abf-44b6-a74b-ec119238f67c.pdf
+wwwroot\RelatoriosTemp\Relatorio_74c14c4b-822f-481e-8723-0d54e151e500.pdf
+wwwroot\RelatoriosTemp\Relatorio_d569cb86-ef07-4758-8830-24e09758dcdd.pdf
+wwwroot\RelatoriosTemp\Relatorio_f0ef12b3-1235-4214-884d-29f8d65a48d9.pdf

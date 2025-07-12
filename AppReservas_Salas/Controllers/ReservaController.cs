@@ -8,6 +8,10 @@ namespace AppReservas_Salas.Controllers
     public class ReservaController : Controller
     {
         private readonly ContextoBD _context;
+        public ReservaController(ContextoBD context)
+        {
+            _context = context;
+        }
 
         public async Task<List<Reserva>>? Reservas()
         {

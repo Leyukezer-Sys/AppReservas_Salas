@@ -60,5 +60,113 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-n1UrH/IZIT3l8UP6BNNNokTvJzeUAXoGBf/BzC4X0/A="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"12597"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022n1UrH/IZIT3l8UP6BNNNokTvJzeUAXoGBf/BzC4X0/A=\u0022"},{"Name":"Last-Modified","Value":"Mon, 07 Jul 2025 02:39:19 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AppReservas_Salas/RelatoriosTemp/Relatorio_33b99c70-0e76-4407-8ddd-25902398790e.dyqvb0togt.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\RelatoriosTemp\Relatorio_33b99c70-0e76-4407-8ddd-25902398790e.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"dyqvb0togt"},{"Name":"integrity","Value":"sha256-y6rgDSB9dfuDWKP1I7ixiXsLZ7xQRF\u002BMrFBqigkeIYo="},{"Name":"label","Value":"_content/AppReservas_Salas/RelatoriosTemp/Relatorio_33b99c70-0e76-4407-8ddd-25902398790e.pdf"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"192939"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022y6rgDSB9dfuDWKP1I7ixiXsLZ7xQRF\u002BMrFBqigkeIYo=\u0022"},{"Name":"Last-Modified","Value":"Sat, 12 Jul 2025 19:40:36 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AppReservas_Salas/RelatoriosTemp/Relatorio_33b99c70-0e76-4407-8ddd-25902398790e.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\RelatoriosTemp\Relatorio_33b99c70-0e76-4407-8ddd-25902398790e.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-y6rgDSB9dfuDWKP1I7ixiXsLZ7xQRF\u002BMrFBqigkeIYo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"192939"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022y6rgDSB9dfuDWKP1I7ixiXsLZ7xQRF\u002BMrFBqigkeIYo=\u0022"},{"Name":"Last-Modified","Value":"Sat, 12 Jul 2025 19:40:36 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AppReservas_Salas/RelatoriosTemp/Relatorio_3f0f475a-33f9-4006-a168-30297aba2524.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\RelatoriosTemp\Relatorio_3f0f475a-33f9-4006-a168-30297aba2524.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Z5o1SkPw70VqctQdqZm1mrSNpywsT42A2a60P7yhjLg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"309054"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022Z5o1SkPw70VqctQdqZm1mrSNpywsT42A2a60P7yhjLg=\u0022"},{"Name":"Last-Modified","Value":"Sat, 12 Jul 2025 20:39:51 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AppReservas_Salas/RelatoriosTemp/Relatorio_3f0f475a-33f9-4006-a168-30297aba2524.vmz8ksbk2o.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\RelatoriosTemp\Relatorio_3f0f475a-33f9-4006-a168-30297aba2524.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vmz8ksbk2o"},{"Name":"integrity","Value":"sha256-Z5o1SkPw70VqctQdqZm1mrSNpywsT42A2a60P7yhjLg="},{"Name":"label","Value":"_content/AppReservas_Salas/RelatoriosTemp/Relatorio_3f0f475a-33f9-4006-a168-30297aba2524.pdf"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"309054"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022Z5o1SkPw70VqctQdqZm1mrSNpywsT42A2a60P7yhjLg=\u0022"},{"Name":"Last-Modified","Value":"Sat, 12 Jul 2025 20:39:51 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AppReservas_Salas/RelatoriosTemp/Relatorio_4aeedb7a-9893-45fc-9285-26d29e7db3cf.e2k1zpg7k7.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\RelatoriosTemp\Relatorio_4aeedb7a-9893-45fc-9285-26d29e7db3cf.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"e2k1zpg7k7"},{"Name":"integrity","Value":"sha256-1uIQ\u002BYtJ1l5D8K04IKpIa/UcRtcEMBog1SZAThTUsg8="},{"Name":"label","Value":"_content/AppReservas_Salas/RelatoriosTemp/Relatorio_4aeedb7a-9893-45fc-9285-26d29e7db3cf.pdf"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"316080"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u00221uIQ\u002BYtJ1l5D8K04IKpIa/UcRtcEMBog1SZAThTUsg8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 12 Jul 2025 20:37:24 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AppReservas_Salas/RelatoriosTemp/Relatorio_4aeedb7a-9893-45fc-9285-26d29e7db3cf.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\RelatoriosTemp\Relatorio_4aeedb7a-9893-45fc-9285-26d29e7db3cf.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-1uIQ\u002BYtJ1l5D8K04IKpIa/UcRtcEMBog1SZAThTUsg8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"316080"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u00221uIQ\u002BYtJ1l5D8K04IKpIa/UcRtcEMBog1SZAThTUsg8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 12 Jul 2025 20:37:24 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AppReservas_Salas/RelatoriosTemp/Relatorio_4fd0bd60-1b7f-4b02-9ee3-82a7382b8c66.5ipweew5fc.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\RelatoriosTemp\Relatorio_4fd0bd60-1b7f-4b02-9ee3-82a7382b8c66.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"5ipweew5fc"},{"Name":"integrity","Value":"sha256-47DEQpj8HBSa\u002B/TImW\u002B5JCeuQeRkm5NMpJWZG3hSuFU="},{"Name":"label","Value":"_content/AppReservas_Salas/RelatoriosTemp/Relatorio_4fd0bd60-1b7f-4b02-9ee3-82a7382b8c66.pdf"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"0"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u002247DEQpj8HBSa\u002B/TImW\u002B5JCeuQeRkm5NMpJWZG3hSuFU=\u0022"},{"Name":"Last-Modified","Value":"Sat, 12 Jul 2025 20:03:15 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AppReservas_Salas/RelatoriosTemp/Relatorio_4fd0bd60-1b7f-4b02-9ee3-82a7382b8c66.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\RelatoriosTemp\Relatorio_4fd0bd60-1b7f-4b02-9ee3-82a7382b8c66.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-47DEQpj8HBSa\u002B/TImW\u002B5JCeuQeRkm5NMpJWZG3hSuFU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"0"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u002247DEQpj8HBSa\u002B/TImW\u002B5JCeuQeRkm5NMpJWZG3hSuFU=\u0022"},{"Name":"Last-Modified","Value":"Sat, 12 Jul 2025 20:03:15 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AppReservas_Salas/RelatoriosTemp/Relatorio_61300eee-cd26-49ea-b1ef-9e819fd922f6.dyo16d1mx7.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\RelatoriosTemp\Relatorio_61300eee-cd26-49ea-b1ef-9e819fd922f6.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"dyo16d1mx7"},{"Name":"integrity","Value":"sha256-ayH1sALuDY\u002B0G9UDdAvnASGYWdgq\u002BZuSALyrFSsCA2k="},{"Name":"label","Value":"_content/AppReservas_Salas/RelatoriosTemp/Relatorio_61300eee-cd26-49ea-b1ef-9e819fd922f6.pdf"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"297395"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022ayH1sALuDY\u002B0G9UDdAvnASGYWdgq\u002BZuSALyrFSsCA2k=\u0022"},{"Name":"Last-Modified","Value":"Sat, 12 Jul 2025 20:36:52 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AppReservas_Salas/RelatoriosTemp/Relatorio_61300eee-cd26-49ea-b1ef-9e819fd922f6.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\RelatoriosTemp\Relatorio_61300eee-cd26-49ea-b1ef-9e819fd922f6.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ayH1sALuDY\u002B0G9UDdAvnASGYWdgq\u002BZuSALyrFSsCA2k="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"297395"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022ayH1sALuDY\u002B0G9UDdAvnASGYWdgq\u002BZuSALyrFSsCA2k=\u0022"},{"Name":"Last-Modified","Value":"Sat, 12 Jul 2025 20:36:52 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AppReservas_Salas/RelatoriosTemp/Relatorio_6d544a21-8abf-44b6-a74b-ec119238f67c.5ipweew5fc.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\RelatoriosTemp\Relatorio_6d544a21-8abf-44b6-a74b-ec119238f67c.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"5ipweew5fc"},{"Name":"integrity","Value":"sha256-47DEQpj8HBSa\u002B/TImW\u002B5JCeuQeRkm5NMpJWZG3hSuFU="},{"Name":"label","Value":"_content/AppReservas_Salas/RelatoriosTemp/Relatorio_6d544a21-8abf-44b6-a74b-ec119238f67c.pdf"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"0"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u002247DEQpj8HBSa\u002B/TImW\u002B5JCeuQeRkm5NMpJWZG3hSuFU=\u0022"},{"Name":"Last-Modified","Value":"Sat, 12 Jul 2025 20:03:15 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AppReservas_Salas/RelatoriosTemp/Relatorio_6d544a21-8abf-44b6-a74b-ec119238f67c.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\RelatoriosTemp\Relatorio_6d544a21-8abf-44b6-a74b-ec119238f67c.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-47DEQpj8HBSa\u002B/TImW\u002B5JCeuQeRkm5NMpJWZG3hSuFU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"0"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u002247DEQpj8HBSa\u002B/TImW\u002B5JCeuQeRkm5NMpJWZG3hSuFU=\u0022"},{"Name":"Last-Modified","Value":"Sat, 12 Jul 2025 20:03:15 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AppReservas_Salas/RelatoriosTemp/Relatorio_74c14c4b-822f-481e-8723-0d54e151e500.5ipweew5fc.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\RelatoriosTemp\Relatorio_74c14c4b-822f-481e-8723-0d54e151e500.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"5ipweew5fc"},{"Name":"integrity","Value":"sha256-47DEQpj8HBSa\u002B/TImW\u002B5JCeuQeRkm5NMpJWZG3hSuFU="},{"Name":"label","Value":"_content/AppReservas_Salas/RelatoriosTemp/Relatorio_74c14c4b-822f-481e-8723-0d54e151e500.pdf"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"0"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u002247DEQpj8HBSa\u002B/TImW\u002B5JCeuQeRkm5NMpJWZG3hSuFU=\u0022"},{"Name":"Last-Modified","Value":"Sat, 12 Jul 2025 19:29:20 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AppReservas_Salas/RelatoriosTemp/Relatorio_74c14c4b-822f-481e-8723-0d54e151e500.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\RelatoriosTemp\Relatorio_74c14c4b-822f-481e-8723-0d54e151e500.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-47DEQpj8HBSa\u002B/TImW\u002B5JCeuQeRkm5NMpJWZG3hSuFU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"0"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u002247DEQpj8HBSa\u002B/TImW\u002B5JCeuQeRkm5NMpJWZG3hSuFU=\u0022"},{"Name":"Last-Modified","Value":"Sat, 12 Jul 2025 19:29:20 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AppReservas_Salas/RelatoriosTemp/Relatorio_d569cb86-ef07-4758-8830-24e09758dcdd.axpdqgxu1d.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\RelatoriosTemp\Relatorio_d569cb86-ef07-4758-8830-24e09758dcdd.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"axpdqgxu1d"},{"Name":"integrity","Value":"sha256-fu5vAUxCORldLBQn2H73F0xukAfRXU4uTiFocpCaafU="},{"Name":"label","Value":"_content/AppReservas_Salas/RelatoriosTemp/Relatorio_d569cb86-ef07-4758-8830-24e09758dcdd.pdf"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"330844"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022fu5vAUxCORldLBQn2H73F0xukAfRXU4uTiFocpCaafU=\u0022"},{"Name":"Last-Modified","Value":"Sat, 12 Jul 2025 20:40:43 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AppReservas_Salas/RelatoriosTemp/Relatorio_d569cb86-ef07-4758-8830-24e09758dcdd.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\RelatoriosTemp\Relatorio_d569cb86-ef07-4758-8830-24e09758dcdd.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-fu5vAUxCORldLBQn2H73F0xukAfRXU4uTiFocpCaafU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"330844"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022fu5vAUxCORldLBQn2H73F0xukAfRXU4uTiFocpCaafU=\u0022"},{"Name":"Last-Modified","Value":"Sat, 12 Jul 2025 20:40:43 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AppReservas_Salas/RelatoriosTemp/Relatorio_f0ef12b3-1235-4214-884d-29f8d65a48d9.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\RelatoriosTemp\Relatorio_f0ef12b3-1235-4214-884d-29f8d65a48d9.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-sRVNmb4/mse1xq6eqi5KmK6cMm3oV\u002BD0NZd1eLAGnKY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"275419"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022sRVNmb4/mse1xq6eqi5KmK6cMm3oV\u002BD0NZd1eLAGnKY=\u0022"},{"Name":"Last-Modified","Value":"Sat, 12 Jul 2025 20:35:49 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AppReservas_Salas/RelatoriosTemp/Relatorio_f0ef12b3-1235-4214-884d-29f8d65a48d9.vckdm3cbkc.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\RelatoriosTemp\Relatorio_f0ef12b3-1235-4214-884d-29f8d65a48d9.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vckdm3cbkc"},{"Name":"integrity","Value":"sha256-sRVNmb4/mse1xq6eqi5KmK6cMm3oV\u002BD0NZd1eLAGnKY="},{"Name":"label","Value":"_content/AppReservas_Salas/RelatoriosTemp/Relatorio_f0ef12b3-1235-4214-884d-29f8d65a48d9.pdf"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"275419"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022sRVNmb4/mse1xq6eqi5KmK6cMm3oV\u002BD0NZd1eLAGnKY=\u0022"},{"Name":"Last-Modified","Value":"Sat, 12 Jul 2025 20:35:49 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>

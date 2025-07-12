@@ -3,7 +3,9 @@
 @using AppReservas_Salas.Models
 @using AppReservas_Salas.Controllers
 @inject TipoSalaController tipoController
+@inject SalaController salaController
 @inject ReservaController reservaController
+@inject UsuarioController usuarioController
 @inject NavigationManager navegacao
 @inject IJSRuntime JSRuntime;
 @rendermode InteractiveServer
@@ -66,13 +68,20 @@ else
 }
 
 @code {
-    private List<TipoSala> tiposSala = new();
+    private List<TipoSala>? tiposSala = new();
+    private List<Sala>? salas = new();
+    private List<Reserva>? reservas = new();
+    private List<Usuario>? usuarios = new();
     private Dictionary<int, bool> salasReservadas = new();
     private DateTime dataConsulta = DateTime.Now;
 
     protected override async Task OnInitializedAsync()
     {
         tiposSala = await tipoController.TiposSalas();
+        salas = await salaController.Salas();
+        reservas = await reservaController.Reservas();
+        usuarios = await usuarioController.Usuarios();
+
         await AtualizarDisponibilidade();
     }
 
@@ -102,8 +111,7 @@ else
     private void ImprimirRelatorioGeral()
     {
         Impressao imprimir = new Impressao();
-        Console.WriteLine("Imprimir");
 
-        imprimir.GerarImpressaoGeral(tiposSala, navegacao, JSRuntime);
+        imprimir.GerarImpressaoGeral(tiposSala,salas,reservas,usuarios, navegacao, JSRuntime);
     }
 }
