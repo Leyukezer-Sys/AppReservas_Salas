@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "aoZTL/zbaaqROg4i9EE0zyb0pK8wm5QYn+rym8bU0RU=",
+  "Hash": "/AycQvzScwvgew7GWImAyGc+HhI3xoiSJ7WFTJnpChs=",
   "Source": "AppReservas_Salas",
   "BasePath": "_content/AppReservas_Salas",
   "Mode": "Default",
@@ -10,19 +10,19 @@
     {
       "Name": "AppReservas_Salas\\wwwroot",
       "Source": "AppReservas_Salas",
-      "ContentRoot": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\",
       "BasePath": "_content/AppReservas_Salas",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AppReservas_Salas.styles.css",
+      "Identity": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AppReservas_Salas.styles.css",
       "SourceId": "AppReservas_Salas",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/AppReservas_Salas",
-      "RelativePath": "AppReservas_Salas#[.{fingerprint}]?.styles.css",
+      "RelativePath": "AppReservas_Salas.styles.css",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Primary",
@@ -31,19 +31,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "ax3l15m3k2",
-      "Integrity": "Hvw/a0F7wIZqU2hVTnyhvyKPPsJftaBuHLCqDCKgQx0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AppReservas_Salas.styles.css"
+      "OriginalItemSpec": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AppReservas_Salas.styles.css"
     },
     {
-      "Identity": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AppReservas_Salas.bundle.scp.css",
+      "Identity": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AppReservas_Salas.bundle.scp.css",
       "SourceId": "AppReservas_Salas",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/AppReservas_Salas",
-      "RelativePath": "AppReservas_Salas#[.{fingerprint}]!.bundle.scp.css",
+      "RelativePath": "AppReservas_Salas.bundle.scp.css",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Primary",
@@ -52,1516 +50,351 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "ax3l15m3k2",
-      "Integrity": "Hvw/a0F7wIZqU2hVTnyhvyKPPsJftaBuHLCqDCKgQx0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AppReservas_Salas.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AppReservas_Salas.bundle.scp.css"
     },
     {
-      "Identity": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\app.css",
+      "Identity": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\app.css",
       "SourceId": "AppReservas_Salas",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\",
       "BasePath": "_content/AppReservas_Salas",
-      "RelativePath": "app#[.{fingerprint}]?.css",
+      "RelativePath": "app.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "da95v2qkru",
-      "Integrity": "u9qEka1auR7E3rd3/8/j8hkQdSOYj9bRJ4nYiFDR1sE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\bootstrap\\bootstrap.min.css",
       "SourceId": "AppReservas_Salas",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\",
       "BasePath": "_content/AppReservas_Salas",
-      "RelativePath": "bootstrap/bootstrap.min#[.{fingerprint}]?.css",
+      "RelativePath": "bootstrap/bootstrap.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "zqik8f1y0o",
-      "Integrity": "688+oFCnWCM2G+fuV4pfKiIq1RncfmtiiHDt74fSVlQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "AppReservas_Salas",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\",
       "BasePath": "_content/AppReservas_Salas",
-      "RelativePath": "bootstrap/bootstrap.min.css#[.{fingerprint}]?.map",
+      "RelativePath": "bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "8inm30yfxf",
-      "Integrity": "gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\favicon.png",
+      "Identity": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\favicon.png",
       "SourceId": "AppReservas_Salas",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\",
       "BasePath": "_content/AppReservas_Salas",
-      "RelativePath": "favicon#[.{fingerprint}]?.png",
+      "RelativePath": "favicon.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "hwdgspyp1r",
-      "Integrity": "n1UrH/IZIT3l8UP6BNNNokTvJzeUAXoGBf/BzC4X0/A=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.png"
     },
     {
-      "Identity": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_33b99c70-0e76-4407-8ddd-25902398790e.pdf",
+      "Identity": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_139d46f8-eb75-47b2-a24f-8f0cc5f0a5eb.pdf",
       "SourceId": "AppReservas_Salas",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\",
       "BasePath": "_content/AppReservas_Salas",
-      "RelativePath": "RelatoriosTemp/Relatorio_33b99c70-0e76-4407-8ddd-25902398790e#[.{fingerprint}]?.pdf",
+      "RelativePath": "RelatoriosTemp/Relatorio_139d46f8-eb75-47b2-a24f-8f0cc5f0a5eb.pdf",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "dyqvb0togt",
-      "Integrity": "y6rgDSB9dfuDWKP1I7ixiXsLZ7xQRF+MrFBqigkeIYo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\RelatoriosTemp\\Relatorio_139d46f8-eb75-47b2-a24f-8f0cc5f0a5eb.pdf"
+    },
+    {
+      "Identity": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_14903b4f-0627-4446-8bae-3cc8bafdb328.pdf",
+      "SourceId": "AppReservas_Salas",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\",
+      "BasePath": "_content/AppReservas_Salas",
+      "RelativePath": "RelatoriosTemp/Relatorio_14903b4f-0627-4446-8bae-3cc8bafdb328.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\RelatoriosTemp\\Relatorio_14903b4f-0627-4446-8bae-3cc8bafdb328.pdf"
+    },
+    {
+      "Identity": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_2f1b179a-6907-4ee9-beea-e250b2e35533.pdf",
+      "SourceId": "AppReservas_Salas",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\",
+      "BasePath": "_content/AppReservas_Salas",
+      "RelativePath": "RelatoriosTemp/Relatorio_2f1b179a-6907-4ee9-beea-e250b2e35533.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\RelatoriosTemp\\Relatorio_2f1b179a-6907-4ee9-beea-e250b2e35533.pdf"
+    },
+    {
+      "Identity": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_33b99c70-0e76-4407-8ddd-25902398790e.pdf",
+      "SourceId": "AppReservas_Salas",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\",
+      "BasePath": "_content/AppReservas_Salas",
+      "RelativePath": "RelatoriosTemp/Relatorio_33b99c70-0e76-4407-8ddd-25902398790e.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\RelatoriosTemp\\Relatorio_33b99c70-0e76-4407-8ddd-25902398790e.pdf"
     },
     {
-      "Identity": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_3f0f475a-33f9-4006-a168-30297aba2524.pdf",
+      "Identity": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_3f0f475a-33f9-4006-a168-30297aba2524.pdf",
       "SourceId": "AppReservas_Salas",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\",
       "BasePath": "_content/AppReservas_Salas",
-      "RelativePath": "RelatoriosTemp/Relatorio_3f0f475a-33f9-4006-a168-30297aba2524#[.{fingerprint}]?.pdf",
+      "RelativePath": "RelatoriosTemp/Relatorio_3f0f475a-33f9-4006-a168-30297aba2524.pdf",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "vmz8ksbk2o",
-      "Integrity": "Z5o1SkPw70VqctQdqZm1mrSNpywsT42A2a60P7yhjLg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\RelatoriosTemp\\Relatorio_3f0f475a-33f9-4006-a168-30297aba2524.pdf"
     },
     {
-      "Identity": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_4aeedb7a-9893-45fc-9285-26d29e7db3cf.pdf",
+      "Identity": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_4aeedb7a-9893-45fc-9285-26d29e7db3cf.pdf",
       "SourceId": "AppReservas_Salas",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\",
       "BasePath": "_content/AppReservas_Salas",
-      "RelativePath": "RelatoriosTemp/Relatorio_4aeedb7a-9893-45fc-9285-26d29e7db3cf#[.{fingerprint}]?.pdf",
+      "RelativePath": "RelatoriosTemp/Relatorio_4aeedb7a-9893-45fc-9285-26d29e7db3cf.pdf",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "e2k1zpg7k7",
-      "Integrity": "1uIQ+YtJ1l5D8K04IKpIa/UcRtcEMBog1SZAThTUsg8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\RelatoriosTemp\\Relatorio_4aeedb7a-9893-45fc-9285-26d29e7db3cf.pdf"
     },
     {
-      "Identity": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_4fd0bd60-1b7f-4b02-9ee3-82a7382b8c66.pdf",
+      "Identity": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_4fd0bd60-1b7f-4b02-9ee3-82a7382b8c66.pdf",
       "SourceId": "AppReservas_Salas",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\",
       "BasePath": "_content/AppReservas_Salas",
-      "RelativePath": "RelatoriosTemp/Relatorio_4fd0bd60-1b7f-4b02-9ee3-82a7382b8c66#[.{fingerprint}]?.pdf",
+      "RelativePath": "RelatoriosTemp/Relatorio_4fd0bd60-1b7f-4b02-9ee3-82a7382b8c66.pdf",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "5ipweew5fc",
-      "Integrity": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\RelatoriosTemp\\Relatorio_4fd0bd60-1b7f-4b02-9ee3-82a7382b8c66.pdf"
     },
     {
-      "Identity": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_61300eee-cd26-49ea-b1ef-9e819fd922f6.pdf",
+      "Identity": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_61300eee-cd26-49ea-b1ef-9e819fd922f6.pdf",
       "SourceId": "AppReservas_Salas",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\",
       "BasePath": "_content/AppReservas_Salas",
-      "RelativePath": "RelatoriosTemp/Relatorio_61300eee-cd26-49ea-b1ef-9e819fd922f6#[.{fingerprint}]?.pdf",
+      "RelativePath": "RelatoriosTemp/Relatorio_61300eee-cd26-49ea-b1ef-9e819fd922f6.pdf",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "dyo16d1mx7",
-      "Integrity": "ayH1sALuDY+0G9UDdAvnASGYWdgq+ZuSALyrFSsCA2k=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\RelatoriosTemp\\Relatorio_61300eee-cd26-49ea-b1ef-9e819fd922f6.pdf"
     },
     {
-      "Identity": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_6d544a21-8abf-44b6-a74b-ec119238f67c.pdf",
+      "Identity": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_6d544a21-8abf-44b6-a74b-ec119238f67c.pdf",
       "SourceId": "AppReservas_Salas",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\",
       "BasePath": "_content/AppReservas_Salas",
-      "RelativePath": "RelatoriosTemp/Relatorio_6d544a21-8abf-44b6-a74b-ec119238f67c#[.{fingerprint}]?.pdf",
+      "RelativePath": "RelatoriosTemp/Relatorio_6d544a21-8abf-44b6-a74b-ec119238f67c.pdf",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "5ipweew5fc",
-      "Integrity": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\RelatoriosTemp\\Relatorio_6d544a21-8abf-44b6-a74b-ec119238f67c.pdf"
     },
     {
-      "Identity": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_74c14c4b-822f-481e-8723-0d54e151e500.pdf",
+      "Identity": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_6edd6db8-f7ac-4654-94e5-3b6850722cd1.pdf",
       "SourceId": "AppReservas_Salas",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\",
       "BasePath": "_content/AppReservas_Salas",
-      "RelativePath": "RelatoriosTemp/Relatorio_74c14c4b-822f-481e-8723-0d54e151e500#[.{fingerprint}]?.pdf",
+      "RelativePath": "RelatoriosTemp/Relatorio_6edd6db8-f7ac-4654-94e5-3b6850722cd1.pdf",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "5ipweew5fc",
-      "Integrity": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\RelatoriosTemp\\Relatorio_6edd6db8-f7ac-4654-94e5-3b6850722cd1.pdf"
+    },
+    {
+      "Identity": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_74c14c4b-822f-481e-8723-0d54e151e500.pdf",
+      "SourceId": "AppReservas_Salas",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\",
+      "BasePath": "_content/AppReservas_Salas",
+      "RelativePath": "RelatoriosTemp/Relatorio_74c14c4b-822f-481e-8723-0d54e151e500.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\RelatoriosTemp\\Relatorio_74c14c4b-822f-481e-8723-0d54e151e500.pdf"
     },
     {
-      "Identity": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_d569cb86-ef07-4758-8830-24e09758dcdd.pdf",
+      "Identity": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_955a907b-10f6-443c-8de5-ebcb6d4e820f.pdf",
       "SourceId": "AppReservas_Salas",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\",
       "BasePath": "_content/AppReservas_Salas",
-      "RelativePath": "RelatoriosTemp/Relatorio_d569cb86-ef07-4758-8830-24e09758dcdd#[.{fingerprint}]?.pdf",
+      "RelativePath": "RelatoriosTemp/Relatorio_955a907b-10f6-443c-8de5-ebcb6d4e820f.pdf",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "axpdqgxu1d",
-      "Integrity": "fu5vAUxCORldLBQn2H73F0xukAfRXU4uTiFocpCaafU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\RelatoriosTemp\\Relatorio_955a907b-10f6-443c-8de5-ebcb6d4e820f.pdf"
+    },
+    {
+      "Identity": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_d569cb86-ef07-4758-8830-24e09758dcdd.pdf",
+      "SourceId": "AppReservas_Salas",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\",
+      "BasePath": "_content/AppReservas_Salas",
+      "RelativePath": "RelatoriosTemp/Relatorio_d569cb86-ef07-4758-8830-24e09758dcdd.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\RelatoriosTemp\\Relatorio_d569cb86-ef07-4758-8830-24e09758dcdd.pdf"
     },
     {
-      "Identity": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_f0ef12b3-1235-4214-884d-29f8d65a48d9.pdf",
+      "Identity": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_f0ef12b3-1235-4214-884d-29f8d65a48d9.pdf",
       "SourceId": "AppReservas_Salas",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\",
       "BasePath": "_content/AppReservas_Salas",
-      "RelativePath": "RelatoriosTemp/Relatorio_f0ef12b3-1235-4214-884d-29f8d65a48d9#[.{fingerprint}]?.pdf",
+      "RelativePath": "RelatoriosTemp/Relatorio_f0ef12b3-1235-4214-884d-29f8d65a48d9.pdf",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "vckdm3cbkc",
-      "Integrity": "sRVNmb4/mse1xq6eqi5KmK6cMm3oV+D0NZd1eLAGnKY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\RelatoriosTemp\\Relatorio_f0ef12b3-1235-4214-884d-29f8d65a48d9.pdf"
-    }
-  ],
-  "Endpoints": [
-    {
-      "Route": "app.css",
-      "AssetFile": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\app.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2591"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"u9qEka1auR7E3rd3/8/j8hkQdSOYj9bRJ4nYiFDR1sE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 26 Jun 2025 20:18:10 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-u9qEka1auR7E3rd3/8/j8hkQdSOYj9bRJ4nYiFDR1sE="
-        }
-      ]
-    },
-    {
-      "Route": "app.da95v2qkru.css",
-      "AssetFile": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\app.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2591"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"u9qEka1auR7E3rd3/8/j8hkQdSOYj9bRJ4nYiFDR1sE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 26 Jun 2025 20:18:10 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "da95v2qkru"
-        },
-        {
-          "Name": "label",
-          "Value": "app.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-u9qEka1auR7E3rd3/8/j8hkQdSOYj9bRJ4nYiFDR1sE="
-        }
-      ]
-    },
-    {
-      "Route": "AppReservas_Salas.ax3l15m3k2.bundle.scp.css",
-      "AssetFile": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AppReservas_Salas.bundle.scp.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5909"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Hvw/a0F7wIZqU2hVTnyhvyKPPsJftaBuHLCqDCKgQx0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 01 Jul 2025 21:58:53 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ax3l15m3k2"
-        },
-        {
-          "Name": "label",
-          "Value": "AppReservas_Salas.bundle.scp.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Hvw/a0F7wIZqU2hVTnyhvyKPPsJftaBuHLCqDCKgQx0="
-        }
-      ]
-    },
-    {
-      "Route": "AppReservas_Salas.ax3l15m3k2.styles.css",
-      "AssetFile": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AppReservas_Salas.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5909"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Hvw/a0F7wIZqU2hVTnyhvyKPPsJftaBuHLCqDCKgQx0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 01 Jul 2025 21:58:53 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ax3l15m3k2"
-        },
-        {
-          "Name": "label",
-          "Value": "AppReservas_Salas.styles.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Hvw/a0F7wIZqU2hVTnyhvyKPPsJftaBuHLCqDCKgQx0="
-        }
-      ]
-    },
-    {
-      "Route": "AppReservas_Salas.bundle.scp.css",
-      "AssetFile": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AppReservas_Salas.bundle.scp.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5909"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Hvw/a0F7wIZqU2hVTnyhvyKPPsJftaBuHLCqDCKgQx0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 01 Jul 2025 21:58:53 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Hvw/a0F7wIZqU2hVTnyhvyKPPsJftaBuHLCqDCKgQx0="
-        }
-      ]
-    },
-    {
-      "Route": "AppReservas_Salas.styles.css",
-      "AssetFile": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AppReservas_Salas.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5909"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Hvw/a0F7wIZqU2hVTnyhvyKPPsJftaBuHLCqDCKgQx0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 01 Jul 2025 21:58:53 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Hvw/a0F7wIZqU2hVTnyhvyKPPsJftaBuHLCqDCKgQx0="
-        }
-      ]
-    },
-    {
-      "Route": "bootstrap/bootstrap.min.css",
-      "AssetFile": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\bootstrap\\bootstrap.min.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "163208"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"688+oFCnWCM2G+fuV4pfKiIq1RncfmtiiHDt74fSVlQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 06 Jul 2025 23:29:05 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-688+oFCnWCM2G+fuV4pfKiIq1RncfmtiiHDt74fSVlQ="
-        }
-      ]
-    },
-    {
-      "Route": "bootstrap/bootstrap.min.css.8inm30yfxf.map",
-      "AssetFile": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\bootstrap\\bootstrap.min.css.map",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "449111"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/plain"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 26 Jun 2025 20:18:10 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "8inm30yfxf"
-        },
-        {
-          "Name": "label",
-          "Value": "bootstrap/bootstrap.min.css.map"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
-        }
-      ]
-    },
-    {
-      "Route": "bootstrap/bootstrap.min.css.map",
-      "AssetFile": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\bootstrap\\bootstrap.min.css.map",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "449111"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/plain"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 26 Jun 2025 20:18:10 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
-        }
-      ]
-    },
-    {
-      "Route": "bootstrap/bootstrap.min.zqik8f1y0o.css",
-      "AssetFile": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\bootstrap\\bootstrap.min.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "163208"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"688+oFCnWCM2G+fuV4pfKiIq1RncfmtiiHDt74fSVlQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 06 Jul 2025 23:29:05 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "zqik8f1y0o"
-        },
-        {
-          "Name": "label",
-          "Value": "bootstrap/bootstrap.min.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-688+oFCnWCM2G+fuV4pfKiIq1RncfmtiiHDt74fSVlQ="
-        }
-      ]
-    },
-    {
-      "Route": "favicon.hwdgspyp1r.png",
-      "AssetFile": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\favicon.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "12597"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"n1UrH/IZIT3l8UP6BNNNokTvJzeUAXoGBf/BzC4X0/A=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 07 Jul 2025 02:39:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "hwdgspyp1r"
-        },
-        {
-          "Name": "label",
-          "Value": "favicon.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-n1UrH/IZIT3l8UP6BNNNokTvJzeUAXoGBf/BzC4X0/A="
-        }
-      ]
-    },
-    {
-      "Route": "favicon.png",
-      "AssetFile": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\favicon.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "12597"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"n1UrH/IZIT3l8UP6BNNNokTvJzeUAXoGBf/BzC4X0/A=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 07 Jul 2025 02:39:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-n1UrH/IZIT3l8UP6BNNNokTvJzeUAXoGBf/BzC4X0/A="
-        }
-      ]
-    },
-    {
-      "Route": "RelatoriosTemp/Relatorio_33b99c70-0e76-4407-8ddd-25902398790e.dyqvb0togt.pdf",
-      "AssetFile": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_33b99c70-0e76-4407-8ddd-25902398790e.pdf",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "192939"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/pdf"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"y6rgDSB9dfuDWKP1I7ixiXsLZ7xQRF+MrFBqigkeIYo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 12 Jul 2025 19:40:36 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "dyqvb0togt"
-        },
-        {
-          "Name": "label",
-          "Value": "RelatoriosTemp/Relatorio_33b99c70-0e76-4407-8ddd-25902398790e.pdf"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-y6rgDSB9dfuDWKP1I7ixiXsLZ7xQRF+MrFBqigkeIYo="
-        }
-      ]
-    },
-    {
-      "Route": "RelatoriosTemp/Relatorio_33b99c70-0e76-4407-8ddd-25902398790e.pdf",
-      "AssetFile": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_33b99c70-0e76-4407-8ddd-25902398790e.pdf",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "192939"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/pdf"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"y6rgDSB9dfuDWKP1I7ixiXsLZ7xQRF+MrFBqigkeIYo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 12 Jul 2025 19:40:36 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-y6rgDSB9dfuDWKP1I7ixiXsLZ7xQRF+MrFBqigkeIYo="
-        }
-      ]
-    },
-    {
-      "Route": "RelatoriosTemp/Relatorio_3f0f475a-33f9-4006-a168-30297aba2524.pdf",
-      "AssetFile": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_3f0f475a-33f9-4006-a168-30297aba2524.pdf",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "309054"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/pdf"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Z5o1SkPw70VqctQdqZm1mrSNpywsT42A2a60P7yhjLg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 12 Jul 2025 20:39:51 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Z5o1SkPw70VqctQdqZm1mrSNpywsT42A2a60P7yhjLg="
-        }
-      ]
-    },
-    {
-      "Route": "RelatoriosTemp/Relatorio_3f0f475a-33f9-4006-a168-30297aba2524.vmz8ksbk2o.pdf",
-      "AssetFile": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_3f0f475a-33f9-4006-a168-30297aba2524.pdf",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "309054"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/pdf"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Z5o1SkPw70VqctQdqZm1mrSNpywsT42A2a60P7yhjLg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 12 Jul 2025 20:39:51 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "vmz8ksbk2o"
-        },
-        {
-          "Name": "label",
-          "Value": "RelatoriosTemp/Relatorio_3f0f475a-33f9-4006-a168-30297aba2524.pdf"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Z5o1SkPw70VqctQdqZm1mrSNpywsT42A2a60P7yhjLg="
-        }
-      ]
-    },
-    {
-      "Route": "RelatoriosTemp/Relatorio_4aeedb7a-9893-45fc-9285-26d29e7db3cf.e2k1zpg7k7.pdf",
-      "AssetFile": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_4aeedb7a-9893-45fc-9285-26d29e7db3cf.pdf",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "316080"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/pdf"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"1uIQ+YtJ1l5D8K04IKpIa/UcRtcEMBog1SZAThTUsg8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 12 Jul 2025 20:37:24 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "e2k1zpg7k7"
-        },
-        {
-          "Name": "label",
-          "Value": "RelatoriosTemp/Relatorio_4aeedb7a-9893-45fc-9285-26d29e7db3cf.pdf"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-1uIQ+YtJ1l5D8K04IKpIa/UcRtcEMBog1SZAThTUsg8="
-        }
-      ]
-    },
-    {
-      "Route": "RelatoriosTemp/Relatorio_4aeedb7a-9893-45fc-9285-26d29e7db3cf.pdf",
-      "AssetFile": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_4aeedb7a-9893-45fc-9285-26d29e7db3cf.pdf",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "316080"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/pdf"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"1uIQ+YtJ1l5D8K04IKpIa/UcRtcEMBog1SZAThTUsg8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 12 Jul 2025 20:37:24 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-1uIQ+YtJ1l5D8K04IKpIa/UcRtcEMBog1SZAThTUsg8="
-        }
-      ]
-    },
-    {
-      "Route": "RelatoriosTemp/Relatorio_4fd0bd60-1b7f-4b02-9ee3-82a7382b8c66.5ipweew5fc.pdf",
-      "AssetFile": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_4fd0bd60-1b7f-4b02-9ee3-82a7382b8c66.pdf",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "0"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/pdf"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 12 Jul 2025 20:03:15 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "5ipweew5fc"
-        },
-        {
-          "Name": "label",
-          "Value": "RelatoriosTemp/Relatorio_4fd0bd60-1b7f-4b02-9ee3-82a7382b8c66.pdf"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
-        }
-      ]
-    },
-    {
-      "Route": "RelatoriosTemp/Relatorio_4fd0bd60-1b7f-4b02-9ee3-82a7382b8c66.pdf",
-      "AssetFile": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_4fd0bd60-1b7f-4b02-9ee3-82a7382b8c66.pdf",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "0"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/pdf"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 12 Jul 2025 20:03:15 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
-        }
-      ]
-    },
-    {
-      "Route": "RelatoriosTemp/Relatorio_61300eee-cd26-49ea-b1ef-9e819fd922f6.dyo16d1mx7.pdf",
-      "AssetFile": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_61300eee-cd26-49ea-b1ef-9e819fd922f6.pdf",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "297395"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/pdf"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ayH1sALuDY+0G9UDdAvnASGYWdgq+ZuSALyrFSsCA2k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 12 Jul 2025 20:36:52 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "dyo16d1mx7"
-        },
-        {
-          "Name": "label",
-          "Value": "RelatoriosTemp/Relatorio_61300eee-cd26-49ea-b1ef-9e819fd922f6.pdf"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-ayH1sALuDY+0G9UDdAvnASGYWdgq+ZuSALyrFSsCA2k="
-        }
-      ]
-    },
-    {
-      "Route": "RelatoriosTemp/Relatorio_61300eee-cd26-49ea-b1ef-9e819fd922f6.pdf",
-      "AssetFile": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_61300eee-cd26-49ea-b1ef-9e819fd922f6.pdf",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "297395"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/pdf"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ayH1sALuDY+0G9UDdAvnASGYWdgq+ZuSALyrFSsCA2k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 12 Jul 2025 20:36:52 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-ayH1sALuDY+0G9UDdAvnASGYWdgq+ZuSALyrFSsCA2k="
-        }
-      ]
-    },
-    {
-      "Route": "RelatoriosTemp/Relatorio_6d544a21-8abf-44b6-a74b-ec119238f67c.5ipweew5fc.pdf",
-      "AssetFile": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_6d544a21-8abf-44b6-a74b-ec119238f67c.pdf",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "0"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/pdf"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 12 Jul 2025 20:03:15 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "5ipweew5fc"
-        },
-        {
-          "Name": "label",
-          "Value": "RelatoriosTemp/Relatorio_6d544a21-8abf-44b6-a74b-ec119238f67c.pdf"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
-        }
-      ]
-    },
-    {
-      "Route": "RelatoriosTemp/Relatorio_6d544a21-8abf-44b6-a74b-ec119238f67c.pdf",
-      "AssetFile": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_6d544a21-8abf-44b6-a74b-ec119238f67c.pdf",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "0"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/pdf"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 12 Jul 2025 20:03:15 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
-        }
-      ]
-    },
-    {
-      "Route": "RelatoriosTemp/Relatorio_74c14c4b-822f-481e-8723-0d54e151e500.5ipweew5fc.pdf",
-      "AssetFile": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_74c14c4b-822f-481e-8723-0d54e151e500.pdf",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "0"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/pdf"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 12 Jul 2025 19:29:20 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "5ipweew5fc"
-        },
-        {
-          "Name": "label",
-          "Value": "RelatoriosTemp/Relatorio_74c14c4b-822f-481e-8723-0d54e151e500.pdf"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
-        }
-      ]
-    },
-    {
-      "Route": "RelatoriosTemp/Relatorio_74c14c4b-822f-481e-8723-0d54e151e500.pdf",
-      "AssetFile": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_74c14c4b-822f-481e-8723-0d54e151e500.pdf",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "0"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/pdf"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 12 Jul 2025 19:29:20 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
-        }
-      ]
-    },
-    {
-      "Route": "RelatoriosTemp/Relatorio_d569cb86-ef07-4758-8830-24e09758dcdd.axpdqgxu1d.pdf",
-      "AssetFile": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_d569cb86-ef07-4758-8830-24e09758dcdd.pdf",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "330844"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/pdf"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"fu5vAUxCORldLBQn2H73F0xukAfRXU4uTiFocpCaafU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 12 Jul 2025 20:40:43 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "axpdqgxu1d"
-        },
-        {
-          "Name": "label",
-          "Value": "RelatoriosTemp/Relatorio_d569cb86-ef07-4758-8830-24e09758dcdd.pdf"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-fu5vAUxCORldLBQn2H73F0xukAfRXU4uTiFocpCaafU="
-        }
-      ]
-    },
-    {
-      "Route": "RelatoriosTemp/Relatorio_d569cb86-ef07-4758-8830-24e09758dcdd.pdf",
-      "AssetFile": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_d569cb86-ef07-4758-8830-24e09758dcdd.pdf",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "330844"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/pdf"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"fu5vAUxCORldLBQn2H73F0xukAfRXU4uTiFocpCaafU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 12 Jul 2025 20:40:43 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-fu5vAUxCORldLBQn2H73F0xukAfRXU4uTiFocpCaafU="
-        }
-      ]
-    },
-    {
-      "Route": "RelatoriosTemp/Relatorio_f0ef12b3-1235-4214-884d-29f8d65a48d9.pdf",
-      "AssetFile": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_f0ef12b3-1235-4214-884d-29f8d65a48d9.pdf",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "275419"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/pdf"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"sRVNmb4/mse1xq6eqi5KmK6cMm3oV+D0NZd1eLAGnKY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 12 Jul 2025 20:35:49 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-sRVNmb4/mse1xq6eqi5KmK6cMm3oV+D0NZd1eLAGnKY="
-        }
-      ]
-    },
-    {
-      "Route": "RelatoriosTemp/Relatorio_f0ef12b3-1235-4214-884d-29f8d65a48d9.vckdm3cbkc.pdf",
-      "AssetFile": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_f0ef12b3-1235-4214-884d-29f8d65a48d9.pdf",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "275419"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/pdf"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"sRVNmb4/mse1xq6eqi5KmK6cMm3oV+D0NZd1eLAGnKY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 12 Jul 2025 20:35:49 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "vckdm3cbkc"
-        },
-        {
-          "Name": "label",
-          "Value": "RelatoriosTemp/Relatorio_f0ef12b3-1235-4214-884d-29f8d65a48d9.pdf"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-sRVNmb4/mse1xq6eqi5KmK6cMm3oV+D0NZd1eLAGnKY="
-        }
-      ]
     }
   ]
 }

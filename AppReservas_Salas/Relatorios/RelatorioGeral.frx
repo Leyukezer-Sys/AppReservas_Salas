@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Report ScriptLanguage="CSharp" ReportInfo.Created="07/12/2025 16:00:20" ReportInfo.Modified="07/12/2025 16:51:53" ReportInfo.CreatorVersion="2025.2.0.0">
+<Report ScriptLanguage="CSharp" ReportInfo.Created="07/12/2025 16:00:20" ReportInfo.Modified="07/12/2025 17:19:19" ReportInfo.CreatorVersion="2025.2.0.0">
   <Dictionary>
     <BusinessObjectDataSource Name="lista1" ReferenceName="lista1" DataType="System.Int32" Enabled="true">
       <Column Name="Id" DataType="System.Int32"/>
@@ -9572,30 +9572,28 @@
     <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="75.6">
       <TextObject Name="Text1" Width="718.2" Height="75.6" Fill.Color="Black" Text="RELATÓRIO DAS SALAS" HorzAlign="Center" VertAlign="Center" Font="Arial, 28pt" TextFill.Color="White"/>
     </ReportTitleBand>
-    <DataBand Name="Data1" Top="79.6" Width="718.2" Height="66.15" DataSource="lista1">
+    <DataBand Name="Data1" Top="78.27" Width="718.2" Height="66.15" DataSource="lista1">
       <TextObject Name="Text2" Top="18.9" Width="727.65" Height="47.25" Border.Lines="Bottom" Border.Width="2" Text="[lista1.Nome]" HorzAlign="Center" VertAlign="Center" Font="Arial, 20pt"/>
-      <DataBand Name="Data2" Top="191.55" Width="718.2" Height="37.8" DataSource="lista2">
-        <TextObject Name="Text3" Left="160.65" Width="141.75" Height="37.8" Border.Lines="Bottom" Border.Width="2" Text="[lista2.Numero]" HorzAlign="Center" VertAlign="Center" Font="Arial, 14pt"/>
-        <TextObject Name="Text5" Left="302.4" Width="122.85" Height="37.8" Border.Lines="Bottom" Border.Width="2" Text="[lista2.Bloco]" HorzAlign="Center" VertAlign="Center" Font="Arial, 14pt"/>
-        <TextObject Name="Text6" Left="425.25" Width="141.75" Height="37.8" Border.Lines="Left, Bottom" Border.Width="2" Text="[lista2.Capacidade]" HorzAlign="Center" VertAlign="Center" Font="Arial, 14pt"/>
-        <DataHeaderBand Name="DataHeader1" Top="149.75" Width="718.2" Height="37.8">
-          <TextObject Name="Text4" Left="160.65" Width="264.6" Height="37.8" Text="SALA" VertAlign="Center" Font="Arial, 14pt"/>
-          <TextObject Name="Text7" Left="425.25" Width="141.75" Height="37.8" Text="COMPORTA" HorzAlign="Center" VertAlign="Center" Font="Arial, 14pt"/>
-        </DataHeaderBand>
-        <DataBand Name="Data3" Top="275.15" Width="718.2" Height="37.8" DataSource="lista3">
-          <TextObject Name="Text16" Left="37.8" Width="141.75" Height="37.8" Border.Lines="Left, Right, Bottom" Text="[lista3.DataReserva]" Font="Arial, 10pt"/>
-          <TextObject Name="Text17" Left="179.55" Width="94.5" Height="37.8" Border.Lines="Left, Right, Bottom" Text="[lista3.HoraInicioReserva]" Font="Arial, 10pt"/>
-          <TextObject Name="Text18" Left="274.05" Width="245.7" Height="37.8" Border.Lines="Left, Right, Bottom" Text="[lista3.Usuario.Nome]" Font="Arial, 10pt"/>
-          <TextObject Name="Text19" Left="519.75" Width="151.2" Height="37.8" Border.Lines="Left, Right, Bottom" Text="[lista3.Usuario.Matricula]" Font="Arial, 10pt"/>
-          <DataHeaderBand Name="DataHeader2" Top="233.35" Width="718.2" Height="37.8">
+      <DataBand Name="Data2" Top="147.08" Width="718.2" Height="37.8" DataSource="lista2">
+        <TextObject Name="Text3" Left="141.75" Width="141.75" Height="37.8" Border.Lines="Bottom" Border.Width="2" Text="[lista2.Numero]" HorzAlign="Center" VertAlign="Center" Font="Arial, 14pt"/>
+        <TextObject Name="Text5" Left="283.5" Width="122.85" Height="37.8" Border.Lines="Bottom" Border.Width="2" Text="[lista2.Bloco]" VertAlign="Center" Font="Arial, 14pt"/>
+        <TextObject Name="Text6" Left="557.55" Width="160.65" Height="37.8" Border.Lines="Bottom" Border.Width="2" Text="[lista2.Capacidade]" HorzAlign="Center" VertAlign="Center" Font="Arial, 14pt"/>
+        <TextObject Name="Text4" Width="141.75" Height="37.8" Border.Lines="Bottom" Border.Width="2" Text="SALA:" HorzAlign="Right" VertAlign="Center" Font="Arial, 14pt"/>
+        <TextObject Name="Text7" Left="406.35" Width="151.2" Height="37.8" Border.Lines="Bottom" Border.Width="2" Text="COMPORTA:" HorzAlign="Right" VertAlign="Center" Font="Arial, 14pt"/>
+        <DataBand Name="Data3" Top="228.02" Width="718.2" Height="37.8" DataSource="lista3">
+          <TextObject Name="Text16" Left="37.8" Width="141.75" Height="37.8" Border.Lines="Left, Right, Bottom" Text="[lista3.DataReserva]" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+          <TextObject Name="Text17" Left="179.55" Width="94.5" Height="37.8" Border.Lines="Left, Right, Bottom" Text="[lista3.HoraInicioReserva]" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+          <TextObject Name="Text18" Left="274.05" Width="245.7" Height="37.8" Border.Lines="Left, Right, Bottom" Text="[lista3.Usuario.Nome]" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+          <TextObject Name="Text19" Left="519.75" Width="151.2" Height="37.8" Border.Lines="Left, Right, Bottom" Text="[lista3.Usuario.Matricula]" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt"/>
+          <DataHeaderBand Name="DataHeader2" Top="187.55" Width="718.2" Height="37.8">
             <TextObject Name="Text9" Left="37.8" Width="141.75" Height="37.8" Border.Lines="Bottom" Text="Data" HorzAlign="Center" VertAlign="Center" Font="Arial, 12pt"/>
             <TextObject Name="Text11" Left="179.55" Width="94.5" Height="37.8" Border.Lines="Bottom" Text="Hora Da Reserva" HorzAlign="Center" VertAlign="Center" Font="Arial, 12pt"/>
-            <TextObject Name="Text13" Left="274.05" Width="245.7" Height="37.8" Border.Lines="Bottom" Text="Reservado por" VertAlign="Center" Font="Arial, 12pt"/>
+            <TextObject Name="Text13" Left="274.05" Width="245.7" Height="37.8" Border.Lines="Bottom" Text="Reservado por" HorzAlign="Center" VertAlign="Center" Font="Arial, 12pt"/>
             <TextObject Name="Text15" Left="519.75" Width="151.2" Height="37.8" Border.Lines="Bottom" Text="Matricula" HorzAlign="Center" VertAlign="Center" Font="Arial, 12pt"/>
           </DataHeaderBand>
         </DataBand>
       </DataBand>
     </DataBand>
-    <PageFooterBand Name="PageFooter1" Top="316.95" Width="718.2" Height="18.9"/>
+    <PageFooterBand Name="PageFooter1" Top="268.48" Width="718.2" Height="18.9"/>
   </ReportPage>
 </Report>

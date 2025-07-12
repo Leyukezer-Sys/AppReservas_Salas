@@ -1,64 +1,80 @@
 {
   "Files": [
     {
-      "Id": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AppReservas_Salas.bundle.scp.css",
-      "PackagePath": "staticwebassets\\AppReservas_Salas.ax3l15m3k2.bundle.scp.css"
+      "Id": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AppReservas_Salas.bundle.scp.css",
+      "PackagePath": "staticwebassets\\AppReservas_Salas.bundle.scp.css"
     },
     {
-      "Id": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_33b99c70-0e76-4407-8ddd-25902398790e.pdf",
+      "Id": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_139d46f8-eb75-47b2-a24f-8f0cc5f0a5eb.pdf",
+      "PackagePath": "staticwebassets\\RelatoriosTemp\\Relatorio_139d46f8-eb75-47b2-a24f-8f0cc5f0a5eb.pdf"
+    },
+    {
+      "Id": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_14903b4f-0627-4446-8bae-3cc8bafdb328.pdf",
+      "PackagePath": "staticwebassets\\RelatoriosTemp\\Relatorio_14903b4f-0627-4446-8bae-3cc8bafdb328.pdf"
+    },
+    {
+      "Id": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_2f1b179a-6907-4ee9-beea-e250b2e35533.pdf",
+      "PackagePath": "staticwebassets\\RelatoriosTemp\\Relatorio_2f1b179a-6907-4ee9-beea-e250b2e35533.pdf"
+    },
+    {
+      "Id": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_33b99c70-0e76-4407-8ddd-25902398790e.pdf",
       "PackagePath": "staticwebassets\\RelatoriosTemp\\Relatorio_33b99c70-0e76-4407-8ddd-25902398790e.pdf"
     },
     {
-      "Id": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_3f0f475a-33f9-4006-a168-30297aba2524.pdf",
+      "Id": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_3f0f475a-33f9-4006-a168-30297aba2524.pdf",
       "PackagePath": "staticwebassets\\RelatoriosTemp\\Relatorio_3f0f475a-33f9-4006-a168-30297aba2524.pdf"
     },
     {
-      "Id": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_4aeedb7a-9893-45fc-9285-26d29e7db3cf.pdf",
+      "Id": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_4aeedb7a-9893-45fc-9285-26d29e7db3cf.pdf",
       "PackagePath": "staticwebassets\\RelatoriosTemp\\Relatorio_4aeedb7a-9893-45fc-9285-26d29e7db3cf.pdf"
     },
     {
-      "Id": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_4fd0bd60-1b7f-4b02-9ee3-82a7382b8c66.pdf",
+      "Id": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_4fd0bd60-1b7f-4b02-9ee3-82a7382b8c66.pdf",
       "PackagePath": "staticwebassets\\RelatoriosTemp\\Relatorio_4fd0bd60-1b7f-4b02-9ee3-82a7382b8c66.pdf"
     },
     {
-      "Id": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_61300eee-cd26-49ea-b1ef-9e819fd922f6.pdf",
+      "Id": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_61300eee-cd26-49ea-b1ef-9e819fd922f6.pdf",
       "PackagePath": "staticwebassets\\RelatoriosTemp\\Relatorio_61300eee-cd26-49ea-b1ef-9e819fd922f6.pdf"
     },
     {
-      "Id": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_6d544a21-8abf-44b6-a74b-ec119238f67c.pdf",
+      "Id": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_6d544a21-8abf-44b6-a74b-ec119238f67c.pdf",
       "PackagePath": "staticwebassets\\RelatoriosTemp\\Relatorio_6d544a21-8abf-44b6-a74b-ec119238f67c.pdf"
     },
     {
-      "Id": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_74c14c4b-822f-481e-8723-0d54e151e500.pdf",
+      "Id": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_6edd6db8-f7ac-4654-94e5-3b6850722cd1.pdf",
+      "PackagePath": "staticwebassets\\RelatoriosTemp\\Relatorio_6edd6db8-f7ac-4654-94e5-3b6850722cd1.pdf"
+    },
+    {
+      "Id": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_74c14c4b-822f-481e-8723-0d54e151e500.pdf",
       "PackagePath": "staticwebassets\\RelatoriosTemp\\Relatorio_74c14c4b-822f-481e-8723-0d54e151e500.pdf"
     },
     {
-      "Id": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_d569cb86-ef07-4758-8830-24e09758dcdd.pdf",
+      "Id": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_955a907b-10f6-443c-8de5-ebcb6d4e820f.pdf",
+      "PackagePath": "staticwebassets\\RelatoriosTemp\\Relatorio_955a907b-10f6-443c-8de5-ebcb6d4e820f.pdf"
+    },
+    {
+      "Id": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_d569cb86-ef07-4758-8830-24e09758dcdd.pdf",
       "PackagePath": "staticwebassets\\RelatoriosTemp\\Relatorio_d569cb86-ef07-4758-8830-24e09758dcdd.pdf"
     },
     {
-      "Id": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_f0ef12b3-1235-4214-884d-29f8d65a48d9.pdf",
+      "Id": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\RelatoriosTemp\\Relatorio_f0ef12b3-1235-4214-884d-29f8d65a48d9.pdf",
       "PackagePath": "staticwebassets\\RelatoriosTemp\\Relatorio_f0ef12b3-1235-4214-884d-29f8d65a48d9.pdf"
     },
     {
-      "Id": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\app.css",
+      "Id": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\app.css",
       "PackagePath": "staticwebassets\\app.css"
     },
     {
-      "Id": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Id": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\Leyukezer\\Documents\\GitHub\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\favicon.png",
+      "Id": "C:\\Users\\aaman\\Documents\\ADS\\6° período\\Programação Visual II\\AppReservas_Salas\\AppReservas_Salas\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
-    },
-    {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.AppReservas_Salas.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
-      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.AppReservas_Salas.Microsoft.AspNetCore.StaticWebAssets.props",
