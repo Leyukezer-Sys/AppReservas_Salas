@@ -1,11 +1,9 @@
 ﻿@page "/cadastrarSala"
 @using AppReservas_Salas.Models;
 @using AppReservas_Salas.Controllers;
-@using Microsoft.AspNetCore.Authorization
 @inject SalaController salaController;
 @inject TipoSalaController tipoController;
 @inject NavigationManager navegacao;
-@attribute [Authorize(Roles = "professor")]
 @rendermode InteractiveServer
 
 <PageTitle>Nova Sala</PageTitle>
@@ -27,7 +25,7 @@
         </div>
         <div class="col ms-3">
             <label class="form-label" for="txtBloco">Local (Bloco) da Sala:</label>
-            <input type="text" name="txtBloco" id="txtBloco" @bind="sala.Bloco" class="form-control" placeholder="" />
+            <input type="text" name="txtBloco" id="txtBloco" @bind="sala.Bloco" class="form-control" placeholder="" required/>
         </div>
     </div>
 
@@ -77,9 +75,16 @@
 
     public async Task Salvar()
     {
+        if (string.IsNullOrWhiteSpace(sala.Bloco) ||
+        sala.Capacidade <= 0 || sala.Numero <= 0 || sala.IdTipo <= 0)
+        {
+            // Você pode exibir um alerta ou impedir o salvamento
+            Console.WriteLine("Campos obrigatórios não preenchidos.");
+            return;
+        }
         await salaController.Add(sala);
         await salaController.Salvar();
-        navegacao.NavigateTo("/cadastrarSala", forceLoad: true);
+        navegacao.NavigateTo("/agendarReserva", forceLoad: true);
     }
 
     private async Task SelecionarTipo(ChangeEventArgs e)

@@ -1,6 +1,4 @@
 ﻿@page "/novoUsuario"
-@using Microsoft.AspNetCore.Authorization
-@attribute [AllowAnonymous]
 @using AppReservas_Salas.Controllers
 @using AppReservas_Salas.Models
 @inject UsuarioController usuarioController
@@ -56,7 +54,7 @@
                 <div class="row mt-2">
                     <div class="col ms-3">
                         <label for="txtTipo">Tipo de Usuario:</label>
-                        <select @bind="usuario.IdTipo" class="form-control" name="txtTipo" id="txtTipo">
+                        <select @onchange="SelecionarIdTipo" class="form-control" name="txtTipo" id="txtTipo">
                             <option disabled selected>Selecione o Tipo de Usuário</option>
                             @foreach (var tipo in tipoUsuarios)
                             {
@@ -66,9 +64,10 @@
                     </div>
                 </div>
 
-                <div class="row mt-2">
-                    <div class="col ms-3">
-                        <button class="btn btn-success" @onclick="Salvar" disabled="@enableButton">SALVAR</button>
+                <div class="row my-3">
+                    <div class="col d-flex flex-row ms-3 justify-content-around align-items-center">
+                        <button class="btn btn-warning px-xl-3" @onclick="Voltar">Voltar</button>
+                        <button class="btn btn-success pt-xl-3" @onclick="Salvar" disabled="@enableButton">SALVAR</button>
                     </div>
                 </div>
             </div>
@@ -96,7 +95,11 @@
         await usuarioController.Add(usuario);
         await usuarioController.Salvar();
 
-        navegacao.NavigateTo("/login");
+        navegacao.NavigateTo("/");
+    }
+    public void Voltar()
+    {
+        navegacao.NavigateTo("/");
     }
 
     private void VerificarSenha(ChangeEventArgs e)
@@ -111,6 +114,22 @@
         else
         {
             erroSenha = false;
+            enableButton = false;
+        }
+    }
+
+    public void SelecionarIdTipo(ChangeEventArgs e)
+    {
+        int opcao = Convert.ToInt32(e.Value);
+
+        if(opcao < 1)
+        {
+            enableButton = true;
+        }
+        else
+        {
+
+            usuario.IdTipo = opcao;
             enableButton = false;
         }
     }

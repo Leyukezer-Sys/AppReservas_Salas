@@ -1,0 +1,1527 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="07/11/2025 19:33:02" ReportInfo.Modified="07/11/2025 21:11:32" ReportInfo.CreatorVersion="2025.2.0.0">
+  <Dictionary>
+    <BusinessObjectDataSource Name="lista1" ReferenceName="lista1" DataType="System.Int32" Enabled="true">
+      <Column Name="Id" DataType="System.Int32"/>
+      <Column Name="Nome" DataType="System.String"/>
+      <BusinessObjectDataSource Name="Salas" DataType="System.Int32" Enabled="true">
+        <Column Name="IdSala" DataType="System.Int32"/>
+        <Column Name="Numero" DataType="System.Int32"/>
+        <Column Name="Capacidade" DataType="System.Int32"/>
+        <Column Name="Bloco" DataType="System.String"/>
+        <Column Name="IdTipo" DataType="System.Int32"/>
+        <Column Name="Tipo" DataType="System.Int32">
+          <Column Name="Id" DataType="System.Int32"/>
+          <Column Name="Nome" DataType="System.String"/>
+          <BusinessObjectDataSource Name="Salas1" Alias="Salas" DataType="System.Int32" PropName="Salas" Enabled="true">
+            <Column Name="IdSala" DataType="System.Int32"/>
+            <Column Name="Numero" DataType="System.Int32"/>
+            <Column Name="Capacidade" DataType="System.Int32"/>
+            <Column Name="Bloco" DataType="System.String"/>
+            <Column Name="IdTipo" DataType="System.Int32"/>
+            <Column Name="Tipo" DataType="System.Int32">
+              <Column Name="Id" DataType="System.Int32"/>
+              <Column Name="Nome" DataType="System.String"/>
+              <BusinessObjectDataSource Name="Salas2" Alias="Salas" DataType="System.Int32" PropName="Salas" Enabled="true">
+                <Column Name="IdSala" DataType="System.Int32"/>
+                <Column Name="Numero" DataType="System.Int32"/>
+                <Column Name="Capacidade" DataType="System.Int32"/>
+                <Column Name="Bloco" DataType="System.String"/>
+                <Column Name="IdTipo" DataType="System.Int32"/>
+                <Column Name="Tipo" DataType="System.Int32">
+                  <Column Name="Id" DataType="System.Int32"/>
+                  <Column Name="Nome" DataType="System.String"/>
+                  <BusinessObjectDataSource Name="Salas3" Alias="Salas" DataType="System.Int32" PropName="Salas" Enabled="true">
+                    <Column Name="IdSala" DataType="System.Int32"/>
+                    <Column Name="Numero" DataType="System.Int32"/>
+                    <Column Name="Capacidade" DataType="System.Int32"/>
+                    <Column Name="Bloco" DataType="System.String"/>
+                    <Column Name="IdTipo" DataType="System.Int32"/>
+                    <Column Name="Tipo" DataType="System.Int32">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="Nome" DataType="System.String"/>
+                      <BusinessObjectDataSource Name="Salas4" Alias="Salas" DataType="System.Int32" PropName="Salas" Enabled="true">
+                        <Column Name="IdSala" DataType="System.Int32"/>
+                        <Column Name="Numero" DataType="System.Int32"/>
+                        <Column Name="Capacidade" DataType="System.Int32"/>
+                        <Column Name="Bloco" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas" Enabled="false" DataType="System.Int32"/>
+                      </BusinessObjectDataSource>
+                    </Column>
+                    <BusinessObjectDataSource Name="Reservas1" Alias="Reservas" DataType="System.Int32" PropName="Reservas" Enabled="true">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="DataReserva" DataType="System.DateTime"/>
+                      <Column Name="HoraInicioReserva" DataType="System.Int32"/>
+                      <Column Name="HoraFimReserva" DataType="System.Int32"/>
+                      <Column Name="IdUsuario" DataType="System.Int32"/>
+                      <Column Name="Usuario" DataType="System.Int32">
+                        <Column Name="IdUsuario" DataType="System.Int32"/>
+                        <Column Name="Nome" DataType="System.String"/>
+                        <Column Name="Matricula" DataType="System.String"/>
+                        <Column Name="Senha" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas2" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                      <Column Name="IdSala" DataType="System.Int32"/>
+                      <Column Name="Sala" DataType="System.Int32">
+                        <Column Name="IdSala" DataType="System.Int32"/>
+                        <Column Name="Numero" DataType="System.Int32"/>
+                        <Column Name="Capacidade" DataType="System.Int32"/>
+                        <Column Name="Bloco" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas3" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                    </BusinessObjectDataSource>
+                  </BusinessObjectDataSource>
+                </Column>
+                <BusinessObjectDataSource Name="Reservas4" Alias="Reservas" DataType="System.Int32" PropName="Reservas" Enabled="true">
+                  <Column Name="Id" DataType="System.Int32"/>
+                  <Column Name="DataReserva" DataType="System.DateTime"/>
+                  <Column Name="HoraInicioReserva" DataType="System.Int32"/>
+                  <Column Name="HoraFimReserva" DataType="System.Int32"/>
+                  <Column Name="IdUsuario" DataType="System.Int32"/>
+                  <Column Name="Usuario" DataType="System.Int32">
+                    <Column Name="IdUsuario" DataType="System.Int32"/>
+                    <Column Name="Nome" DataType="System.String"/>
+                    <Column Name="Matricula" DataType="System.String"/>
+                    <Column Name="Senha" DataType="System.String"/>
+                    <Column Name="IdTipo" DataType="System.Int32"/>
+                    <Column Name="Tipo" DataType="System.Int32">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="Nome" DataType="System.String"/>
+                      <BusinessObjectDataSource Name="Usuarios" DataType="System.Int32" Enabled="true">
+                        <Column Name="IdUsuario" DataType="System.Int32"/>
+                        <Column Name="Nome" DataType="System.String"/>
+                        <Column Name="Matricula" DataType="System.String"/>
+                        <Column Name="Senha" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas5" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </BusinessObjectDataSource>
+                    </Column>
+                    <BusinessObjectDataSource Name="Reservas6" Alias="Reservas" DataType="System.Int32" PropName="Reservas" Enabled="true">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="DataReserva" DataType="System.DateTime"/>
+                      <Column Name="HoraInicioReserva" DataType="System.Int32"/>
+                      <Column Name="HoraFimReserva" DataType="System.Int32"/>
+                      <Column Name="IdUsuario" DataType="System.Int32"/>
+                      <Column Name="Usuario" DataType="System.Int32">
+                        <Column Name="IdUsuario" DataType="System.Int32"/>
+                        <Column Name="Nome" DataType="System.String"/>
+                        <Column Name="Matricula" DataType="System.String"/>
+                        <Column Name="Senha" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas7" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                      <Column Name="IdSala" DataType="System.Int32"/>
+                      <Column Name="Sala" DataType="System.Int32">
+                        <Column Name="IdSala" DataType="System.Int32"/>
+                        <Column Name="Numero" DataType="System.Int32"/>
+                        <Column Name="Capacidade" DataType="System.Int32"/>
+                        <Column Name="Bloco" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas8" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                    </BusinessObjectDataSource>
+                  </Column>
+                  <Column Name="IdSala" DataType="System.Int32"/>
+                  <Column Name="Sala" DataType="System.Int32">
+                    <Column Name="IdSala" DataType="System.Int32"/>
+                    <Column Name="Numero" DataType="System.Int32"/>
+                    <Column Name="Capacidade" DataType="System.Int32"/>
+                    <Column Name="Bloco" DataType="System.String"/>
+                    <Column Name="IdTipo" DataType="System.Int32"/>
+                    <Column Name="Tipo" DataType="System.Int32">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="Nome" DataType="System.String"/>
+                      <BusinessObjectDataSource Name="Salas5" Alias="Salas" DataType="System.Int32" PropName="Salas" Enabled="true">
+                        <Column Name="IdSala" DataType="System.Int32"/>
+                        <Column Name="Numero" DataType="System.Int32"/>
+                        <Column Name="Capacidade" DataType="System.Int32"/>
+                        <Column Name="Bloco" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas9" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </BusinessObjectDataSource>
+                    </Column>
+                    <BusinessObjectDataSource Name="Reservas10" Alias="Reservas" DataType="System.Int32" PropName="Reservas" Enabled="true">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="DataReserva" DataType="System.DateTime"/>
+                      <Column Name="HoraInicioReserva" DataType="System.Int32"/>
+                      <Column Name="HoraFimReserva" DataType="System.Int32"/>
+                      <Column Name="IdUsuario" DataType="System.Int32"/>
+                      <Column Name="Usuario" DataType="System.Int32">
+                        <Column Name="IdUsuario" DataType="System.Int32"/>
+                        <Column Name="Nome" DataType="System.String"/>
+                        <Column Name="Matricula" DataType="System.String"/>
+                        <Column Name="Senha" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas11" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                      <Column Name="IdSala" DataType="System.Int32"/>
+                      <Column Name="Sala" DataType="System.Int32">
+                        <Column Name="IdSala" DataType="System.Int32"/>
+                        <Column Name="Numero" DataType="System.Int32"/>
+                        <Column Name="Capacidade" DataType="System.Int32"/>
+                        <Column Name="Bloco" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas12" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                    </BusinessObjectDataSource>
+                  </Column>
+                </BusinessObjectDataSource>
+              </BusinessObjectDataSource>
+            </Column>
+            <BusinessObjectDataSource Name="Reservas13" Alias="Reservas" DataType="System.Int32" PropName="Reservas" Enabled="true">
+              <Column Name="Id" DataType="System.Int32"/>
+              <Column Name="DataReserva" DataType="System.DateTime"/>
+              <Column Name="HoraInicioReserva" DataType="System.Int32"/>
+              <Column Name="HoraFimReserva" DataType="System.Int32"/>
+              <Column Name="IdUsuario" DataType="System.Int32"/>
+              <Column Name="Usuario" DataType="System.Int32">
+                <Column Name="IdUsuario" DataType="System.Int32"/>
+                <Column Name="Nome" DataType="System.String"/>
+                <Column Name="Matricula" DataType="System.String"/>
+                <Column Name="Senha" DataType="System.String"/>
+                <Column Name="IdTipo" DataType="System.Int32"/>
+                <Column Name="Tipo" DataType="System.Int32">
+                  <Column Name="Id" DataType="System.Int32"/>
+                  <Column Name="Nome" DataType="System.String"/>
+                  <BusinessObjectDataSource Name="Usuarios1" Alias="Usuarios" DataType="System.Int32" PropName="Usuarios" Enabled="true">
+                    <Column Name="IdUsuario" DataType="System.Int32"/>
+                    <Column Name="Nome" DataType="System.String"/>
+                    <Column Name="Matricula" DataType="System.String"/>
+                    <Column Name="Senha" DataType="System.String"/>
+                    <Column Name="IdTipo" DataType="System.Int32"/>
+                    <Column Name="Tipo" DataType="System.Int32">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="Nome" DataType="System.String"/>
+                      <BusinessObjectDataSource Name="Usuarios2" Alias="Usuarios" DataType="System.Int32" PropName="Usuarios" Enabled="true">
+                        <Column Name="IdUsuario" DataType="System.Int32"/>
+                        <Column Name="Nome" DataType="System.String"/>
+                        <Column Name="Matricula" DataType="System.String"/>
+                        <Column Name="Senha" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas14" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </BusinessObjectDataSource>
+                    </Column>
+                    <BusinessObjectDataSource Name="Reservas15" Alias="Reservas" DataType="System.Int32" PropName="Reservas" Enabled="true">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="DataReserva" DataType="System.DateTime"/>
+                      <Column Name="HoraInicioReserva" DataType="System.Int32"/>
+                      <Column Name="HoraFimReserva" DataType="System.Int32"/>
+                      <Column Name="IdUsuario" DataType="System.Int32"/>
+                      <Column Name="Usuario" DataType="System.Int32">
+                        <Column Name="IdUsuario" DataType="System.Int32"/>
+                        <Column Name="Nome" DataType="System.String"/>
+                        <Column Name="Matricula" DataType="System.String"/>
+                        <Column Name="Senha" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas16" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                      <Column Name="IdSala" DataType="System.Int32"/>
+                      <Column Name="Sala" DataType="System.Int32">
+                        <Column Name="IdSala" DataType="System.Int32"/>
+                        <Column Name="Numero" DataType="System.Int32"/>
+                        <Column Name="Capacidade" DataType="System.Int32"/>
+                        <Column Name="Bloco" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas17" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                    </BusinessObjectDataSource>
+                  </BusinessObjectDataSource>
+                </Column>
+                <BusinessObjectDataSource Name="Reservas18" Alias="Reservas" DataType="System.Int32" PropName="Reservas" Enabled="true">
+                  <Column Name="Id" DataType="System.Int32"/>
+                  <Column Name="DataReserva" DataType="System.DateTime"/>
+                  <Column Name="HoraInicioReserva" DataType="System.Int32"/>
+                  <Column Name="HoraFimReserva" DataType="System.Int32"/>
+                  <Column Name="IdUsuario" DataType="System.Int32"/>
+                  <Column Name="Usuario" DataType="System.Int32">
+                    <Column Name="IdUsuario" DataType="System.Int32"/>
+                    <Column Name="Nome" DataType="System.String"/>
+                    <Column Name="Matricula" DataType="System.String"/>
+                    <Column Name="Senha" DataType="System.String"/>
+                    <Column Name="IdTipo" DataType="System.Int32"/>
+                    <Column Name="Tipo" DataType="System.Int32">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="Nome" DataType="System.String"/>
+                      <BusinessObjectDataSource Name="Usuarios3" Alias="Usuarios" DataType="System.Int32" PropName="Usuarios" Enabled="true">
+                        <Column Name="IdUsuario" DataType="System.Int32"/>
+                        <Column Name="Nome" DataType="System.String"/>
+                        <Column Name="Matricula" DataType="System.String"/>
+                        <Column Name="Senha" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas19" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </BusinessObjectDataSource>
+                    </Column>
+                    <BusinessObjectDataSource Name="Reservas20" Alias="Reservas" DataType="System.Int32" PropName="Reservas" Enabled="true">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="DataReserva" DataType="System.DateTime"/>
+                      <Column Name="HoraInicioReserva" DataType="System.Int32"/>
+                      <Column Name="HoraFimReserva" DataType="System.Int32"/>
+                      <Column Name="IdUsuario" DataType="System.Int32"/>
+                      <Column Name="Usuario" DataType="System.Int32">
+                        <Column Name="IdUsuario" DataType="System.Int32"/>
+                        <Column Name="Nome" DataType="System.String"/>
+                        <Column Name="Matricula" DataType="System.String"/>
+                        <Column Name="Senha" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas21" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                      <Column Name="IdSala" DataType="System.Int32"/>
+                      <Column Name="Sala" DataType="System.Int32">
+                        <Column Name="IdSala" DataType="System.Int32"/>
+                        <Column Name="Numero" DataType="System.Int32"/>
+                        <Column Name="Capacidade" DataType="System.Int32"/>
+                        <Column Name="Bloco" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas22" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                    </BusinessObjectDataSource>
+                  </Column>
+                  <Column Name="IdSala" DataType="System.Int32"/>
+                  <Column Name="Sala" DataType="System.Int32">
+                    <Column Name="IdSala" DataType="System.Int32"/>
+                    <Column Name="Numero" DataType="System.Int32"/>
+                    <Column Name="Capacidade" DataType="System.Int32"/>
+                    <Column Name="Bloco" DataType="System.String"/>
+                    <Column Name="IdTipo" DataType="System.Int32"/>
+                    <Column Name="Tipo" DataType="System.Int32">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="Nome" DataType="System.String"/>
+                      <BusinessObjectDataSource Name="Salas6" Alias="Salas" DataType="System.Int32" PropName="Salas" Enabled="true">
+                        <Column Name="IdSala" DataType="System.Int32"/>
+                        <Column Name="Numero" DataType="System.Int32"/>
+                        <Column Name="Capacidade" DataType="System.Int32"/>
+                        <Column Name="Bloco" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas23" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </BusinessObjectDataSource>
+                    </Column>
+                    <BusinessObjectDataSource Name="Reservas24" Alias="Reservas" DataType="System.Int32" PropName="Reservas" Enabled="true">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="DataReserva" DataType="System.DateTime"/>
+                      <Column Name="HoraInicioReserva" DataType="System.Int32"/>
+                      <Column Name="HoraFimReserva" DataType="System.Int32"/>
+                      <Column Name="IdUsuario" DataType="System.Int32"/>
+                      <Column Name="Usuario" DataType="System.Int32">
+                        <Column Name="IdUsuario" DataType="System.Int32"/>
+                        <Column Name="Nome" DataType="System.String"/>
+                        <Column Name="Matricula" DataType="System.String"/>
+                        <Column Name="Senha" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas25" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                      <Column Name="IdSala" DataType="System.Int32"/>
+                      <Column Name="Sala" DataType="System.Int32">
+                        <Column Name="IdSala" DataType="System.Int32"/>
+                        <Column Name="Numero" DataType="System.Int32"/>
+                        <Column Name="Capacidade" DataType="System.Int32"/>
+                        <Column Name="Bloco" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas26" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                    </BusinessObjectDataSource>
+                  </Column>
+                </BusinessObjectDataSource>
+              </Column>
+              <Column Name="IdSala" DataType="System.Int32"/>
+              <Column Name="Sala" DataType="System.Int32">
+                <Column Name="IdSala" DataType="System.Int32"/>
+                <Column Name="Numero" DataType="System.Int32"/>
+                <Column Name="Capacidade" DataType="System.Int32"/>
+                <Column Name="Bloco" DataType="System.String"/>
+                <Column Name="IdTipo" DataType="System.Int32"/>
+                <Column Name="Tipo" DataType="System.Int32">
+                  <Column Name="Id" DataType="System.Int32"/>
+                  <Column Name="Nome" DataType="System.String"/>
+                  <BusinessObjectDataSource Name="Salas7" Alias="Salas" DataType="System.Int32" PropName="Salas" Enabled="true">
+                    <Column Name="IdSala" DataType="System.Int32"/>
+                    <Column Name="Numero" DataType="System.Int32"/>
+                    <Column Name="Capacidade" DataType="System.Int32"/>
+                    <Column Name="Bloco" DataType="System.String"/>
+                    <Column Name="IdTipo" DataType="System.Int32"/>
+                    <Column Name="Tipo" DataType="System.Int32">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="Nome" DataType="System.String"/>
+                      <BusinessObjectDataSource Name="Salas8" Alias="Salas" DataType="System.Int32" PropName="Salas" Enabled="true">
+                        <Column Name="IdSala" DataType="System.Int32"/>
+                        <Column Name="Numero" DataType="System.Int32"/>
+                        <Column Name="Capacidade" DataType="System.Int32"/>
+                        <Column Name="Bloco" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas27" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </BusinessObjectDataSource>
+                    </Column>
+                    <BusinessObjectDataSource Name="Reservas28" Alias="Reservas" DataType="System.Int32" PropName="Reservas" Enabled="true">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="DataReserva" DataType="System.DateTime"/>
+                      <Column Name="HoraInicioReserva" DataType="System.Int32"/>
+                      <Column Name="HoraFimReserva" DataType="System.Int32"/>
+                      <Column Name="IdUsuario" DataType="System.Int32"/>
+                      <Column Name="Usuario" DataType="System.Int32">
+                        <Column Name="IdUsuario" DataType="System.Int32"/>
+                        <Column Name="Nome" DataType="System.String"/>
+                        <Column Name="Matricula" DataType="System.String"/>
+                        <Column Name="Senha" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas29" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                      <Column Name="IdSala" DataType="System.Int32"/>
+                      <Column Name="Sala" DataType="System.Int32">
+                        <Column Name="IdSala" DataType="System.Int32"/>
+                        <Column Name="Numero" DataType="System.Int32"/>
+                        <Column Name="Capacidade" DataType="System.Int32"/>
+                        <Column Name="Bloco" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas30" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                    </BusinessObjectDataSource>
+                  </BusinessObjectDataSource>
+                </Column>
+                <BusinessObjectDataSource Name="Reservas31" Alias="Reservas" DataType="System.Int32" PropName="Reservas" Enabled="true">
+                  <Column Name="Id" DataType="System.Int32"/>
+                  <Column Name="DataReserva" DataType="System.DateTime"/>
+                  <Column Name="HoraInicioReserva" DataType="System.Int32"/>
+                  <Column Name="HoraFimReserva" DataType="System.Int32"/>
+                  <Column Name="IdUsuario" DataType="System.Int32"/>
+                  <Column Name="Usuario" DataType="System.Int32">
+                    <Column Name="IdUsuario" DataType="System.Int32"/>
+                    <Column Name="Nome" DataType="System.String"/>
+                    <Column Name="Matricula" DataType="System.String"/>
+                    <Column Name="Senha" DataType="System.String"/>
+                    <Column Name="IdTipo" DataType="System.Int32"/>
+                    <Column Name="Tipo" DataType="System.Int32">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="Nome" DataType="System.String"/>
+                      <BusinessObjectDataSource Name="Usuarios4" Alias="Usuarios" DataType="System.Int32" PropName="Usuarios" Enabled="true">
+                        <Column Name="IdUsuario" DataType="System.Int32"/>
+                        <Column Name="Nome" DataType="System.String"/>
+                        <Column Name="Matricula" DataType="System.String"/>
+                        <Column Name="Senha" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas32" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </BusinessObjectDataSource>
+                    </Column>
+                    <BusinessObjectDataSource Name="Reservas33" Alias="Reservas" DataType="System.Int32" PropName="Reservas" Enabled="true">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="DataReserva" DataType="System.DateTime"/>
+                      <Column Name="HoraInicioReserva" DataType="System.Int32"/>
+                      <Column Name="HoraFimReserva" DataType="System.Int32"/>
+                      <Column Name="IdUsuario" DataType="System.Int32"/>
+                      <Column Name="Usuario" DataType="System.Int32">
+                        <Column Name="IdUsuario" DataType="System.Int32"/>
+                        <Column Name="Nome" DataType="System.String"/>
+                        <Column Name="Matricula" DataType="System.String"/>
+                        <Column Name="Senha" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas34" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                      <Column Name="IdSala" DataType="System.Int32"/>
+                      <Column Name="Sala" DataType="System.Int32">
+                        <Column Name="IdSala" DataType="System.Int32"/>
+                        <Column Name="Numero" DataType="System.Int32"/>
+                        <Column Name="Capacidade" DataType="System.Int32"/>
+                        <Column Name="Bloco" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas35" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                    </BusinessObjectDataSource>
+                  </Column>
+                  <Column Name="IdSala" DataType="System.Int32"/>
+                  <Column Name="Sala" DataType="System.Int32">
+                    <Column Name="IdSala" DataType="System.Int32"/>
+                    <Column Name="Numero" DataType="System.Int32"/>
+                    <Column Name="Capacidade" DataType="System.Int32"/>
+                    <Column Name="Bloco" DataType="System.String"/>
+                    <Column Name="IdTipo" DataType="System.Int32"/>
+                    <Column Name="Tipo" DataType="System.Int32">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="Nome" DataType="System.String"/>
+                      <BusinessObjectDataSource Name="Salas9" Alias="Salas" DataType="System.Int32" PropName="Salas" Enabled="true">
+                        <Column Name="IdSala" DataType="System.Int32"/>
+                        <Column Name="Numero" DataType="System.Int32"/>
+                        <Column Name="Capacidade" DataType="System.Int32"/>
+                        <Column Name="Bloco" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas36" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </BusinessObjectDataSource>
+                    </Column>
+                    <BusinessObjectDataSource Name="Reservas37" Alias="Reservas" DataType="System.Int32" PropName="Reservas" Enabled="true">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="DataReserva" DataType="System.DateTime"/>
+                      <Column Name="HoraInicioReserva" DataType="System.Int32"/>
+                      <Column Name="HoraFimReserva" DataType="System.Int32"/>
+                      <Column Name="IdUsuario" DataType="System.Int32"/>
+                      <Column Name="Usuario" DataType="System.Int32">
+                        <Column Name="IdUsuario" DataType="System.Int32"/>
+                        <Column Name="Nome" DataType="System.String"/>
+                        <Column Name="Matricula" DataType="System.String"/>
+                        <Column Name="Senha" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas38" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                      <Column Name="IdSala" DataType="System.Int32"/>
+                      <Column Name="Sala" DataType="System.Int32">
+                        <Column Name="IdSala" DataType="System.Int32"/>
+                        <Column Name="Numero" DataType="System.Int32"/>
+                        <Column Name="Capacidade" DataType="System.Int32"/>
+                        <Column Name="Bloco" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas39" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                    </BusinessObjectDataSource>
+                  </Column>
+                </BusinessObjectDataSource>
+              </Column>
+            </BusinessObjectDataSource>
+          </BusinessObjectDataSource>
+        </Column>
+        <BusinessObjectDataSource Name="Reservas40" Alias="Reservas" DataType="System.Int32" PropName="Reservas" Enabled="true">
+          <Column Name="Id" DataType="System.Int32"/>
+          <Column Name="DataReserva" DataType="System.DateTime" Format="Date"/>
+          <Column Name="HoraInicioReserva" DataType="System.Int32"/>
+          <Column Name="HoraFimReserva" DataType="System.Int32"/>
+          <Column Name="IdUsuario" DataType="System.Int32"/>
+          <Column Name="Usuario" DataType="System.Int32">
+            <Column Name="IdUsuario" DataType="System.Int32"/>
+            <Column Name="Nome" DataType="System.String"/>
+            <Column Name="Matricula" DataType="System.String"/>
+            <Column Name="Senha" DataType="System.String"/>
+            <Column Name="IdTipo" DataType="System.Int32"/>
+            <Column Name="Tipo" DataType="System.Int32">
+              <Column Name="Id" DataType="System.Int32"/>
+              <Column Name="Nome" DataType="System.String"/>
+              <BusinessObjectDataSource Name="Usuarios5" Alias="Usuarios" DataType="System.Int32" PropName="Usuarios" Enabled="true">
+                <Column Name="IdUsuario" DataType="System.Int32"/>
+                <Column Name="Nome" DataType="System.String"/>
+                <Column Name="Matricula" DataType="System.String"/>
+                <Column Name="Senha" DataType="System.String"/>
+                <Column Name="IdTipo" DataType="System.Int32"/>
+                <Column Name="Tipo" DataType="System.Int32">
+                  <Column Name="Id" DataType="System.Int32"/>
+                  <Column Name="Nome" DataType="System.String"/>
+                  <BusinessObjectDataSource Name="Usuarios6" Alias="Usuarios" DataType="System.Int32" PropName="Usuarios" Enabled="true">
+                    <Column Name="IdUsuario" DataType="System.Int32"/>
+                    <Column Name="Nome" DataType="System.String"/>
+                    <Column Name="Matricula" DataType="System.String"/>
+                    <Column Name="Senha" DataType="System.String"/>
+                    <Column Name="IdTipo" DataType="System.Int32"/>
+                    <Column Name="Tipo" DataType="System.Int32">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="Nome" DataType="System.String"/>
+                      <BusinessObjectDataSource Name="Usuarios7" Alias="Usuarios" DataType="System.Int32" PropName="Usuarios" Enabled="true">
+                        <Column Name="IdUsuario" DataType="System.Int32"/>
+                        <Column Name="Nome" DataType="System.String"/>
+                        <Column Name="Matricula" DataType="System.String"/>
+                        <Column Name="Senha" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas41" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </BusinessObjectDataSource>
+                    </Column>
+                    <BusinessObjectDataSource Name="Reservas42" Alias="Reservas" DataType="System.Int32" PropName="Reservas" Enabled="true">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="DataReserva" DataType="System.DateTime"/>
+                      <Column Name="HoraInicioReserva" DataType="System.Int32"/>
+                      <Column Name="HoraFimReserva" DataType="System.Int32"/>
+                      <Column Name="IdUsuario" DataType="System.Int32"/>
+                      <Column Name="Usuario" DataType="System.Int32">
+                        <Column Name="IdUsuario" DataType="System.Int32"/>
+                        <Column Name="Nome" DataType="System.String"/>
+                        <Column Name="Matricula" DataType="System.String"/>
+                        <Column Name="Senha" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas43" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                      <Column Name="IdSala" DataType="System.Int32"/>
+                      <Column Name="Sala" DataType="System.Int32">
+                        <Column Name="IdSala" DataType="System.Int32"/>
+                        <Column Name="Numero" DataType="System.Int32"/>
+                        <Column Name="Capacidade" DataType="System.Int32"/>
+                        <Column Name="Bloco" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas44" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                    </BusinessObjectDataSource>
+                  </BusinessObjectDataSource>
+                </Column>
+                <BusinessObjectDataSource Name="Reservas45" Alias="Reservas" DataType="System.Int32" PropName="Reservas" Enabled="true">
+                  <Column Name="Id" DataType="System.Int32"/>
+                  <Column Name="DataReserva" DataType="System.DateTime"/>
+                  <Column Name="HoraInicioReserva" DataType="System.Int32"/>
+                  <Column Name="HoraFimReserva" DataType="System.Int32"/>
+                  <Column Name="IdUsuario" DataType="System.Int32"/>
+                  <Column Name="Usuario" DataType="System.Int32">
+                    <Column Name="IdUsuario" DataType="System.Int32"/>
+                    <Column Name="Nome" DataType="System.String"/>
+                    <Column Name="Matricula" DataType="System.String"/>
+                    <Column Name="Senha" DataType="System.String"/>
+                    <Column Name="IdTipo" DataType="System.Int32"/>
+                    <Column Name="Tipo" DataType="System.Int32">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="Nome" DataType="System.String"/>
+                      <BusinessObjectDataSource Name="Usuarios8" Alias="Usuarios" DataType="System.Int32" PropName="Usuarios" Enabled="true">
+                        <Column Name="IdUsuario" DataType="System.Int32"/>
+                        <Column Name="Nome" DataType="System.String"/>
+                        <Column Name="Matricula" DataType="System.String"/>
+                        <Column Name="Senha" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas46" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </BusinessObjectDataSource>
+                    </Column>
+                    <BusinessObjectDataSource Name="Reservas47" Alias="Reservas" DataType="System.Int32" PropName="Reservas" Enabled="true">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="DataReserva" DataType="System.DateTime"/>
+                      <Column Name="HoraInicioReserva" DataType="System.Int32"/>
+                      <Column Name="HoraFimReserva" DataType="System.Int32"/>
+                      <Column Name="IdUsuario" DataType="System.Int32"/>
+                      <Column Name="Usuario" DataType="System.Int32">
+                        <Column Name="IdUsuario" DataType="System.Int32"/>
+                        <Column Name="Nome" DataType="System.String"/>
+                        <Column Name="Matricula" DataType="System.String"/>
+                        <Column Name="Senha" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas48" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                      <Column Name="IdSala" DataType="System.Int32"/>
+                      <Column Name="Sala" DataType="System.Int32">
+                        <Column Name="IdSala" DataType="System.Int32"/>
+                        <Column Name="Numero" DataType="System.Int32"/>
+                        <Column Name="Capacidade" DataType="System.Int32"/>
+                        <Column Name="Bloco" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas49" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                    </BusinessObjectDataSource>
+                  </Column>
+                  <Column Name="IdSala" DataType="System.Int32"/>
+                  <Column Name="Sala" DataType="System.Int32">
+                    <Column Name="IdSala" DataType="System.Int32"/>
+                    <Column Name="Numero" DataType="System.Int32"/>
+                    <Column Name="Capacidade" DataType="System.Int32"/>
+                    <Column Name="Bloco" DataType="System.String"/>
+                    <Column Name="IdTipo" DataType="System.Int32"/>
+                    <Column Name="Tipo" DataType="System.Int32">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="Nome" DataType="System.String"/>
+                      <BusinessObjectDataSource Name="Salas10" Alias="Salas" DataType="System.Int32" PropName="Salas" Enabled="true">
+                        <Column Name="IdSala" DataType="System.Int32"/>
+                        <Column Name="Numero" DataType="System.Int32"/>
+                        <Column Name="Capacidade" DataType="System.Int32"/>
+                        <Column Name="Bloco" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas50" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </BusinessObjectDataSource>
+                    </Column>
+                    <BusinessObjectDataSource Name="Reservas51" Alias="Reservas" DataType="System.Int32" PropName="Reservas" Enabled="true">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="DataReserva" DataType="System.DateTime"/>
+                      <Column Name="HoraInicioReserva" DataType="System.Int32"/>
+                      <Column Name="HoraFimReserva" DataType="System.Int32"/>
+                      <Column Name="IdUsuario" DataType="System.Int32"/>
+                      <Column Name="Usuario" DataType="System.Int32">
+                        <Column Name="IdUsuario" DataType="System.Int32"/>
+                        <Column Name="Nome" DataType="System.String"/>
+                        <Column Name="Matricula" DataType="System.String"/>
+                        <Column Name="Senha" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas52" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                      <Column Name="IdSala" DataType="System.Int32"/>
+                      <Column Name="Sala" DataType="System.Int32">
+                        <Column Name="IdSala" DataType="System.Int32"/>
+                        <Column Name="Numero" DataType="System.Int32"/>
+                        <Column Name="Capacidade" DataType="System.Int32"/>
+                        <Column Name="Bloco" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas53" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                    </BusinessObjectDataSource>
+                  </Column>
+                </BusinessObjectDataSource>
+              </BusinessObjectDataSource>
+            </Column>
+            <BusinessObjectDataSource Name="Reservas54" Alias="Reservas" DataType="System.Int32" PropName="Reservas" Enabled="true">
+              <Column Name="Id" DataType="System.Int32"/>
+              <Column Name="DataReserva" DataType="System.DateTime"/>
+              <Column Name="HoraInicioReserva" DataType="System.Int32"/>
+              <Column Name="HoraFimReserva" DataType="System.Int32"/>
+              <Column Name="IdUsuario" DataType="System.Int32"/>
+              <Column Name="Usuario" DataType="System.Int32">
+                <Column Name="IdUsuario" DataType="System.Int32"/>
+                <Column Name="Nome" DataType="System.String"/>
+                <Column Name="Matricula" DataType="System.String"/>
+                <Column Name="Senha" DataType="System.String"/>
+                <Column Name="IdTipo" DataType="System.Int32"/>
+                <Column Name="Tipo" DataType="System.Int32">
+                  <Column Name="Id" DataType="System.Int32"/>
+                  <Column Name="Nome" DataType="System.String"/>
+                  <BusinessObjectDataSource Name="Usuarios9" Alias="Usuarios" DataType="System.Int32" PropName="Usuarios" Enabled="true">
+                    <Column Name="IdUsuario" DataType="System.Int32"/>
+                    <Column Name="Nome" DataType="System.String"/>
+                    <Column Name="Matricula" DataType="System.String"/>
+                    <Column Name="Senha" DataType="System.String"/>
+                    <Column Name="IdTipo" DataType="System.Int32"/>
+                    <Column Name="Tipo" DataType="System.Int32">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="Nome" DataType="System.String"/>
+                      <BusinessObjectDataSource Name="Usuarios10" Alias="Usuarios" DataType="System.Int32" PropName="Usuarios" Enabled="true">
+                        <Column Name="IdUsuario" DataType="System.Int32"/>
+                        <Column Name="Nome" DataType="System.String"/>
+                        <Column Name="Matricula" DataType="System.String"/>
+                        <Column Name="Senha" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas55" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </BusinessObjectDataSource>
+                    </Column>
+                    <BusinessObjectDataSource Name="Reservas56" Alias="Reservas" DataType="System.Int32" PropName="Reservas" Enabled="true">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="DataReserva" DataType="System.DateTime"/>
+                      <Column Name="HoraInicioReserva" DataType="System.Int32"/>
+                      <Column Name="HoraFimReserva" DataType="System.Int32"/>
+                      <Column Name="IdUsuario" DataType="System.Int32"/>
+                      <Column Name="Usuario" DataType="System.Int32">
+                        <Column Name="IdUsuario" DataType="System.Int32"/>
+                        <Column Name="Nome" DataType="System.String"/>
+                        <Column Name="Matricula" DataType="System.String"/>
+                        <Column Name="Senha" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas57" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                      <Column Name="IdSala" DataType="System.Int32"/>
+                      <Column Name="Sala" DataType="System.Int32">
+                        <Column Name="IdSala" DataType="System.Int32"/>
+                        <Column Name="Numero" DataType="System.Int32"/>
+                        <Column Name="Capacidade" DataType="System.Int32"/>
+                        <Column Name="Bloco" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas58" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                    </BusinessObjectDataSource>
+                  </BusinessObjectDataSource>
+                </Column>
+                <BusinessObjectDataSource Name="Reservas59" Alias="Reservas" DataType="System.Int32" PropName="Reservas" Enabled="true">
+                  <Column Name="Id" DataType="System.Int32"/>
+                  <Column Name="DataReserva" DataType="System.DateTime"/>
+                  <Column Name="HoraInicioReserva" DataType="System.Int32"/>
+                  <Column Name="HoraFimReserva" DataType="System.Int32"/>
+                  <Column Name="IdUsuario" DataType="System.Int32"/>
+                  <Column Name="Usuario" DataType="System.Int32">
+                    <Column Name="IdUsuario" DataType="System.Int32"/>
+                    <Column Name="Nome" DataType="System.String"/>
+                    <Column Name="Matricula" DataType="System.String"/>
+                    <Column Name="Senha" DataType="System.String"/>
+                    <Column Name="IdTipo" DataType="System.Int32"/>
+                    <Column Name="Tipo" DataType="System.Int32">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="Nome" DataType="System.String"/>
+                      <BusinessObjectDataSource Name="Usuarios11" Alias="Usuarios" DataType="System.Int32" PropName="Usuarios" Enabled="true">
+                        <Column Name="IdUsuario" DataType="System.Int32"/>
+                        <Column Name="Nome" DataType="System.String"/>
+                        <Column Name="Matricula" DataType="System.String"/>
+                        <Column Name="Senha" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas60" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </BusinessObjectDataSource>
+                    </Column>
+                    <BusinessObjectDataSource Name="Reservas61" Alias="Reservas" DataType="System.Int32" PropName="Reservas" Enabled="true">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="DataReserva" DataType="System.DateTime"/>
+                      <Column Name="HoraInicioReserva" DataType="System.Int32"/>
+                      <Column Name="HoraFimReserva" DataType="System.Int32"/>
+                      <Column Name="IdUsuario" DataType="System.Int32"/>
+                      <Column Name="Usuario" DataType="System.Int32">
+                        <Column Name="IdUsuario" DataType="System.Int32"/>
+                        <Column Name="Nome" DataType="System.String"/>
+                        <Column Name="Matricula" DataType="System.String"/>
+                        <Column Name="Senha" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas62" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                      <Column Name="IdSala" DataType="System.Int32"/>
+                      <Column Name="Sala" DataType="System.Int32">
+                        <Column Name="IdSala" DataType="System.Int32"/>
+                        <Column Name="Numero" DataType="System.Int32"/>
+                        <Column Name="Capacidade" DataType="System.Int32"/>
+                        <Column Name="Bloco" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas63" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                    </BusinessObjectDataSource>
+                  </Column>
+                  <Column Name="IdSala" DataType="System.Int32"/>
+                  <Column Name="Sala" DataType="System.Int32">
+                    <Column Name="IdSala" DataType="System.Int32"/>
+                    <Column Name="Numero" DataType="System.Int32"/>
+                    <Column Name="Capacidade" DataType="System.Int32"/>
+                    <Column Name="Bloco" DataType="System.String"/>
+                    <Column Name="IdTipo" DataType="System.Int32"/>
+                    <Column Name="Tipo" DataType="System.Int32">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="Nome" DataType="System.String"/>
+                      <BusinessObjectDataSource Name="Salas11" Alias="Salas" DataType="System.Int32" PropName="Salas" Enabled="true">
+                        <Column Name="IdSala" DataType="System.Int32"/>
+                        <Column Name="Numero" DataType="System.Int32"/>
+                        <Column Name="Capacidade" DataType="System.Int32"/>
+                        <Column Name="Bloco" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas64" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </BusinessObjectDataSource>
+                    </Column>
+                    <BusinessObjectDataSource Name="Reservas65" Alias="Reservas" DataType="System.Int32" PropName="Reservas" Enabled="true">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="DataReserva" DataType="System.DateTime"/>
+                      <Column Name="HoraInicioReserva" DataType="System.Int32"/>
+                      <Column Name="HoraFimReserva" DataType="System.Int32"/>
+                      <Column Name="IdUsuario" DataType="System.Int32"/>
+                      <Column Name="Usuario" DataType="System.Int32">
+                        <Column Name="IdUsuario" DataType="System.Int32"/>
+                        <Column Name="Nome" DataType="System.String"/>
+                        <Column Name="Matricula" DataType="System.String"/>
+                        <Column Name="Senha" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas66" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                      <Column Name="IdSala" DataType="System.Int32"/>
+                      <Column Name="Sala" DataType="System.Int32">
+                        <Column Name="IdSala" DataType="System.Int32"/>
+                        <Column Name="Numero" DataType="System.Int32"/>
+                        <Column Name="Capacidade" DataType="System.Int32"/>
+                        <Column Name="Bloco" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas67" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                    </BusinessObjectDataSource>
+                  </Column>
+                </BusinessObjectDataSource>
+              </Column>
+              <Column Name="IdSala" DataType="System.Int32"/>
+              <Column Name="Sala" DataType="System.Int32">
+                <Column Name="IdSala" DataType="System.Int32"/>
+                <Column Name="Numero" DataType="System.Int32"/>
+                <Column Name="Capacidade" DataType="System.Int32"/>
+                <Column Name="Bloco" DataType="System.String"/>
+                <Column Name="IdTipo" DataType="System.Int32"/>
+                <Column Name="Tipo" DataType="System.Int32">
+                  <Column Name="Id" DataType="System.Int32"/>
+                  <Column Name="Nome" DataType="System.String"/>
+                  <BusinessObjectDataSource Name="Salas12" Alias="Salas" DataType="System.Int32" PropName="Salas" Enabled="true">
+                    <Column Name="IdSala" DataType="System.Int32"/>
+                    <Column Name="Numero" DataType="System.Int32"/>
+                    <Column Name="Capacidade" DataType="System.Int32"/>
+                    <Column Name="Bloco" DataType="System.String"/>
+                    <Column Name="IdTipo" DataType="System.Int32"/>
+                    <Column Name="Tipo" DataType="System.Int32">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="Nome" DataType="System.String"/>
+                      <BusinessObjectDataSource Name="Salas13" Alias="Salas" DataType="System.Int32" PropName="Salas" Enabled="true">
+                        <Column Name="IdSala" DataType="System.Int32"/>
+                        <Column Name="Numero" DataType="System.Int32"/>
+                        <Column Name="Capacidade" DataType="System.Int32"/>
+                        <Column Name="Bloco" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas68" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </BusinessObjectDataSource>
+                    </Column>
+                    <BusinessObjectDataSource Name="Reservas69" Alias="Reservas" DataType="System.Int32" PropName="Reservas" Enabled="true">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="DataReserva" DataType="System.DateTime"/>
+                      <Column Name="HoraInicioReserva" DataType="System.Int32"/>
+                      <Column Name="HoraFimReserva" DataType="System.Int32"/>
+                      <Column Name="IdUsuario" DataType="System.Int32"/>
+                      <Column Name="Usuario" DataType="System.Int32">
+                        <Column Name="IdUsuario" DataType="System.Int32"/>
+                        <Column Name="Nome" DataType="System.String"/>
+                        <Column Name="Matricula" DataType="System.String"/>
+                        <Column Name="Senha" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas70" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                      <Column Name="IdSala" DataType="System.Int32"/>
+                      <Column Name="Sala" DataType="System.Int32">
+                        <Column Name="IdSala" DataType="System.Int32"/>
+                        <Column Name="Numero" DataType="System.Int32"/>
+                        <Column Name="Capacidade" DataType="System.Int32"/>
+                        <Column Name="Bloco" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas71" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                    </BusinessObjectDataSource>
+                  </BusinessObjectDataSource>
+                </Column>
+                <BusinessObjectDataSource Name="Reservas72" Alias="Reservas" DataType="System.Int32" PropName="Reservas" Enabled="true">
+                  <Column Name="Id" DataType="System.Int32"/>
+                  <Column Name="DataReserva" DataType="System.DateTime"/>
+                  <Column Name="HoraInicioReserva" DataType="System.Int32"/>
+                  <Column Name="HoraFimReserva" DataType="System.Int32"/>
+                  <Column Name="IdUsuario" DataType="System.Int32"/>
+                  <Column Name="Usuario" DataType="System.Int32">
+                    <Column Name="IdUsuario" DataType="System.Int32"/>
+                    <Column Name="Nome" DataType="System.String"/>
+                    <Column Name="Matricula" DataType="System.String"/>
+                    <Column Name="Senha" DataType="System.String"/>
+                    <Column Name="IdTipo" DataType="System.Int32"/>
+                    <Column Name="Tipo" DataType="System.Int32">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="Nome" DataType="System.String"/>
+                      <BusinessObjectDataSource Name="Usuarios12" Alias="Usuarios" DataType="System.Int32" PropName="Usuarios" Enabled="true">
+                        <Column Name="IdUsuario" DataType="System.Int32"/>
+                        <Column Name="Nome" DataType="System.String"/>
+                        <Column Name="Matricula" DataType="System.String"/>
+                        <Column Name="Senha" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas73" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </BusinessObjectDataSource>
+                    </Column>
+                    <BusinessObjectDataSource Name="Reservas74" Alias="Reservas" DataType="System.Int32" PropName="Reservas" Enabled="true">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="DataReserva" DataType="System.DateTime"/>
+                      <Column Name="HoraInicioReserva" DataType="System.Int32"/>
+                      <Column Name="HoraFimReserva" DataType="System.Int32"/>
+                      <Column Name="IdUsuario" DataType="System.Int32"/>
+                      <Column Name="Usuario" DataType="System.Int32">
+                        <Column Name="IdUsuario" DataType="System.Int32"/>
+                        <Column Name="Nome" DataType="System.String"/>
+                        <Column Name="Matricula" DataType="System.String"/>
+                        <Column Name="Senha" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas75" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                      <Column Name="IdSala" DataType="System.Int32"/>
+                      <Column Name="Sala" DataType="System.Int32">
+                        <Column Name="IdSala" DataType="System.Int32"/>
+                        <Column Name="Numero" DataType="System.Int32"/>
+                        <Column Name="Capacidade" DataType="System.Int32"/>
+                        <Column Name="Bloco" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas76" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                    </BusinessObjectDataSource>
+                  </Column>
+                  <Column Name="IdSala" DataType="System.Int32"/>
+                  <Column Name="Sala" DataType="System.Int32">
+                    <Column Name="IdSala" DataType="System.Int32"/>
+                    <Column Name="Numero" DataType="System.Int32"/>
+                    <Column Name="Capacidade" DataType="System.Int32"/>
+                    <Column Name="Bloco" DataType="System.String"/>
+                    <Column Name="IdTipo" DataType="System.Int32"/>
+                    <Column Name="Tipo" DataType="System.Int32">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="Nome" DataType="System.String"/>
+                      <BusinessObjectDataSource Name="Salas14" Alias="Salas" DataType="System.Int32" PropName="Salas" Enabled="true">
+                        <Column Name="IdSala" DataType="System.Int32"/>
+                        <Column Name="Numero" DataType="System.Int32"/>
+                        <Column Name="Capacidade" DataType="System.Int32"/>
+                        <Column Name="Bloco" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas77" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </BusinessObjectDataSource>
+                    </Column>
+                    <BusinessObjectDataSource Name="Reservas78" Alias="Reservas" DataType="System.Int32" PropName="Reservas" Enabled="true">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="DataReserva" DataType="System.DateTime"/>
+                      <Column Name="HoraInicioReserva" DataType="System.Int32"/>
+                      <Column Name="HoraFimReserva" DataType="System.Int32"/>
+                      <Column Name="IdUsuario" DataType="System.Int32"/>
+                      <Column Name="Usuario" DataType="System.Int32">
+                        <Column Name="IdUsuario" DataType="System.Int32"/>
+                        <Column Name="Nome" DataType="System.String"/>
+                        <Column Name="Matricula" DataType="System.String"/>
+                        <Column Name="Senha" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas79" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                      <Column Name="IdSala" DataType="System.Int32"/>
+                      <Column Name="Sala" DataType="System.Int32">
+                        <Column Name="IdSala" DataType="System.Int32"/>
+                        <Column Name="Numero" DataType="System.Int32"/>
+                        <Column Name="Capacidade" DataType="System.Int32"/>
+                        <Column Name="Bloco" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas80" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                    </BusinessObjectDataSource>
+                  </Column>
+                </BusinessObjectDataSource>
+              </Column>
+            </BusinessObjectDataSource>
+          </Column>
+          <Column Name="IdSala" DataType="System.Int32"/>
+          <Column Name="Sala" DataType="System.Int32">
+            <Column Name="IdSala" DataType="System.Int32"/>
+            <Column Name="Numero" DataType="System.Int32"/>
+            <Column Name="Capacidade" DataType="System.Int32"/>
+            <Column Name="Bloco" DataType="System.String"/>
+            <Column Name="IdTipo" DataType="System.Int32"/>
+            <Column Name="Tipo" DataType="System.Int32">
+              <Column Name="Id" DataType="System.Int32"/>
+              <Column Name="Nome" DataType="System.String"/>
+              <BusinessObjectDataSource Name="Salas15" Alias="Salas" DataType="System.Int32" PropName="Salas" Enabled="true">
+                <Column Name="IdSala" DataType="System.Int32"/>
+                <Column Name="Numero" DataType="System.Int32"/>
+                <Column Name="Capacidade" DataType="System.Int32"/>
+                <Column Name="Bloco" DataType="System.String"/>
+                <Column Name="IdTipo" DataType="System.Int32"/>
+                <Column Name="Tipo" DataType="System.Int32">
+                  <Column Name="Id" DataType="System.Int32"/>
+                  <Column Name="Nome" DataType="System.String"/>
+                  <BusinessObjectDataSource Name="Salas16" Alias="Salas" DataType="System.Int32" PropName="Salas" Enabled="true">
+                    <Column Name="IdSala" DataType="System.Int32"/>
+                    <Column Name="Numero" DataType="System.Int32"/>
+                    <Column Name="Capacidade" DataType="System.Int32"/>
+                    <Column Name="Bloco" DataType="System.String"/>
+                    <Column Name="IdTipo" DataType="System.Int32"/>
+                    <Column Name="Tipo" DataType="System.Int32">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="Nome" DataType="System.String"/>
+                      <BusinessObjectDataSource Name="Salas17" Alias="Salas" DataType="System.Int32" PropName="Salas" Enabled="true">
+                        <Column Name="IdSala" DataType="System.Int32"/>
+                        <Column Name="Numero" DataType="System.Int32"/>
+                        <Column Name="Capacidade" DataType="System.Int32"/>
+                        <Column Name="Bloco" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas81" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </BusinessObjectDataSource>
+                    </Column>
+                    <BusinessObjectDataSource Name="Reservas82" Alias="Reservas" DataType="System.Int32" PropName="Reservas" Enabled="true">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="DataReserva" DataType="System.DateTime"/>
+                      <Column Name="HoraInicioReserva" DataType="System.Int32"/>
+                      <Column Name="HoraFimReserva" DataType="System.Int32"/>
+                      <Column Name="IdUsuario" DataType="System.Int32"/>
+                      <Column Name="Usuario" DataType="System.Int32">
+                        <Column Name="IdUsuario" DataType="System.Int32"/>
+                        <Column Name="Nome" DataType="System.String"/>
+                        <Column Name="Matricula" DataType="System.String"/>
+                        <Column Name="Senha" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas83" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                      <Column Name="IdSala" DataType="System.Int32"/>
+                      <Column Name="Sala" DataType="System.Int32">
+                        <Column Name="IdSala" DataType="System.Int32"/>
+                        <Column Name="Numero" DataType="System.Int32"/>
+                        <Column Name="Capacidade" DataType="System.Int32"/>
+                        <Column Name="Bloco" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas84" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                    </BusinessObjectDataSource>
+                  </BusinessObjectDataSource>
+                </Column>
+                <BusinessObjectDataSource Name="Reservas85" Alias="Reservas" DataType="System.Int32" PropName="Reservas" Enabled="true">
+                  <Column Name="Id" DataType="System.Int32"/>
+                  <Column Name="DataReserva" DataType="System.DateTime"/>
+                  <Column Name="HoraInicioReserva" DataType="System.Int32"/>
+                  <Column Name="HoraFimReserva" DataType="System.Int32"/>
+                  <Column Name="IdUsuario" DataType="System.Int32"/>
+                  <Column Name="Usuario" DataType="System.Int32">
+                    <Column Name="IdUsuario" DataType="System.Int32"/>
+                    <Column Name="Nome" DataType="System.String"/>
+                    <Column Name="Matricula" DataType="System.String"/>
+                    <Column Name="Senha" DataType="System.String"/>
+                    <Column Name="IdTipo" DataType="System.Int32"/>
+                    <Column Name="Tipo" DataType="System.Int32">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="Nome" DataType="System.String"/>
+                      <BusinessObjectDataSource Name="Usuarios13" Alias="Usuarios" DataType="System.Int32" PropName="Usuarios" Enabled="true">
+                        <Column Name="IdUsuario" DataType="System.Int32"/>
+                        <Column Name="Nome" DataType="System.String"/>
+                        <Column Name="Matricula" DataType="System.String"/>
+                        <Column Name="Senha" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas86" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </BusinessObjectDataSource>
+                    </Column>
+                    <BusinessObjectDataSource Name="Reservas87" Alias="Reservas" DataType="System.Int32" PropName="Reservas" Enabled="true">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="DataReserva" DataType="System.DateTime"/>
+                      <Column Name="HoraInicioReserva" DataType="System.Int32"/>
+                      <Column Name="HoraFimReserva" DataType="System.Int32"/>
+                      <Column Name="IdUsuario" DataType="System.Int32"/>
+                      <Column Name="Usuario" DataType="System.Int32">
+                        <Column Name="IdUsuario" DataType="System.Int32"/>
+                        <Column Name="Nome" DataType="System.String"/>
+                        <Column Name="Matricula" DataType="System.String"/>
+                        <Column Name="Senha" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas88" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                      <Column Name="IdSala" DataType="System.Int32"/>
+                      <Column Name="Sala" DataType="System.Int32">
+                        <Column Name="IdSala" DataType="System.Int32"/>
+                        <Column Name="Numero" DataType="System.Int32"/>
+                        <Column Name="Capacidade" DataType="System.Int32"/>
+                        <Column Name="Bloco" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas89" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                    </BusinessObjectDataSource>
+                  </Column>
+                  <Column Name="IdSala" DataType="System.Int32"/>
+                  <Column Name="Sala" DataType="System.Int32">
+                    <Column Name="IdSala" DataType="System.Int32"/>
+                    <Column Name="Numero" DataType="System.Int32"/>
+                    <Column Name="Capacidade" DataType="System.Int32"/>
+                    <Column Name="Bloco" DataType="System.String"/>
+                    <Column Name="IdTipo" DataType="System.Int32"/>
+                    <Column Name="Tipo" DataType="System.Int32">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="Nome" DataType="System.String"/>
+                      <BusinessObjectDataSource Name="Salas18" Alias="Salas" DataType="System.Int32" PropName="Salas" Enabled="true">
+                        <Column Name="IdSala" DataType="System.Int32"/>
+                        <Column Name="Numero" DataType="System.Int32"/>
+                        <Column Name="Capacidade" DataType="System.Int32"/>
+                        <Column Name="Bloco" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas90" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </BusinessObjectDataSource>
+                    </Column>
+                    <BusinessObjectDataSource Name="Reservas91" Alias="Reservas" DataType="System.Int32" PropName="Reservas" Enabled="true">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="DataReserva" DataType="System.DateTime"/>
+                      <Column Name="HoraInicioReserva" DataType="System.Int32"/>
+                      <Column Name="HoraFimReserva" DataType="System.Int32"/>
+                      <Column Name="IdUsuario" DataType="System.Int32"/>
+                      <Column Name="Usuario" DataType="System.Int32">
+                        <Column Name="IdUsuario" DataType="System.Int32"/>
+                        <Column Name="Nome" DataType="System.String"/>
+                        <Column Name="Matricula" DataType="System.String"/>
+                        <Column Name="Senha" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas92" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                      <Column Name="IdSala" DataType="System.Int32"/>
+                      <Column Name="Sala" DataType="System.Int32">
+                        <Column Name="IdSala" DataType="System.Int32"/>
+                        <Column Name="Numero" DataType="System.Int32"/>
+                        <Column Name="Capacidade" DataType="System.Int32"/>
+                        <Column Name="Bloco" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas93" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                    </BusinessObjectDataSource>
+                  </Column>
+                </BusinessObjectDataSource>
+              </BusinessObjectDataSource>
+            </Column>
+            <BusinessObjectDataSource Name="Reservas94" Alias="Reservas" DataType="System.Int32" PropName="Reservas" Enabled="true">
+              <Column Name="Id" DataType="System.Int32"/>
+              <Column Name="DataReserva" DataType="System.DateTime"/>
+              <Column Name="HoraInicioReserva" DataType="System.Int32"/>
+              <Column Name="HoraFimReserva" DataType="System.Int32"/>
+              <Column Name="IdUsuario" DataType="System.Int32"/>
+              <Column Name="Usuario" DataType="System.Int32">
+                <Column Name="IdUsuario" DataType="System.Int32"/>
+                <Column Name="Nome" DataType="System.String"/>
+                <Column Name="Matricula" DataType="System.String"/>
+                <Column Name="Senha" DataType="System.String"/>
+                <Column Name="IdTipo" DataType="System.Int32"/>
+                <Column Name="Tipo" DataType="System.Int32">
+                  <Column Name="Id" DataType="System.Int32"/>
+                  <Column Name="Nome" DataType="System.String"/>
+                  <BusinessObjectDataSource Name="Usuarios14" Alias="Usuarios" DataType="System.Int32" PropName="Usuarios" Enabled="true">
+                    <Column Name="IdUsuario" DataType="System.Int32"/>
+                    <Column Name="Nome" DataType="System.String"/>
+                    <Column Name="Matricula" DataType="System.String"/>
+                    <Column Name="Senha" DataType="System.String"/>
+                    <Column Name="IdTipo" DataType="System.Int32"/>
+                    <Column Name="Tipo" DataType="System.Int32">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="Nome" DataType="System.String"/>
+                      <BusinessObjectDataSource Name="Usuarios15" Alias="Usuarios" DataType="System.Int32" PropName="Usuarios" Enabled="true">
+                        <Column Name="IdUsuario" DataType="System.Int32"/>
+                        <Column Name="Nome" DataType="System.String"/>
+                        <Column Name="Matricula" DataType="System.String"/>
+                        <Column Name="Senha" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas95" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </BusinessObjectDataSource>
+                    </Column>
+                    <BusinessObjectDataSource Name="Reservas96" Alias="Reservas" DataType="System.Int32" PropName="Reservas" Enabled="true">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="DataReserva" DataType="System.DateTime"/>
+                      <Column Name="HoraInicioReserva" DataType="System.Int32"/>
+                      <Column Name="HoraFimReserva" DataType="System.Int32"/>
+                      <Column Name="IdUsuario" DataType="System.Int32"/>
+                      <Column Name="Usuario" DataType="System.Int32">
+                        <Column Name="IdUsuario" DataType="System.Int32"/>
+                        <Column Name="Nome" DataType="System.String"/>
+                        <Column Name="Matricula" DataType="System.String"/>
+                        <Column Name="Senha" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas97" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                      <Column Name="IdSala" DataType="System.Int32"/>
+                      <Column Name="Sala" DataType="System.Int32">
+                        <Column Name="IdSala" DataType="System.Int32"/>
+                        <Column Name="Numero" DataType="System.Int32"/>
+                        <Column Name="Capacidade" DataType="System.Int32"/>
+                        <Column Name="Bloco" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas98" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                    </BusinessObjectDataSource>
+                  </BusinessObjectDataSource>
+                </Column>
+                <BusinessObjectDataSource Name="Reservas99" Alias="Reservas" DataType="System.Int32" PropName="Reservas" Enabled="true">
+                  <Column Name="Id" DataType="System.Int32"/>
+                  <Column Name="DataReserva" DataType="System.DateTime"/>
+                  <Column Name="HoraInicioReserva" DataType="System.Int32"/>
+                  <Column Name="HoraFimReserva" DataType="System.Int32"/>
+                  <Column Name="IdUsuario" DataType="System.Int32"/>
+                  <Column Name="Usuario" DataType="System.Int32">
+                    <Column Name="IdUsuario" DataType="System.Int32"/>
+                    <Column Name="Nome" DataType="System.String"/>
+                    <Column Name="Matricula" DataType="System.String"/>
+                    <Column Name="Senha" DataType="System.String"/>
+                    <Column Name="IdTipo" DataType="System.Int32"/>
+                    <Column Name="Tipo" DataType="System.Int32">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="Nome" DataType="System.String"/>
+                      <BusinessObjectDataSource Name="Usuarios16" Alias="Usuarios" DataType="System.Int32" PropName="Usuarios" Enabled="true">
+                        <Column Name="IdUsuario" DataType="System.Int32"/>
+                        <Column Name="Nome" DataType="System.String"/>
+                        <Column Name="Matricula" DataType="System.String"/>
+                        <Column Name="Senha" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas100" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </BusinessObjectDataSource>
+                    </Column>
+                    <BusinessObjectDataSource Name="Reservas101" Alias="Reservas" DataType="System.Int32" PropName="Reservas" Enabled="true">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="DataReserva" DataType="System.DateTime"/>
+                      <Column Name="HoraInicioReserva" DataType="System.Int32"/>
+                      <Column Name="HoraFimReserva" DataType="System.Int32"/>
+                      <Column Name="IdUsuario" DataType="System.Int32"/>
+                      <Column Name="Usuario" DataType="System.Int32">
+                        <Column Name="IdUsuario" DataType="System.Int32"/>
+                        <Column Name="Nome" DataType="System.String"/>
+                        <Column Name="Matricula" DataType="System.String"/>
+                        <Column Name="Senha" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas102" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                      <Column Name="IdSala" DataType="System.Int32"/>
+                      <Column Name="Sala" DataType="System.Int32">
+                        <Column Name="IdSala" DataType="System.Int32"/>
+                        <Column Name="Numero" DataType="System.Int32"/>
+                        <Column Name="Capacidade" DataType="System.Int32"/>
+                        <Column Name="Bloco" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas103" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                    </BusinessObjectDataSource>
+                  </Column>
+                  <Column Name="IdSala" DataType="System.Int32"/>
+                  <Column Name="Sala" DataType="System.Int32">
+                    <Column Name="IdSala" DataType="System.Int32"/>
+                    <Column Name="Numero" DataType="System.Int32"/>
+                    <Column Name="Capacidade" DataType="System.Int32"/>
+                    <Column Name="Bloco" DataType="System.String"/>
+                    <Column Name="IdTipo" DataType="System.Int32"/>
+                    <Column Name="Tipo" DataType="System.Int32">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="Nome" DataType="System.String"/>
+                      <BusinessObjectDataSource Name="Salas19" Alias="Salas" DataType="System.Int32" PropName="Salas" Enabled="true">
+                        <Column Name="IdSala" DataType="System.Int32"/>
+                        <Column Name="Numero" DataType="System.Int32"/>
+                        <Column Name="Capacidade" DataType="System.Int32"/>
+                        <Column Name="Bloco" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas104" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </BusinessObjectDataSource>
+                    </Column>
+                    <BusinessObjectDataSource Name="Reservas105" Alias="Reservas" DataType="System.Int32" PropName="Reservas" Enabled="true">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="DataReserva" DataType="System.DateTime"/>
+                      <Column Name="HoraInicioReserva" DataType="System.Int32"/>
+                      <Column Name="HoraFimReserva" DataType="System.Int32"/>
+                      <Column Name="IdUsuario" DataType="System.Int32"/>
+                      <Column Name="Usuario" DataType="System.Int32">
+                        <Column Name="IdUsuario" DataType="System.Int32"/>
+                        <Column Name="Nome" DataType="System.String"/>
+                        <Column Name="Matricula" DataType="System.String"/>
+                        <Column Name="Senha" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas106" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                      <Column Name="IdSala" DataType="System.Int32"/>
+                      <Column Name="Sala" DataType="System.Int32">
+                        <Column Name="IdSala" DataType="System.Int32"/>
+                        <Column Name="Numero" DataType="System.Int32"/>
+                        <Column Name="Capacidade" DataType="System.Int32"/>
+                        <Column Name="Bloco" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas107" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                    </BusinessObjectDataSource>
+                  </Column>
+                </BusinessObjectDataSource>
+              </Column>
+              <Column Name="IdSala" DataType="System.Int32"/>
+              <Column Name="Sala" DataType="System.Int32">
+                <Column Name="IdSala" DataType="System.Int32"/>
+                <Column Name="Numero" DataType="System.Int32"/>
+                <Column Name="Capacidade" DataType="System.Int32"/>
+                <Column Name="Bloco" DataType="System.String"/>
+                <Column Name="IdTipo" DataType="System.Int32"/>
+                <Column Name="Tipo" DataType="System.Int32">
+                  <Column Name="Id" DataType="System.Int32"/>
+                  <Column Name="Nome" DataType="System.String"/>
+                  <BusinessObjectDataSource Name="Salas20" Alias="Salas" DataType="System.Int32" PropName="Salas" Enabled="true">
+                    <Column Name="IdSala" DataType="System.Int32"/>
+                    <Column Name="Numero" DataType="System.Int32"/>
+                    <Column Name="Capacidade" DataType="System.Int32"/>
+                    <Column Name="Bloco" DataType="System.String"/>
+                    <Column Name="IdTipo" DataType="System.Int32"/>
+                    <Column Name="Tipo" DataType="System.Int32">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="Nome" DataType="System.String"/>
+                      <BusinessObjectDataSource Name="Salas21" Alias="Salas" DataType="System.Int32" PropName="Salas" Enabled="true">
+                        <Column Name="IdSala" DataType="System.Int32"/>
+                        <Column Name="Numero" DataType="System.Int32"/>
+                        <Column Name="Capacidade" DataType="System.Int32"/>
+                        <Column Name="Bloco" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas108" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </BusinessObjectDataSource>
+                    </Column>
+                    <BusinessObjectDataSource Name="Reservas109" Alias="Reservas" DataType="System.Int32" PropName="Reservas" Enabled="true">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="DataReserva" DataType="System.DateTime"/>
+                      <Column Name="HoraInicioReserva" DataType="System.Int32"/>
+                      <Column Name="HoraFimReserva" DataType="System.Int32"/>
+                      <Column Name="IdUsuario" DataType="System.Int32"/>
+                      <Column Name="Usuario" DataType="System.Int32">
+                        <Column Name="IdUsuario" DataType="System.Int32"/>
+                        <Column Name="Nome" DataType="System.String"/>
+                        <Column Name="Matricula" DataType="System.String"/>
+                        <Column Name="Senha" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas110" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                      <Column Name="IdSala" DataType="System.Int32"/>
+                      <Column Name="Sala" DataType="System.Int32">
+                        <Column Name="IdSala" DataType="System.Int32"/>
+                        <Column Name="Numero" DataType="System.Int32"/>
+                        <Column Name="Capacidade" DataType="System.Int32"/>
+                        <Column Name="Bloco" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas111" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                    </BusinessObjectDataSource>
+                  </BusinessObjectDataSource>
+                </Column>
+                <BusinessObjectDataSource Name="Reservas112" Alias="Reservas" DataType="System.Int32" PropName="Reservas" Enabled="true">
+                  <Column Name="Id" DataType="System.Int32"/>
+                  <Column Name="DataReserva" DataType="System.DateTime"/>
+                  <Column Name="HoraInicioReserva" DataType="System.Int32"/>
+                  <Column Name="HoraFimReserva" DataType="System.Int32"/>
+                  <Column Name="IdUsuario" DataType="System.Int32"/>
+                  <Column Name="Usuario" DataType="System.Int32">
+                    <Column Name="IdUsuario" DataType="System.Int32"/>
+                    <Column Name="Nome" DataType="System.String"/>
+                    <Column Name="Matricula" DataType="System.String"/>
+                    <Column Name="Senha" DataType="System.String"/>
+                    <Column Name="IdTipo" DataType="System.Int32"/>
+                    <Column Name="Tipo" DataType="System.Int32">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="Nome" DataType="System.String"/>
+                      <BusinessObjectDataSource Name="Usuarios17" Alias="Usuarios" DataType="System.Int32" PropName="Usuarios" Enabled="true">
+                        <Column Name="IdUsuario" DataType="System.Int32"/>
+                        <Column Name="Nome" DataType="System.String"/>
+                        <Column Name="Matricula" DataType="System.String"/>
+                        <Column Name="Senha" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas113" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </BusinessObjectDataSource>
+                    </Column>
+                    <BusinessObjectDataSource Name="Reservas114" Alias="Reservas" DataType="System.Int32" PropName="Reservas" Enabled="true">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="DataReserva" DataType="System.DateTime"/>
+                      <Column Name="HoraInicioReserva" DataType="System.Int32"/>
+                      <Column Name="HoraFimReserva" DataType="System.Int32"/>
+                      <Column Name="IdUsuario" DataType="System.Int32"/>
+                      <Column Name="Usuario" DataType="System.Int32">
+                        <Column Name="IdUsuario" DataType="System.Int32"/>
+                        <Column Name="Nome" DataType="System.String"/>
+                        <Column Name="Matricula" DataType="System.String"/>
+                        <Column Name="Senha" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas115" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                      <Column Name="IdSala" DataType="System.Int32"/>
+                      <Column Name="Sala" DataType="System.Int32">
+                        <Column Name="IdSala" DataType="System.Int32"/>
+                        <Column Name="Numero" DataType="System.Int32"/>
+                        <Column Name="Capacidade" DataType="System.Int32"/>
+                        <Column Name="Bloco" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas116" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                    </BusinessObjectDataSource>
+                  </Column>
+                  <Column Name="IdSala" DataType="System.Int32"/>
+                  <Column Name="Sala" DataType="System.Int32">
+                    <Column Name="IdSala" DataType="System.Int32"/>
+                    <Column Name="Numero" DataType="System.Int32"/>
+                    <Column Name="Capacidade" DataType="System.Int32"/>
+                    <Column Name="Bloco" DataType="System.String"/>
+                    <Column Name="IdTipo" DataType="System.Int32"/>
+                    <Column Name="Tipo" DataType="System.Int32">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="Nome" DataType="System.String"/>
+                      <BusinessObjectDataSource Name="Salas22" Alias="Salas" DataType="System.Int32" PropName="Salas" Enabled="true">
+                        <Column Name="IdSala" DataType="System.Int32"/>
+                        <Column Name="Numero" DataType="System.Int32"/>
+                        <Column Name="Capacidade" DataType="System.Int32"/>
+                        <Column Name="Bloco" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas117" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </BusinessObjectDataSource>
+                    </Column>
+                    <BusinessObjectDataSource Name="Reservas118" Alias="Reservas" DataType="System.Int32" PropName="Reservas" Enabled="true">
+                      <Column Name="Id" DataType="System.Int32"/>
+                      <Column Name="DataReserva" DataType="System.DateTime"/>
+                      <Column Name="HoraInicioReserva" DataType="System.Int32"/>
+                      <Column Name="HoraFimReserva" DataType="System.Int32"/>
+                      <Column Name="IdUsuario" DataType="System.Int32"/>
+                      <Column Name="Usuario" DataType="System.Int32">
+                        <Column Name="IdUsuario" DataType="System.Int32"/>
+                        <Column Name="Nome" DataType="System.String"/>
+                        <Column Name="Matricula" DataType="System.String"/>
+                        <Column Name="Senha" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas119" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                      <Column Name="IdSala" DataType="System.Int32"/>
+                      <Column Name="Sala" DataType="System.Int32">
+                        <Column Name="IdSala" DataType="System.Int32"/>
+                        <Column Name="Numero" DataType="System.Int32"/>
+                        <Column Name="Capacidade" DataType="System.Int32"/>
+                        <Column Name="Bloco" DataType="System.String"/>
+                        <Column Name="IdTipo" DataType="System.Int32"/>
+                        <Column Name="Tipo" DataType="System.Int32"/>
+                        <BusinessObjectDataSource Name="Reservas120" Alias="Reservas" Enabled="false" DataType="System.Int32" PropName="Reservas"/>
+                      </Column>
+                    </BusinessObjectDataSource>
+                  </Column>
+                </BusinessObjectDataSource>
+              </Column>
+            </BusinessObjectDataSource>
+          </Column>
+        </BusinessObjectDataSource>
+      </BusinessObjectDataSource>
+    </BusinessObjectDataSource>
+  </Dictionary>
+  <ReportPage Name="Page1" Watermark.Font="Arial, 60pt">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="113.4" Fill.Color="Black">
+      <TextObject Name="Text1" Width="727.65" Height="113.4" Fill.Color="Black" Text="RELATÓRIO GERAL DE SALAS [lista1.Salas.Reservas.DataReserva]" HorzAlign="Center" VertAlign="Center" Font="Arial, 36pt" TextFill.Color="White"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="117.4" Width="718.2" Height="47.25"/>
+    <DataBand Name="Data1" Top="168.65" Width="718.2" Height="113.4" DataSource="lista1">
+      <TextObject Name="Text2" Top="47.25" Width="718.2" Height="66.15" Text="[lista1.Nome]" HorzAlign="Center" VertAlign="Center" Font="Arial, 24pt"/>
+      <DataBand Name="Data2" Top="327.85" Width="718.2" Height="47.25" DataSource="Salas">
+        <TextObject Name="Text3" Left="28.35" Width="198.45" Height="37.8" Text="[lista1.Salas.Numero]" HorzAlign="Center" VertAlign="Center" Font="Arial, 16pt"/>
+        <TextObject Name="Text5" Left="226.8" Width="151.2" Height="37.8" Text="[lista1.Salas.Bloco]" HorzAlign="Center" VertAlign="Center" Font="Arial, 16pt"/>
+        <TextObject Name="Text6" Left="378" Width="151.2" Height="37.8" Border.Lines="Left" Border.Width="2" Text="[lista1.Salas.Capacidade]" HorzAlign="Center" VertAlign="Center" Font="Arial, 16pt"/>
+        <DataHeaderBand Name="DataHeader1" Top="286.05" Width="718.2" Height="37.8">
+          <TextObject Name="Text4" Left="28.35" Width="349.65" Height="37.8" Border.Lines="Bottom" Border.Width="2" Text="SALA" HorzAlign="Center" VertAlign="Bottom" Font="Arial, 16pt"/>
+          <TextObject Name="Text7" Left="378" Width="151.2" Height="37.8" Border.Lines="Left, Bottom" Border.Width="2" Text="Comporta" HorzAlign="Center" VertAlign="Bottom" Font="Arial, 16pt"/>
+        </DataHeaderBand>
+        <DataBand Name="Data3" Top="411.45" Width="718.2" Height="37.8" DataSource="Reservas40">
+          <TextObject Name="Text8" Left="226.8" Width="198.45" Height="37.8" Border.Lines="Left, Bottom" Border.Width="2" Text="[lista1.Salas.Reservas.Usuario.Nome]" HorzAlign="Center" VertAlign="Bottom" Font="Arial, 12pt"/>
+          <TextObject Name="Text10" Left="425.25" Width="207.9" Height="37.8" Border.Lines="Left, Bottom" Border.Width="2" Text="[lista1.Salas.Reservas.Usuario.Matricula]" HorzAlign="Center" VertAlign="Bottom" Font="Arial, 12pt"/>
+          <TextObject Name="Text12" Left="37.8" Width="189" Height="37.8" Border.Lines="Left, Bottom" Border.Width="2" Text="[lista1.Salas.Reservas.HoraInicioReserva]" HorzAlign="Center" VertAlign="Bottom" Font="Arial, 12pt"/>
+          <DataHeaderBand Name="DataHeader2" Top="379.1" Width="718.2" Height="28.35">
+            <TextObject Name="Text9" Left="226.8" Width="198.45" Height="28.35" Border.Lines="Left, Bottom" Border.Width="2" Text="Nome" HorzAlign="Center" VertAlign="Bottom" Font="Arial, 12pt"/>
+            <TextObject Name="Text11" Left="425.25" Width="207.9" Height="28.35" Border.Lines="Left, Bottom" Border.Width="2" Text="Matricula" HorzAlign="Center" VertAlign="Bottom" Font="Arial, 12pt"/>
+            <TextObject Name="Text13" Left="37.8" Width="189" Height="28.35" Border.Lines="Left, Bottom" Border.Width="2" Text="Hora da Reserva" HorzAlign="Center" VertAlign="Bottom" Font="Arial, 12pt"/>
+          </DataHeaderBand>
+        </DataBand>
+      </DataBand>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="453.25" Width="718.2" Height="18.9"/>
+  </ReportPage>
+</Report>

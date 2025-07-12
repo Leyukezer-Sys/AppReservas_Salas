@@ -91,9 +91,10 @@ namespace AppReservas_Salas.Ferramenta
                 var url = nav.ToAbsoluteUri($"/RelatoriosTemp/{fileName}");
 
                 //// Abre o relatório em uma nova guia
-                //nav.NavigateTo(url.ToString(), true);
+               // nav.NavigateTo(url.ToString(), true);
 
-                await jsRuntime.InvokeVoidAsync("NovaGuia", url.ToString()); //alteração 
+                await jsRuntime.InvokeVoidAsync("NovaGuia", url.ToString());
+                Console.WriteLine("só naao quis abrir!");
             }
             catch (Exception ex)
             {

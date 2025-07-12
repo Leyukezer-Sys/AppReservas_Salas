@@ -1,12 +1,10 @@
-﻿@page "/login"
+﻿@page "/"
 @using AppReservas_Salas.Controllers
 @using AppReservas_Salas.Models
-@using System.Security.Claims
-@inject IHttpContextAccessor http;
-@using Microsoft.AspNetCore.Authentication;
 @inject UsuarioController usuarioController
 @layout LoginLayout
 @inject NavigationManager navegacao;
+
 
 @rendermode InteractiveServer
 
@@ -16,45 +14,59 @@
             <div class="d-flex align-items-center justify-content-center mt-3">
                 <img class="card-img-top rounded" src="favicon.png" style="width: 50px;"/>
             </div>
-            <div class=" mt-3 mx-5 position-relative">
-                <label class="form-label" for="txtMatricula">Matricula</label>
-                <input type="number"
-                       name="txtMatricula"
-                       id="txtMatricula"
-                       @onchange="VerificarMatricula"
-                       class="form-control @(erroMatricula ? "is-invalid" : "")"
-                       placeholder=""
-                       @ref="matriculaInput" />
-                @if (erroMatricula)
-                {
-                    <div class="invalid-tooltip">
-                        As Matricula está Incorreta!
-                    </div>
-                }
-            </div>
-            <div class="mt-2 mx-5 position-relative">
-                <label class="form-label" for="txtSenha">Senha</label>
-                <input type="password"
-                       name="txtSenha"
-                       id="txtSenha"
-                       @onchange="VerificarSenha"
-                       class="form-control @(erroSenha ? "is-invalid" : "")"
-                       placeholder=""
-                       @ref="senhaInput" />
-                @if (erroSenha)
-                {
-                    <div class="invalid-tooltip">
-                        As senhas não está Correta para está Matrícula!
-                    </div>
-                }
-            </div>
-            <div class="d-flex flex-column align-items-center justify-content-center my-4">
-                <button class="btn btn-success fs-4" @onclick="Entrar">ENTRAR</button>
-                <a href="/novoUsuario" class="link-info fs-6 mt-2" >Cadastrar-se</a>
-            </div>
+            <form @onsubmit="Entrar">
+                <div class=" mt-3 mx-5 position-relative">
+                    <label class="form-label" for="txtMatricula">Matricula</label>
+                    <input type="number"
+                    name="txtMatricula"
+                    id="txtMatricula"
+                    @onchange="VerificarMatricula"
+                    class="form-control @(erroMatricula ? "is-invalid" : "")"
+                    placeholder=""
+                    @ref="matriculaInput"
+                    autocomplete="username" />
+                    @if (erroMatricula)
+                    {
+                        <div class="invalid-tooltip">
+                            As Matricula está Incorreta!
+                        </div>
+                    }
+                </div>
+                <div class="mt-2 mx-5 position-relative">
+                    <label class="form-label" for="txtSenha">Senha</label>
+                    <input type="password"
+                    name="txtSenha"
+                    id="txtSenha"
+                    @onchange="VerificarSenha"
+                    class="form-control @(erroSenha ? "is-invalid" : "")"
+                    placeholder=""
+                    @ref="senhaInput" 
+                    autocomplete="current-password" />
+                    @if (erroSenha)
+                    {
+                        <div class="invalid-tooltip">
+                            As senhas não está Correta para está Matrícula!
+                        </div>
+                    }
+                </div>
+                <div class="d-flex flex-column align-items-center justify-content-center my-4">
+                    <button class="btn btn-success fs-4" disabled="@carregando" type="submit">ENTRAR</button>
+                    <a href="/novoUsuario" class="link-info fs-6 mt-2">Cadastrar-se</a>
+                </div>
+            </form>
         </div>       
     </div>
 </div>
+@if (carregando)
+{
+    <div class="text-center my-3">
+        <div class="spinner-border text-success" role="status">
+            <span class="visually-hidden">Autenticando...</span>
+        </div>
+        <p class="mt-2">Entrando no sistema...</p>
+    </div>
+}
+
 
 @code {
     private string? matricula;
@@ -64,6 +76,7 @@
     private List<Usuario> listaUsuarios = new();
     private ElementReference matriculaInput;
     private ElementReference senhaInput;
+    private bool carregando = false;
 
 
     protected override async Task OnInitializedAsync()
@@ -104,6 +117,7 @@
 
     public async Task Entrar()
     {
+
         if (erroMatricula)
         {
             await matriculaInput.FocusAsync();
@@ -116,26 +130,8 @@
             return;
         }
 
-        var usuario = listaUsuarios.FirstOrDefault(u => u.Matricula == matricula && u.Senha == senha);
-
-        if (usuario != null)
-        {
-            var claims = new List<Claim>
-    {
-        new Claim(ClaimTypes.Name, usuario.Nome),
-        new Claim("Matricula", usuario.Matricula),
-        new Claim(ClaimTypes.Role, usuario.Tipo.Nome) 
-    };
-
-            var identity = new ClaimsIdentity(claims, "Cookies");
-            var principal = new ClaimsPrincipal(identity);
-
-            await http.HttpContext.SignInAsync("Cookies", principal);
-
-            navegacao.NavigateTo("/home");
-        }
-
-
+        navegacao.NavigateTo("/home", forceLoad: true);
+     
     }
 
 }

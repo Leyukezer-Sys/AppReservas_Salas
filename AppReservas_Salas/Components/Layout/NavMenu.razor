@@ -1,11 +1,10 @@
-﻿@inject NavigationManager navegacao;
-@inject IHttpContextAccessor http;
-@using Microsoft.AspNetCore.Authentication;
+﻿@using AppReservas_Salas.Controllers
+@inject NavigationManager navegacao;
 @rendermode InteractiveServer
 
 <div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="">Reservas De Salas</a>
+        <a class="navbar-brand" href="/home">Reservas De Salas</a>
     </div>
 </div>
 
@@ -14,7 +13,7 @@
 <div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
     <nav class="flex-column">
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+            <NavLink class="nav-link" href="/home" Match="NavLinkMatch.All">
                 <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Rerservas de Salas
             </NavLink>
         </div>
@@ -41,9 +40,9 @@
 </div>
 
 @code{
-    private async Task Sair()
+    private void Sair()
     {
-        await http.HttpContext.SignOutAsync("Cookies");
-        navegacao.NavigateTo("/login");
+       navegacao.NavigateTo("/", forceLoad: true);
     }
+
 }

@@ -46,7 +46,7 @@ namespace AppReservas_Salas.Controllers
                 Console.WriteLine("Salas Nulo, Inválido!");
             }
         }
-        public async Task Update(Sala sala)
+        public void Update(Sala sala)
         {
             _context.Salas.Update(sala);
         }

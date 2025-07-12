@@ -1,12 +1,10 @@
 ﻿@page "/agendarReserva"
 @using AppReservas_Salas.Models
 @using AppReservas_Salas.Controllers
-@using Microsoft.AspNetCore.Authorization
 @inject ReservaController reservaController
 @inject SalaController salaController
 @inject UsuarioController usuarioController
 @inject NavigationManager navegacao
-@attribute [Authorize]
 @rendermode InteractiveServer
 
 <PageTitle>Reservas de Sala</PageTitle>
@@ -16,24 +14,26 @@
     <div class="row mt-2">
         <div class="col ms-3">
             <label>Usuário:</label>
-            <select @bind="reserva.IdUsuario" class="form-control">
-                <option disabled value="">Selecione o usuário</option>
+            <select @onchange="SelecionarUsuario" class="form-control">
+                <option disabled selected value="-1">Selecione o usuário</option>
                 @foreach (var usuario in usuarios)
                 {
                     <option value="@usuario.IdUsuario">@usuario.Nome</option>
                 }
             </select>
         </div>
+
         <div class="col ms-3">
             <label>Sala:</label>
-            <select @bind="reserva.IdSala" class="form-control">
-                <option disabled value="">Selecione uma sala</option>
+            <select @onchange="SelecionarSala" class="form-control">
+                <option disabled selected value="-1">Selecione uma sala</option>
                 @foreach (var sala in salas)
                 {
                     <option value="@sala.IdSala">Sala @sala.Numero - Bloco @sala.Bloco</option>
                 }
             </select>
         </div>
+
     </div>
 
     <div class="row mt-2">
@@ -53,7 +53,7 @@
 
     <div class="row mt-3">
         <div class="col ms-3">
-            <button class="btn btn-primary" @onclick="Agendar" disabled="@( !FormularioValido() )">Reservar</button>
+            <button class="btn btn-primary" @onclick="Agendar" disabled="@invalido">Reservar</button>
         </div>
     </div>
 
@@ -61,26 +61,95 @@
     {
         <div class="alert alert-info mt-3 ms-3">@mensagem</div>
     }
-</div>
 
+</div>
 @code {
     private Reserva reserva = new Reserva();
-    private List<Sala> salas = new List<Sala>();
-    private List<Usuario> usuarios = new List<Usuario>();
+    private List<Sala> salas = new();
+    private List<Usuario> usuarios = new();
     private string mensagem = "";
+    private bool invalido = false;
 
     protected override async Task OnInitializedAsync()
     {
         salas = await salaController.Salas();
         usuarios = await usuarioController.Usuarios();
-        reserva.DataReserva = DateTime.Today;
+        reserva.DataReserva = DateOnly.FromDateTime(DateTime.Today);
     }
+
+    private void SelecionarUsuario(ChangeEventArgs e)
+    {
+        var valor = e.Value?.ToString();
+
+        if (valor == "-1" || string.IsNullOrWhiteSpace(valor))
+        {
+            mensagem = "Usuário não selecionado.";
+            reserva.IdUsuario = 0;
+            invalido = true;
+            return;
+        }
+
+        if (int.TryParse(valor, out int idUsuario))
+        {
+            reserva.IdUsuario = idUsuario;
+        }
+    }
+
+    private void SelecionarSala(ChangeEventArgs e)
+    {
+        var valor = e.Value?.ToString();
+
+        if (valor == "-1" || string.IsNullOrWhiteSpace(valor))
+        {
+            mensagem = "Sala não selecionada.";
+            reserva.IdSala = 0;
+            invalido = true;
+            return;
+        }
+
+        if (int.TryParse(valor, out int idSala))
+        {
+            reserva.IdSala = idSala;
+        }
+    }
+
 
     private async Task Agendar()
     {
-        var disponivel = await reservaController.VerificarDisponibilidade(reserva.IdSala, reserva.DataReserva, reserva.HoraInicioReserva, reserva.HoraFimReserva);
+        mensagem = "";
 
-        if (!disponivel)
+        if (reserva.IdUsuario <= 0)
+        {
+            mensagem = "Selecione um usuário.";
+            return;
+        }
+
+        if (reserva.IdSala <= 0)
+        {
+            mensagem = "Selecione uma sala.";
+            return;
+        }
+
+        if (reserva.DataReserva < DateOnly.FromDateTime(DateTime.Today))
+        {
+            mensagem = "A data da reserva deve ser igual ou posterior à data atual.";
+            return;
+        }
+
+        if (reserva.HoraInicioReserva >= reserva.HoraFimReserva)
+        {
+            mensagem = "A hora de início deve ser anterior à hora de fim.";
+            return;
+        }
+
+        var disponivel = await reservaController.VerificarDisponibilidade(
+            reserva.IdSala,
+            reserva.DataReserva,
+            reserva.HoraInicioReserva,
+            reserva.HoraFimReserva
+        );
+
+        if (disponivel)
         {
             mensagem = "Essa sala já está reservada nesse horário.";
             return;
@@ -90,14 +159,6 @@
         await reservaController.Salvar();
 
         mensagem = "Reserva realizada com sucesso!";
-        reserva = new Reserva() { DataReserva = DateTime.Today };
-    }
-
-    private bool FormularioValido()
-    {
-        return reserva.IdUsuario > 0 &&
-               reserva.IdSala > 0 &&
-               reserva.DataReserva >= DateTime.Today &&
-               reserva.HoraInicioReserva < reserva.HoraFimReserva;
+        navegacao.NavigateTo("/home");
     }
 }

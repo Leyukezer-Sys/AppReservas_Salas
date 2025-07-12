@@ -16,24 +16,57 @@ namespace AppReservas_Salas.Controllers
             return reservas;
         }
 
-        public async Task<bool> VerificarDisponibilidade(int idSala, DateTime dataReserva, TimeOnly horaInicio, TimeOnly horaFim)
+        public async Task<bool> VerificarDisponibilidade(int idSala, DateOnly dataReserva, TimeOnly horaInicio, TimeOnly horaFim)
         {
-            return !await _context.Reservas.AnyAsync(r =>
-                r.IdSala == idSala &&
-                r.DataReserva.Date == dataReserva.Date &&
-                (
-                    (horaInicio >= r.HoraInicioReserva && horaInicio < r.HoraFimReserva) ||
-                    (horaFim > r.HoraInicioReserva && horaFim <= r.HoraFimReserva) ||       
-                    (horaInicio <= r.HoraInicioReserva && horaFim >= r.HoraFimReserva)      
-                )
-            );
+            try
+            {
+                // Verifica se o DbContext ou o DbSet está nulo
+                if (_context?.Reservas == null)
+                {
+                    Console.WriteLine("⚠️ Contexto ou DbSet 'Reservas' está nulo.");
+                    return false; // Ou 'true', se quiser bloquear reservas por precaução
+                }
+
+                bool conflito = await _context.Reservas.AnyAsync(r =>
+                    r.IdSala == idSala &&
+                    r.DataReserva == dataReserva &&
+                    (
+                        (horaInicio >= r.HoraInicioReserva && horaInicio < r.HoraFimReserva) ||
+                        (horaFim > r.HoraInicioReserva && horaFim <= r.HoraFimReserva) ||
+                        (horaInicio <= r.HoraInicioReserva && horaFim >= r.HoraFimReserva)
+                    )
+                );
+
+                return conflito;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"🛑 Erro ao verificar disponibilidade: {ex.Message}");
+                return false;
+            }
         }
 
-        public async Task<bool> SalaEstaReservada(int idSala, DateTime data)
+
+        public async Task<bool> SalaEstaReservada(int idSala, DateOnly data)
         {
-            return await _context.Reservas
-                .AnyAsync(r => r.IdSala == idSala && r.DataReserva == data);
+            if (_context?.Reservas == null)
+            {
+                Console.WriteLine("⚠️ Contexto ou DbSet Reservas está nulo.");
+                return false; // ou true, se quiser assumir como “ocupado” por segurança
+            }
+
+            try
+            {
+                return await _context.Reservas
+                    .AnyAsync(r => r.IdSala == idSala && r.DataReserva == data);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"🛑 Erro ao verificar reserva: {ex.Message}");
+                return false;
+            }
         }
+
 
 
         public async Task<Reserva>? GetReserva(int id)
@@ -43,11 +76,11 @@ namespace AppReservas_Salas.Controllers
             return reserva;
         }
 
-        public async Task<Reserva>? GetReserva(DateTime dataReserva)
+        public async Task<Reserva>? GetReserva(DateOnly dataReserva)
         {
-            var Reserva = await _context.Reservas.Include(r => r.Sala).Include(r => r.Usuario).Where(r => r.DataReserva == dataReserva).FirstOrDefaultAsync();
+            var reserva = await _context.Reservas.Include(r => r.Sala).Include(r => r.Usuario).Where(r => r.DataReserva == dataReserva).FirstOrDefaultAsync();
 
-            return Reserva;
+            return reserva;
         }
 
         public async Task Add(Reserva Reserva)

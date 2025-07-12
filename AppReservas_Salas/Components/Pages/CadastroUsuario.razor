@@ -1,11 +1,9 @@
 ﻿@page "/cadastrarUsuario"
 @using AppReservas_Salas.Models;
 @using AppReservas_Salas.Controllers;
-@using Microsoft.AspNetCore.Authorization
 @inject UsuarioController usuarioController;
 @inject TipoUsuarioController tipoController;
 @inject NavigationManager navegacao;
-@attribute [Authorize(Roles = "professor")]
 @rendermode InteractiveServer
 
 <PageTitle>Novo Usuário</PageTitle>

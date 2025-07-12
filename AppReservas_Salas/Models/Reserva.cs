@@ -10,7 +10,7 @@ namespace AppReservas_Salas.Models
         public int Id { get; set; }
 
         [Column("data_reserva")]
-        public DateTime DataReserva { get; set; } = new DateTime(DateTime.Now.Year,DateTime.Now.Month,DateTime.Now.Day);
+        public DateOnly DataReserva { get; set; } = new DateOnly(DateTime.Now.Year,DateTime.Now.Month,DateTime.Now.Day);
         
         [Column("hora_inicio_reserva")]
         public TimeOnly HoraInicioReserva { get; set; } 
